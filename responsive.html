@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/customStyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Playfair+Display&display=swap">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="css/slick.min.css">
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.min.css">
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <title>FinVedic</title>
+        <style>
+            .header-bg {
+                background-image: url('assets/background_landing.png');
+                background-size: 100% 100%;
+                background-position: top;
+                background-repeat: no-repeat;
+            }
+            .underlineImg {
+                position: relative;
+            }
+            .underlineImg:after {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                height: 10px;
+                width: 100%;
+                background-image: url(assets/underline_lp.png);
+                background-position: center;
+                background-size:100% 100%;
+                background-repeat: no-repeat;
+            }
+
+            .professionalBackground {
+                background: url(assets/White_square.png);
+                background-position: top;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                position: relative;
+                height: 100%;
+
+                &.mobile { 
+                    min-height: 470px;
+                    margin: 10px;
+                }
+            }
+
+
+            .footerStyle {
+                background-image: url('assets/Ellipse 43.png');
+                background-size: 100% 100%;
+                background-position: top;
+                background-repeat: no-repeat;
+            }
+
+            @media only screen and (max-width: 576px) {
+                
+                .header-bg {
+                     background-size: 200% 80%;
+                }
+
+                .footerStyle {
+                    background-size: cover;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+    <div id="app">
+        <!-- navbar section -->
+        <nav class="navbar navbar-expand-md navbar-dark " style="background-color: #0A004B;">
+            <div class="container justify-content-center">
+                <img class="navbar-brand d-none d-md-block" src="assets/Logo.png">
+                <img class="navbar-brand d-block d-md-none" src="assets/logo-mobile-version.svg">
+                <div class="collapse navbar-collapse d-none d-md-block" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Bootcamp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">External</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="mx-auto"></div>
+                    <button class="button_contact btn rounded-pill px-4 text-white">Contact Us</button>
+                </div>
+            </div>
+        </nav>
+        <div class="websiteBackground">
+
+            <!-- header section  -->
+            <div class="header-bg">
+                <div class="container">
+                    <div class="py-5 text-white text-center headerTextStyle">
+                        <span class="headerTextHightlite underlineImg">Join</span> 
+                        Learn & Accelerate Supercharge your <br> career with 
+                        <span class="headerTextHightlite">Finvedic!</span>
+                    </div>
+                    <div class="row justify-content-center pb-5" style="white-space: nowrap;">
+                        <div class="row justify-content-center align-items-center g-3" style="max-width: 380px">
+                            <div class="col-12 col-md-6">
+                                <button class="buttonEnroll btn rounded-pill text-white  w-100">Enroll Now</button>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <button class="buttonBrochure btn rounded-pill text-white w-100">
+                                    <span class="d-inline-block d-md-none">Download</span>&nbsp;Brochure&nbsp; <i
+                                        class="fa-solid fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headerCaroselWeb">
+                    
+                    </div>
+                    <div class="row justify-content-center py-5">
+                        <div class="col-10 col-md-8">                       
+                            <div class="headerCaroselMobile">
+                                <div><img src="assets/hero1.png" class="w-100 h-100"> </div>
+                                <div><img src="assets/hero2.png" class="w-100 h-100"> </div>
+                                <div><img src="assets/hero3.png" class="w-100 h-100"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 100px;" class="d-none d-md-block"></div>
+            </div>
+
+            <!-- finance and technology -->
+            <div class="container py-5 px-4">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 text-left">
+                        <p class="textTechnology">
+                            As the world of <br>
+                            <span style="color: #0A004B;" class="fw-bold">finance and technology</span> <br>
+                            continues to evolve and change so does the industry(FinTech) that surrounds it.
+                        </p>
+                        <p class="textTechnology">The need for financial technology(FinTech) has neve been greater and we're dedicated to
+                            helping you suceed in this
+                            exciting new field</p>
+                    </div>
+                    <div class="col-12 col-md-6 d-none d-md-inline-block text-center">
+                        <img src="assets/hero_.png" alt="" class="w-75">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Life as a FinTech Professional -->
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <span class="mainHeading text-white">Life as a FinTech Professional</span>
+                    </div>
+                    <div class="col-12 col-md-10 py-5">
+                        <!-- tablat or web View  -->
+                        <div class="professionalBackground p-5 d-none d-md-block"> 
+                            <div class="starStyle">
+                                <img src="assets/star.png" alt="">
+                            </div>
+
+                            <div class="row py-1 align-items-center justify-content-center justify-content-md-start">
+                                <div class="col-10 col-md-3">
+                                    <img src="assets/Icons.png" class="w-100">
+                                </div>
+                                <div class="col-12 col-md-7">
+                                    <h4 class="profissionalTextHeading">Great Salary & Perks</h4>
+                                    <p class="profissionalText">Easy to learn, high-paying and in a fast growing
+                                        industry</p>
+                                </div>
+                            </div>
+
+                            <div class="row py-1 align-items-center justify-content-center justify-content-md-end">
+                                <div class="col-12 col-md-7">
+                                    <h4 class="profissionalTextHeading">Accelerated Growth Path</h4>
+                                    <p class="profissionalText">FinTech offers tech, expert collaboration, experience,
+                                    and fast career growth due to high demand.</p>
+                                </div>
+                                <div class="col-10 col-md-3">
+                                    <img src="assets/Group 251.png" class="w-100">
+                                </div>
+                            </div>
+
+                            <div class="row py-1 align-items-center justify-content-center justify-content-md-start">
+                                <div class="col-10 col-md-3">
+                                    <img src="assets/Group 294.png" class="w-100">
+                                </div>
+                                <div class="col-12 col-md-7">
+                                    <h4 class="profissionalTextHeading">Build a Solid Profile</h4>
+                                    <p class="profissionalText">Exciting, rewarding FinTech environment to
+                                    achieve career goals.</p>
+                                </div>
+                            </div>
+
+                            <div class="row py-1 align-items-center justify-content-center justify-content-md-end">
+                                <div class="col-12 col-md-7">
+                                    <h4 class="profissionalTextHeading">Achieve the Extra-Ordinary</h4>
+                                    <p class="profissionalText">FinTech's trillion-dollar growth provides a fantastic career
+                                    opportunity for extraordinary achievements.</p>
+                                </div>
+                                <div class="col-10 col-md-3">
+                                    <img src="assets/Group 257.png" class="w-100">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- mobile View  -->
+                        <div class="d-block d-md-none">
+                            <div class="profissionalCarosel">
+                                <div class="professionalBackground mobile">
+                                    <div class="starStyle">
+                                        <img src="assets/star.png" alt="">
+                                    </div>
+                                    <div class="row px-4 py-5 align-items-center justify-content-center justify-content-md-start">
+                                        <div class="col-8">
+                                            <img src="assets/Icons.png" style="width: 200px ">
+                                        </div>
+                                        <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
+                                            <h4 class="profissionalTextHeading">Great Salary & Perks</h4>
+                                            <p class="profissionalText">Easy to learn, high-paying and in a fast growing
+                                                industry</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="professionalBackground mobile">
+                                    <div class="starStyle">
+                                        <img src="assets/star.png" alt="">
+                                    </div>
+                                    <div class="row px-4 pt-5 align-items-center justify-content-center justify-content-md-end">
+                                        <div class="col-8">
+                                            <img src="assets/Group 251.png" style="width: 200px ">
+                                        </div>
+                                        <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
+                                            <h4 class="profissionalTextHeading">Accelerated Growth Path</h4>
+                                            <p class="profissionalText">FinTech offers tech, expert collaboration, experience,
+                                                and fast career growth due to high demand.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="professionalBackground mobile">
+                                    <div class="starStyle">
+                                        <img src="assets/star.png" alt="">
+                                    </div>
+                                    <div class="row px-4 py-5 align-items-center justify-content-center justify-content-md-start">
+                                        <div class="col-8">
+                                            <img src="assets/Group 294.png" style="width: 200px ">
+                                        </div>
+                                        <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
+                                            <h4 class="profissionalTextHeading">Build a Solid Profile</h4>
+                                            <p class="profissionalText">Exciting, rewarding FinTech environment to
+                                                achieve career goals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="professionalBackground mobile">
+                                    <div class="starStyle">
+                                        <img src="assets/star.png" alt="">
+                                    </div>
+                                    <div class="row px-4 pt-5 align-items-center justify-content-center justify-content-md-end">
+                                        <div class="col-8">
+                                            <img src="assets/Group 257.png" style="width: 200px ">
+                                        </div>
+                                        <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
+                                            <h4 class="profissionalTextHeading">Achieve the Extra-Ordinary</h4>
+                                            <p class="profissionalText">FinTech's trillion-dollar growth provides a fantastic career
+                                                opportunity for extraordinary achievements.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- who We Are Section -->
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        About Us<br>
+                        <span class="mainHeading">Who we are?</span>
+                    </div>
+                    <div class="col-12 pt-5 px-4 ">
+                        <div class="whoWeAreStyleBase" style="border-radius: 25px;background-color: rgb(255, 255, 255)">
+                            <img class="w-100" src="assets/Mask group.png" alt="">
+                            <div class="card d-block d-md-none  px-2 pt-2">
+                                <div class="row align-items-center">
+                                    <div class="col-2 p-2">
+                                        <img src="assets/card1.svg" class="w-100">
+                                    </div>
+                                    <div class="col-10" style="transition: 1s;">
+                                       {{ activeTextWho.active == 1 && activeTextWho.count != defaultLength ? text1.slice(0, 10000 ): text1.slice(0, this.defaultLength)+ '...' }}
+                                    </div>
+                                    <div class="text-end w-100 px-4" @click="whoWeAreActiveText(1)"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                            </div>
+                            <div class="card d-block d-md-none px-2 pt-2">
+                                <div class="row align-items-center">
+                                    <div class="col-2 text-center p-2">
+                                        <img src="assets/card2-1.svg" class="w-75">
+                                        <img src="assets/card2-2.svg" class="w-75">
+                                    </div>
+                                    <div class="col-10" style="transition: 1s;"> 
+                                        {{ activeTextWho.active == 2 && activeTextWho.count != defaultLength ? text2.slice(0, 10000 ) : text2.slice(0, this.defaultLength)+ '...' }} 
+                                    </div>
+                                    <div class="text-end w-100 px-4" @click="whoWeAreActiveText(2)"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                            </div>
+                            <div class="card d-block d-md-none px-2 pt-2">
+                                <div class="row align-items-center">
+                                    <div class="col-2 text-center p-2">
+                                        <img src="assets/card3.svg" class="w-100">
+                                    </div>
+                                    <div class="col-10" style="transition: 1s;">
+                                        {{ activeTextWho.active == 3 && activeTextWho.count != defaultLength ?  text3.slice(0, 10000 ): text3.slice(0, this.defaultLength)+ '...' }}
+                                    </div>
+                                    <div class="text-end w-100 px-4" @click="whoWeAreActiveText(3)"><i class="fa-solid fa-angle-down"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 d-none d-md-block pt-5">
+                        <div class="row">
+
+                            <div class="col-4 whoWrAreStyle">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <img class="card-title" src="assets/card1.png">
+                                        <h3 class="card-para">{{ text1 }}</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 whoWrAreStyle">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <img class="card-title" src="assets/card2.png">
+                                        <div class="card-para">{{ text2 }}</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 whoWrAreStyle">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <img class="card-title" src="assets/card3.png">
+                                        <h3 class="card-para" style="padding-top: 4%;">{{ text3 }}</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center p-4 pt-5 ">
+                    <div class="row whoWeAreContact align-items-center" style="max-width: 800px;">
+                        <div class="col-12 col-md-9 p-4">
+                            Reach us to learn more about how we can help you land your ideal position with a competitive salary
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <button class="buttonEnroll btn rounded-pill text-white px-5" style="white-space: nowrap;">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/whowearebottom.svg" class="w-100" style="margin-top: -30px;">
+        </div>
+
+        <!-- why Finvedic Section  && Certification of Authentication section -->
+        <div class="w-100 whyFinvedicStyle">
+            <!-- why Finvedic Section -->
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 text-center mainHeading text-white d-block d-md-none pb-5">Why Finvedic?</div>
+
+                    <div class="col-12 col-md-5 d-none d-md-block">
+                        <div class="mainHeading text-white">Why Finvedic?</div>
+                        <div>
+                            <img src="assets/student_img.png" class="w-100" >
+                            <div class="row whoWeAreContact p-4 align-items-center">
+                                <div class="col-12 col-md-6" style="color: #5661B0;font-family: Manrope;">
+                                    Subscribe to our newsletter to get new updates on courses
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <button class="buttonEnroll btn rounded-pill text-white py-3 w-100">Enroll Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-7 px-4 h-100">
+                        <div class="d-flex">
+                            <img src="assets/vertical_slider.png">
+                            <div class="">
+                                <div>
+                                    <h1>Specialized Courses</h1>
+                                    <p>Courses designed by Fintech industry experts for real time exposure.</p>
+                                </div>
+                                <div>
+                                    <h1>Live Projects</h1>
+                                    <p>FinTech experts developed our Finvedic labs, which is a company in itself, serving thriving financial company.</p>
+                                </div>
+                                <div>
+                                    <h1>Placement Assistance</h1>
+                                    <p>Strategically partnered with top FinTech companies and banking global delivery centres placement assistance</p>
+                                    <p>We coach them rigorously with :</p>
+                                    <ol>
+                                        <li>Mock Interview</li>
+                                        <li>FinTech trends</li>
+                                        <li>FinTech industry insights</li>
+                                        <li>Portfolios & much more</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-block d-md-none py-4">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img src="assets/student_img.png" class="w-100">
+                            </div>
+                            <div class="col-6" style="color: #fff;font-family: Manrope;font-size: 1.3em;">
+                                Subscribe to our newsletter to get new updates on courses
+                            </div>
+                            <div class="col-12 text-center py-5" style="background: #C04BE225;">
+                                <button class="buttonEnroll btn rounded-pill text-white px-5  py-2">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container py-5 d-none d-md-block">
+                <div class="row text-white">
+
+                    <div class="col-6 letUsSeeSectionStyle">
+                        <div class="mainHeading lh-base">Let us see <br>how we do it</div>
+                        <div class="p-4 letUsSeeSectionBox" style="margin-top: 100px">
+                            <img src="assets/finvedicPink.svg" class="logo">
+                            <div class="numberStyle">2</div>
+                            <div class="letUsSeeHeading">Capstone
+                                <img class="letUsSeeHeadingImg"
+                                    src="https://s3-alpha-sig.figma.com/img/32cb/f566/df9aca5e47d1339d2e94283924f7b10d?Expires=1704672000&Signature=kVBUTLi6C8zLFj5VwHgtzzQ0hby2pqj9LY5VnM3tBNra~S3TLnmBbmQasR6NwJb~oIraARwPIpNmkK6JiOrZx20A7NLuh-SzhIIlWKxIlV2tW03lxCIultzM0TseScEXRH-eEXyyTm68WPF3HDIxhL7uKQwbupqrLtCxMgHHoCu1haCR2KOdE43ZiHe246nIVnMTDXFIziWlJ0PerCplJSUOn7HYZAFmfd~6R4MRDXcf3qJvv5hkPeOZUt0Bfd6FvMRZW2va4A~qtf3cbFc6INF4KO95U3X7i5pRMPtvVjwtiXeS-QqIrgcDwdlj9qMVvir~L81cWM5kUvPH~rGeGg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                                <br>Fintech Projects
+                            </div>
+                            <br>
+                            <ul>
+                                <li>NextGen Fintech Infrastructure</li>
+                                <li>Internship on Fintech projects</li>
+                                <li>AI powered lab assistance</li>
+                                <li>Real world experience</li>
+                                <li>Crafted by industry leaders</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-6 letUsSeeSectionStyle">
+                        <div class="p-4 letUsSeeSectionBox">
+                            <div class="numberStyle">1</div>
+                            <img src="assets/finvedicPink.svg" class="logo">
+                            <div class="letUsSeeHeading">Fintech 
+                                <img class="letUsSeeHeadingImg" src="https://s3-alpha-sig.figma.com/img/0cfb/beb0/d2071a5b978ff2cfc45b3c92c2d199a5?Expires=1704672000&Signature=JDdVBxkSTic40zEkpjyOS0tjXOlYMAjfxBlPsC8vxa6tCK~6MeZSPjYT7OXsiTaiAigHEoNJSRhiuef4eio~Zt2xLSPbpjLBGOKxUkr0Aq48pVsEfMxuZyQGXuAvHu8XCinQNMmqp1KBeQHl1sPH8~dVKUXGf2I~nPtGQgQCQ9bA9iU6Gv5PpQlnDgYZ~rBBzavmO7ZcL3RYmlj3no3uxe5rmd1DXEvv3pW4ZFZ1VG1GmP4UB9s730YEk1Rr~U5rOJXp4rg47s3FORyimcR9uWVL7TZTzoIJQEzzZ5jRKXp0830NZcrZ~BBKgDZ4X85BXqAK37hwFhBbYRKY9hlZjQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                                <br>Domain Sessions
+                            </div>
+                            <br>
+                            <ul>
+                                <li>Trainers - Industry experts</li>
+                                <li>Video Library - Recorded sessions</li>
+                                <li>Proprietary Content - NextGen Fintech cirriculum</li>
+                                <li>Virtual Live - Classrooms</li>
+                                <li>Infographic handbooks</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <img src="assets/whiterocketGas.svg" class=" d-none d-md-block" style="margin-top: -200px;width: 75%;position: absolute;">
+            <div class="container py-5  d-none d-md-block">
+                <div class="row text-white">
+            
+                    <div class="col-6 letUsSeeSectionStyle">
+                        <div class="p-4 letUsSeeSectionBox" style="margin-top: 200px">
+                            <img src="assets/finvedicPink.svg" class="logo">
+                            <div class="numberStyle">4</div>
+                            <div class="letUsSeeHeading">Placement
+                                <img class="letUsSeeHeadingImg"
+                                    src="https://s3-alpha-sig.figma.com/img/721c/90db/98c0d35ebd21775bffb3dba0b223762f?Expires=1704672000&Signature=EL8eTEBGOfR9YSA-gcoNaCX3hf2bMn6ymWm4U8yT6A3FcjiPO0kL2yc8MfX2y2d1V78w7PEANdAcgnj1xqC80pXESaaZd6F-~hsWfQ0tQtRsQB0TS5kfOjFcqNcY0cJHxXcskdPvdrjLcccjlvCk~6YGAai5kuV8Qycp6Fr6sH7RMzz63YEvqmIpLlAMJ~mfxI2zXKIPDJwYbMep9VRt2sRg6me6ZOy4PwwutpsLwkxA1iQxThSgA9tkCy9K1vpPUZMgRRtX0kCl42plnJVnnAlUkni0PU31XqUcByzdLAPrBIGysf6mAjEbFBsiXnLRUhpJKglOmxC0htWh7KzU-Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                                <br>Assistance
+                            </div>
+                            
+                            <br>
+                            <ul>
+                                <li>Handbooks</li>
+                                <li>Video Lectures</li>
+                                <li>Unlimited access to Fintech lab</li>
+                                <li>200 hours of Azure Cloud Corporate access</li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="col-6 letUsSeeSectionStyle">
+                        <div class="p-4 letUsSeeSectionBox">
+                            <div class="numberStyle">3</div>
+                            <img src="assets/finvedicPink.svg" class="logo">
+                            <div class="letUsSeeHeading">Our
+                                <img class="letUsSeeHeadingImg"
+                                    src="https://s3-alpha-sig.figma.com/img/8362/982c/742fe858361d56bdd14f9c13df741ee8?Expires=1704672000&Signature=CdfE~ksrJlYKETT0o3wSODdV36Tc-BsU9p5MsHsqdV5nCjwuHZEonX6QVYyy5pWv98G9fbHVivdHVzG9-J8~7jfisxF2yvXTDVFbqyKVA4lRJHZXA6CGqJafNtPUR358ZFl9Dk2W1xuwKWovduiaOw1zj93v8C2hM6cDj9aKtDQj3H1JEYCMJUPNVN56jl-y6bs0MX9Z8DzZ43GvmIhuNknNphWPyMoIDPAdfBQA~NHtvXfGGoFYuSAOcBz7nxvOKi1y~cULeb1zP3Z5~aYGtBpTzkzbVUQrVK76e06xyScJIQTY22GJTSDRiVK4M1qu0hlYJCx88N28UMhI0gHLqw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4">
+                                <br>Offerings
+                            </div>
+                            <br>
+                            <ul>
+                                <li>6 months of access to Gurukul portal that includes :
+                                    <ul>
+                                        <li>Handbooks</li>
+                                        <li>Video Lectures</li>
+                                        <li>Unlimited access to Fintech lab</li>
+                                        <li>200 hours of Azure Cloud Corporate access</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            <div class="container d-bock d-md-none py-5">
+                <div class="row">
+                    <div class="col-12 mainHeading text-white text-center"> Let us see<br>how we do it?</div>
+                    <div class="col-12 p-4">
+                        <div class="rocketText">
+                            <img src="assets/student_img.png" class="rocket-img" v-if="loadingRocket">
+                            <div class="w-100 h-100 text-center" v-if="!loadingRocket && stage == '1'">
+                                <h6 class="rocketTextHeading">Fintech Domain Sessions</h6>
+                                <ul class="text-start">
+                                    <li>Trainers - Industry experts</li>
+                                    <li>Video Library - Recorded sessions</li>
+                                    <li>Proprietary Content - NextGen Fintech cirriculum</li>
+                                    <li>Virtual Live - Classrooms</li>
+                                    <li>Infographic handbooks</li>
+                                </ul>
+                                <h6 class="rocketTextHeading">Stage 1</h6>
+                            </div>
+                            <div class="w-100 h-100 text-center" v-if="!loadingRocket && stage == '2'">
+                                <h6 class="rocketTextHeading">Capstone Fintech Projects</h6>
+                                <ul class="text-start">
+                                    <li>NextGen Fintech Infrastructure</li>
+                                    <li>Internship on Fintech projects</li>
+                                    <li>AI powered lab assistance</li>
+                                    <li>Real world experience</li>
+                                    <li>Crafted by industry leaders</li>
+                                </ul>
+                                <h6 class="rocketTextHeading">Stage 2</h6>
+                            </div>
+                            <div class="w-100 h-100 text-center" v-if="!loadingRocket && stage == '3'">
+                                <h6 class="rocketTextHeading">Our Offerings</h6>
+                                <ul class="text-start">
+                                    <li>6 months of access to Gurukul portal that includes :
+                                        <ul>
+                                            <li>Handbooks</li>
+                                            <li>Video Lectures</li>
+                                            <li>Unlimited access to Fintech lab</li>
+                                            <li>200 hours of Azure Cloud Corporate access</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h6 class="rocketTextHeading">Stage 3</h6>
+                            </div>
+                            <div class="w-100 h-100 text-center" v-if="!loadingRocket && stage == '4'">
+                                <h6 class="rocketTextHeading">Placement Assistance</h6>
+                                <ul class="text-start">
+                                    <li>Corporate partnership</li>
+                                    <li>Resume services</li>
+                                    <li>Mock interviews</li>
+                                    <li>Mentorship by experts</li>
+                                </ul>
+                                <h6 class="rocketTextHeading">Stage 4</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center align-items-between">
+                            <div class="stageBox" @click="changeStage(1)">
+                                <div style="font-size: 14px;" class="pt-2" v-if="stage != 1">stage</div> 
+                                <div class="stageText" v-if="stage != 1">1</div>
+                                <div class="stageDot rounded-pill" :style="{ height:  stage == 1 ? '124px' : '30px',transition: stage == 1 ? '500ms' : ''}"></div>
+                            </div>
+                            <div class="stageBox" @click="changeStage(2)">
+                                <div style="font-size: 14px;" class="pt-2" v-if="stage != 2">stage</div>
+                                <div class="stageText" v-if="stage != 2">2</div>
+                                <div class="stageDot rounded-pill" :style="{ height:  stage == 2 ? '124px' : '30px', transition: stage == 2 ? '500ms' : ''}"></div>
+                            </div>
+                            <div class="stageBox" @click="changeStage(3)">
+                                <div style="font-size: 14px;" class="pt-2" v-if="stage != 3">stage</div>
+                                <div class="stageText" v-if="stage != 3">3</div>
+                                <div class="stageDot rounded-pill" :style="{ height:  stage == 3 ? '124px' : '30px', transition: stage == 3 ? '500ms' : ''}"></div>
+                            </div>
+                            <div class="stageBox" @click="changeStage(4)">
+                                <div style="font-size: 14px;" class="pt-2" v-if="stage != 4">stage</div>
+                                <div class="stageText" v-if="stage != 4">4</div>
+                                <div class="stageDot rounded-pill" :style="{ height:  stage == 4 ? '124px' : '30px', transition: stage == 4 ? '500ms' : ''}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification of Authentication section -->
+            <div class="container py-5 p-5">
+                <div class="row justify-content-center CertificationStyle">
+                    <div class="col-12 text-center mainHeading text-white">Certification of Authentication</div>
+                    <div class="col-12 text-white-50 text-center" style="font-size: 1em;">
+                        Online authentication of certification to ensure the legitimacy of digital identities
+                    </div>
+                    <div class="col-12 col-md-8 py-4">
+                        <form @submit.prevent="" class="w-100">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-md-9  py-4">
+                                    <input type="text" placeholder="Enter registered maild id to check authentication" class="form-control rounded-pill py-3 w-100">
+                                </div>
+                                <div class="text-center col-12 col-md-3">
+                                    <button class="buttonEnroll btn rounded-pill text-white py-3 fw-bold w-100" style="max-width: 200px;">Check Now</button>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>                    
+                    <img src="assets/papperFlod-2.svg" class="paper-1 d-block d-md-none">
+                    <img src="assets/papperFlod-1.svg" class="paper-2 d-block d-md-none">
+                </div>
+            </div>
+        </div>
+
+        <div class="cloudStyle d-none d-md-block">
+            <img src="assets/Mask group (2).png" class="w-100">
+        </div>
+
+        <!-- Curriculum section -->
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 mainHeading text-center"> Course Curriculum</div>
+                <div class="col-12 col-md-8 text-center py-5">
+                    <div class="CurriculumCarosuel">
+                        <div><img src="assets/book_cover1.png" class="CurriculumSlide"></div>
+                        <div><img src="assets/book_cover2.png" class="CurriculumSlide"></div>
+                        <div><img src="assets/book_cover3.png" class="CurriculumSlide"></div>
+                        <div><img src="assets/book_cover4.png" class="CurriculumSlide"></div>
+                        <div><img src="assets/book_cover5.png" class="CurriculumSlide"></div>
+
+                    </div>
+                </div>
+                <div class="col-12 d-none d-md-block">
+                    <div class="row g-5">
+                        <div class="col-5">
+                            <p class="curriculamTitle">Course description</p>
+                            <div class="curriculamText">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                                <p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                    velit esse cillum dolore
+                                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim
+                                    id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="curriculamTitle">Key features</p>
+                                    <div class="curriculamText">
+                                        <ul>
+                                            <li>Building blocks of distributed systems</li>
+                                            <li>The power of open API & Microservices</li>
+                                            <li>Cloud containers & orchestration in modern fintech</li>
+                                            <li>Blockchain and the revolution of smart contracts</li>
+                                            <li>Leveraging AI & machine learning in fintech</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <p class="curriculamTitle">Next: Fintech and...</p>
+                                    <div class="curriculamText">
+                                        <ul>
+                                            <li>Navigating digital banking: An intro</li>
+                                            <li>Banking unveiled: A primer</li>
+                                            <li>Unlocking finance : A beginner’s guide</li>
+                                            <li>Discovering fintech : The essentials</li>
+                                            <li>Agile-powered software delivery journey</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <!-- Our Success Stories section && About Finvedic section -->
+        <div class="StoriesStyle pt-5 w-100">
+            <!-- Our Success Stories section -->
+            <div class="w-100 py-5">
+                <div class="col-12 text-center text-white">
+                    <div style="font-size: 1.5rem;line-height: 2em;" class="text-white-50">Reviews</div>
+                    <div class="mainHeading text-white">Our Success Stories</div>
+                </div>
+                
+                <div class="col-12 pt-5">
+                    <div class="rangeslider">
+                        <div class="range_slider_container">
+                            <div class="slider_carousel">
+                    
+                                <div class="item" style="position: relative;">
+                                    <div class="image_card">
+                                        <div style="display: inline-block;">
+                                            <img class="card_abs" src="assets/paul_rodd_dummy.jpg" alt=""
+                                                style="width: 80px;height:80px ;margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+                                            <h6 class="card_abs" style="width: 100%;text-align: center;">Paul Rudd</h6>
+                                            <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+                                        </div>
+                                        <div style="display: inline-block;">
+                                            <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+                                            <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur
+                                                vel fugiat
+                                                aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="item" style="width: 7.3%;height: 200px">
+                                    <img src="assets/Chris_Evans_SDCC_2014.jpg" alt=""
+                                        style="width: 100%;height:100% ;border-radius: 12px;">
+                                </div>
+                    
+                                <div class="item" style="position: relative;">
+                                    <div class="image_card">
+                                        <div style="display: inline-block;">
+                                            <img class="card_abs" src="assets/Chris_Evans_SDCC_2014.jpg" alt=""
+                                                style="width: 80px;height:80px;margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+                                            <h6 class="card_abs" style="width: 100%;text-align: center;">Chris Evans</h6>
+                                            <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+                                        </div>
+                                        <div style="display: inline-block;">
+                                            <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+                                            <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur
+                                                vel fugiat
+                                                aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="item" style="width: 7.3%;height: 200px">
+                                    <img src="assets/rd_jr_dummy.jpg" alt="" style="width: 100%;height:100% ;border-radius: 12px;">
+                                </div>
+                    
+                                <div class="item" style="position: relative;">
+                                    <div class="image_card">
+                                        <div style="display: inline-block;">
+                                            <img class="card_abs" src="assets/rd_jr_dummy.jpg" alt=""
+                                                style="width: 80px;height: 80px; margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+                                            <h6 class="card_abs" style="width: 100%;text-align: center;">Robert Jr</h6>
+                                            <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+                                        </div>
+                                        <div style="display: inline-block;">
+                                            <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+                                            <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur
+                                                vel fugiat
+                                                aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="item" style="width: 7.3%;height: 200px">
+                                    <img src="assets/Benedict_Cumberbatch_dummy.jpg" alt=""
+                                        style="width: 100%;height:100% ;border-radius: 12px;">
+                                </div>
+                    
+                                <div class="item" style="position: relative;">
+                                    <div class="image_card">
+                                        <div style="display: inline-block;">
+                                            <img class="card_abs" src="assets/Benedict_Cumberbatch_dummy.jpg" alt=""
+                                                style="width: 80px;height: 80px;margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+                                            <h6 class="card_abs" style="width: 100%;text-align: center;">Benedict</h6>
+                                            <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+                                        </div>
+                                        <div style="display: inline-block;">
+                                            <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+                                            <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur
+                                                vel fugiat
+                                                aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="item" style="width: 7.3%;height: 200px">
+                                    <img src="assets/paul_rodd_dummy.jpg" alt="" style="width: 100%;height:100% ;border-radius: 12px;">
+                                </div>
+                    
+                            </div>
+                            <div class="slider_carousel2">
+                    
+                                <div class="item" style="width: 7.3%;height: 200px">
+                                    <img src="assets/Benedict_Cumberbatch_dummy.jpg" alt=""
+                                        style="width: 100%;height:100% ;border-radius: 12px;">
+                                </div>
+                    
+                                <div class="item" style="position: relative;">
+                                    <div class="image_card">
+                                        <div style="display: inline-block;">
+                                            <img class="card_abs" src="assets/Benedict_Cumberbatch_dummy.jpg" alt=""
+                                                style="width: 80px;height: 80px;margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+                                            <h6 class="card_abs" style="width: 100%;text-align: center;">Benedict</h6>
+                                            <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+                                        </div>
+                                        <div style="display: inline-block;">
+                                            <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+                                            <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur
+                                                vel fugiat
+                                                aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="item" style="width: 7.3%;height: 200px">
+                                    <img src="assets/paul_rodd_dummy.jpg" alt="" style="width: 100%;height:100% ;border-radius: 12px;">
+                                </div>
+                    
+                                <div class="item" style="position: relative;">
+                                    <div class="image_card">
+                                        <div style="display: inline-block;">
+                                            <img class="card_abs" src="assets/paul_rodd_dummy.jpg" alt=""
+                                                style="width: 80px;height:80px ;margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+                                            <h6 class="card_abs" style="width: 100%;text-align: center;">Paul Rudd</h6>
+                                            <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+                                        </div>
+                                        <div style="display: inline-block;">
+                                            <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+                                            <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur
+                                                vel fugiat
+                                                aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                    
+                                <div class="item" style="width: 7.3%;height: 200px">
+                                    <img src="assets/Chris_Evans_SDCC_2014.jpg" alt=""
+                                        style="width: 100%;height:100% ;border-radius: 12px;">
+                                </div>
+                    
+                                <div class="item" style="position: relative;">
+                                    <div class="image_card">
+                                        <div style="display: inline-block;">
+                                            <img class="card_abs" src="assets/Chris_Evans_SDCC_2014.jpg" alt=""
+                                                style="width: 80px;height:80px;margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+                                            <h6 class="card_abs" style="width: 100%;text-align: center;">Chris Evans</h6>
+                                            <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+                                        </div>
+                                        <div style="display: inline-block;">
+                                            <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+                                            <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur
+                                                vel fugiat
+                                                aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="item" style="width: 7.3%;height: 200px">
+                                    <img src="assets/rd_jr_dummy.jpg" alt="" style="width: 100%;height:100% ;border-radius: 12px;">
+                                </div>
+                    
+                    
+                                <div class="item" style="position: relative;">
+                                    <div class="image_card">
+                                        <div style="display: inline-block;">
+                                            <img class="card_abs" src="assets/rd_jr_dummy.jpg" alt=""
+                                                style="width: 80px;height: 80px; margin-top: 40%; border:2px solid #0A004B;border-radius: 50% 50%;">
+                                            <h6 class="card_abs" style="width: 100%;text-align: center;">Robert Jr</h6>
+                                            <p class="card_abs" style="width: 100%;text-align: center;">Designation</p>
+                                        </div>
+                                        <div style="display: inline-block;">
+                                            <h4 style="margin-top: 6%;margin-left: 10%;width: 100%;">Great Course</h4>
+                                            <p style="margin-top: 3%;margin-left: 10%;width: fit-content;">Lorem ipsum dolor sit amet
+                                                consectetur
+                                                adipisicing elit. Modi, blanditiis culpa beatae, similique magni est reiciendis consectetur
+                                                vel fugiat
+                                                aliquid expedita a ipsam neque tenetur nihil provident qui dolorum quas?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Finvedic section -->
+            <div class="w-100 py-5 container-fluid">
+                <div class="row justify-content-center aboutStyle">
+                    <div class="col-12  mainHeading text-white text-center">About Finvedic</div>
+                    <div class="col-10 col-md-4 text-white-50 text-center">By utilizing technological advances such as AI and blockchain,
+                    fintech companies are revolutionizing the way people interact with their
+                    finances by being part of the:</div>
+                    <div class="col-12 mainHeading text-center py-4">The Fintech 250</div>
+                    <div class="col-12 text-center d-none d-md-block">
+                        <div class="bg-white">
+                            <marquee> The most promising fintech companies of 2022</marquee>
+                        </div>
+                       <div class="text-white py-4">
+                            <strong>Source : </strong>
+                            <a href="www.cbinsights.com/research/report/top-fintech-startups-2022"
+                                class=" text-white">www.cbinsights.com/research/report/top-fintech-startups-2022</a>
+                       </div>
+                    </div>
+                </div>
+                <!-- payments Section Style -->
+                <div class="container paymentsSectionStyle my-5 py-5">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center mainHeading d-block d-md-none">
+                            The most promising fintech companies of 2022
+                        </div>
+                        <div class="col-12 mainHeading-2 text-center">
+                            Payments processing and network
+                        </div>
+                        <div class="col-12 col-md-10 p-4 py-5">
+                            <div class="paymentscarosel">
+                                <div><img src="assets/logos_of_diff_companies.png" alt="" width="100%"></div>
+                                <div><img src="assets/logos_of_diff_companies.png" alt="" width="100%"></div>
+                                <div><img src="assets/logos_of_diff_companies.png" alt="" width="100%"></div>
+                                <div><img src="assets/logos_of_diff_companies.png" alt="" width="100%"></div>
+                            </div>
+                        </div>
+                        <div class="py-4 w-100 text-center d-block d-md-none" style="color: #94A2D1">
+                            <strong>Source : </strong>
+                            <a href="www.cbinsights.com/research/report/top-fintech-startups-2022"  style="color: #94A2D1">
+                                www.cbinsights.com/research/report/top-fintech-startups-2022
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Subscribe to Our Newsletter section -->
+            <div class="d-block d-md-none py-5 p-4">
+                <div class="text-center subscriptionStyle text-white py-5 px-4">
+                    <div>Subscribe to Our Newsletter</div>
+                    <div class="form-floating mb-3 mt-3 ">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                        <label for="name">Email</label>
+                    </div>
+                    <div class="form-floating mb-3 mt-3 ">
+                        <input type="number" class="form-control" id="number" placeholder="Enter Contant No" name="number">
+                        <label for="number">Contant No</label>
+                    </div>
+                    <div class="form-floating mb-3 mt-3 ">
+                        <input type="email" class="form-control" id="emailId" placeholder="Enter email" name="email">
+                        <label for="emailId">Email Id</label>
+                    </div>
+                    <div class="text-white">
+                        <button class="buttonEnroll btn rounded-pill text-white py-3 px-5 mt-4 mb-2">Enroll Now</button>
+                        <div style="font-size: 12px;" > * yes, I agree to the terms and privacy policy</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer  section  -->
+            <div class="footerStyle py-5" style="padding-top:100px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mainHeading text-center text-white pt-5">Follow Us</div>
+                        
+                        <div class="col-12">
+                            <div class="row justify-content-around">
+                                <div class="col py-4 text-center" v-for="link in socialLinks">
+                                    <a :href="link.link" class="socialLink"> 
+                                        <div class="d-none d-md-inline-block label">{{ link.label }}</div>
+                                        <div class="d-inline-block d-md-none icon"><i :class="link.icon" class="text-white fa-3x"></i></div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-5 py-5 addessStyle">
+                            <img src="assets/logo_long.svg" class="w-50"> 
+                            <br><br>
+                            <p class="text-white">RENT A DESK,Hitech City RAM SVR,Plot No4/2<br>Sector
+                                1,Madhapur,HuDA Techno Enclave,<br>HITECH City,Hyderabad,Telangana 500081</p>
+                            <p class="text-white">+91 9908011843 &nbsp support@finvedic.com</p>
+                        </div>
+                        <div class="col-3 py-5 d-none d-md-block">
+                            <table class="table table-borderless " style="color: #F4F0FF">
+                                <tbody>
+                                    <tr>
+                                        <td>Home</td>
+                                        <td>External</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Courses</td>
+                                        <td>About Us</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bootcamp</td>
+                                        <td>Careers</td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+                        </div>
+                        <div class="col-4 d-none d-md-block py-5">
+                            <div class="text-center subscriptionStyle text-white px-4" style="background:#C04BE225;">
+                                <div>Subscribe to Our Newsletter</div>
+                                <div class="form-floating mb-2 mt-2 ">
+                                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                                    <label for="name">Email</label>
+                                </div>
+                                <div class="form-floating mb-2 mt-2 ">
+                                    <input type="number" class="form-control" id="number" placeholder="Enter Contant No" name="number">
+                                    <label for="number">Contant No</label>
+                                </div>
+                                <div class="form-floating mb-2 mt-2 ">
+                                    <input type="email" class="form-control" id="emailId" placeholder="Enter email" name="email">
+                                    <label for="emailId">Email Id</label>
+                                </div>
+                                <div class="text-white">
+                                    <button class="buttonEnroll btn rounded-pill text-white py-2 px-5 mt-2 mb-2">Enroll Now</button>
+                                    <div style="font-size: 12px;"> * yes, I agree to the terms and privacy policy</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 text-center text-white pt-5" style="font-size: 12px;">
+                    Terms & Conditions &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Privacy Policy &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All Rights Reserved @ FinVedic 2023
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+
+         $(document).ready(function () {
+                $('.headerCaroselMobile').slick({
+                    dots: true,
+                    arrows: false,
+                    fade: true,
+                })
+            })
+
+
+        $(document).ready(function (){
+            $('.profissionalCarosel').slick({
+                centerMode: true,
+                centerPadding: '35px',
+                slidesToShow: 1,
+                dots: true,
+                arrows: false
+            })
+        })
+
+        $(document).ready(function () {
+            $('.CurriculumCarosuel').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                arrows: false,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 578,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '-60px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            })
+        });
+
+
+        $(document).ready(function () {
+            $('.paymentscarosel').slick({
+                dots: true
+            });
+        });
+    </script>
+    <script>
+        const { createApp, ref } = Vue
+        createApp({
+            setup() {
+                const message = ref('Hello vue!')
+                return {
+                    message
+                }
+            },
+            data: () => {
+                return{
+                    vueMessage: ref('Sandeep'),
+                    loadingRocket: false,
+                    stage: 1,
+                    socialLinks: [
+                        { link: '', label: 'LinkedIn', icon: 'fa-brands fa-facebook' },
+                        { link: '', label: 'Instagram', icon: 'fa-brands fa-instagram' },
+                        { link: '', label: 'Facebook', icon: 'fa-brands fa-linkedin' },
+                        { link: '', label: 'Threads', icon: 'fa-brands fa-threads' },
+                    ],
+                    defaultLength: 65,
+                    activeTextWho: { count: 65, active: 0 },
+                    text1: "FinVedic is a group of enthusiastic professionals who are committed to assisting professionals and students in learning more about careers in finance and financial technology.",
+                    text2: "Our platform offers exclusive labs, user-friendly e-learning, and ongoing support to help you understand the business.",
+                    text3: "We're here to help you reach your career goals whether this is your first job or your fifth.",
+                }
+            },
+            mounted() {
+            },
+            methods: {
+                changeStage(value) {
+                    this.loadingRocket = true;
+                    setTimeout(() => {
+                        this.stage = value;
+                         this.loadingRocket = false;
+                    }, 500)
+                },
+                whoWeAreActiveText( val ) {
+                    let length;
+                    if(this.activeTextWho.active == val) {
+                        length = this.activeTextWho.count == this.defaultLength ? 10000 : this.defaultLength;
+                    } else {
+                        length = 10000;
+                    }
+                    
+                    this.activeTextWho = {
+                        count: length,
+                        active: val,
+                    };
+                }
+            },
+        }).mount('#app')
+    </script>
+    </body>
+</html>
