@@ -1,3 +1,12 @@
+::root {
+    --Gradient-2: #6B54F7 #C04BE2;
+    --Primary-Gradient: #5479F7 #C04BE2;
+    --Primary-Bg: #0A004B;
+    --Text-Light: #F4F0FF;
+    --Primary-600: #031349;
+
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -38,7 +47,7 @@ body {
 }
 
 .headerTextHightlite {
-    background: linear-gradient(#6B54F7, #C04BE2);
+    background: var(--Gradient-2, linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -125,15 +134,19 @@ body {
 }
 
 .buttonEnroll {
-    background: linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%) !important;
+    background: var(--Gradient-2, linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%));
     color: white;
 }
 
 .buttonBrochure {
-    border: 1px solid #C04BE2;
-    background: transparent;
+    border: 1px solid #6B54F7;
+    /* border-image: linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%);
+    border-image-slice: 1; */
+    /* background: transparent; */
     cursor: pointer;
     z-index: 15;
+    border-radius: 35px !important;
+    /* overflow: hidden;  */
 }
 
 .buttonBrochure:hover {
@@ -142,7 +155,7 @@ body {
 }
 
 .websiteBackground {
-    background: var(--Primary-Gradient, linear-gradient(180deg, #5479F7 45%, #C04BE2 120.19%));
+    background: var(--Primary-Gradient, linear-gradient(180deg, #5479F7 0%, #C04BE2 120.19%));
 }
 
 .textTechnology {
@@ -157,10 +170,22 @@ body {
     }
 }
 
+.technoloyClock {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+}
+
 .mainHeading {
-    font-family: 'Playfair Display', serif;
-    font-size: 4em;
-    letter-spacing: 2px;
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 67.5px;
+    letter-spacing: 2.7px;
 }
 
 .starStyle {
@@ -224,18 +249,25 @@ body {
     width: 30%;
     padding-top: 5%;
     padding-bottom: 5%;
+    & img {
+        height: 112px;
+        width: 112px;
+    }
 }
 
 
 
 .whoWrAreStyle .card-para {
 
-    font-family: 'Manrope', sans-serif;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    opacity: 0.8;
-    font-size: medium;
-    justify-content: center;
+    color: var(--Text-Light, #F4F0FF);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    letter-spacing: 0.8px;
 }
 
 .whoWrAreStyle .card:hover {
@@ -278,13 +310,30 @@ body {
 .whoWeAreContact {
     border-radius: 16px;
     background-color: white;
-    color: var(#0A004B);
+    color: var(--Primary-Bg, #0A004B);
     font-family: Manrope;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0.8px;
+}
+
+.carveImg {
+    position: relative;
+    & .carveFlower {
+        position: absolute;
+        width: 150px;
+        top: 25%;
+        right: 22%;
+        opacity: 0.5;
+    }
+    & .fuzzle {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        opacity: 0.5;
+    }
 }
 
 .whyFinvedicStyle {
@@ -348,6 +397,39 @@ body {
     & .check-active {
         display: none;
     }
+
+    h1 {
+        color: #405291;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        /* 162.5% */
+        letter-spacing: 0.8px;
+    }
+    
+    p {
+    color: #405291;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    /* 125% */
+    letter-spacing: 1.8px;
+    }
+
+}
+
+.subscribeText {
+    color: #5661B0;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.8px;
 }
 
 .whyFinvedicScroll.active {
@@ -360,6 +442,27 @@ body {
     & .check-active {
 
         display: block;
+    }
+    h1 {
+        color: var(--Text-Light, #F4F0FF);
+        font-family: Playfair Display;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 45px;
+        /* 125% */
+        letter-spacing: 1.8px;
+    }
+
+    p {
+        color: var(--Text-Light, #F4F0FF);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        /* 162.5% */
+        letter-spacing: 0.8px;
     }
 }
 
@@ -379,20 +482,29 @@ body {
         z-index: 0;
     }
 }
-.class1{
+.whyFinvedicList{
     list-style: none;
     padding: 0%;
     li:before{
-        content: '▶';
+        content: '\f0da';
         margin-right: 5px;
-        font-family: 'Font Awesome 5 Free';
+        font-family: FontAwesome;
     }
 
 }
 
+.letUsSeeList {
+    list-style: url(../assets/arrow-right-solid.svg);
+}
+
+.letUsSeeList-1 {
+    list-style: url(../assets/listFlower.svg);
+}
+
+
 .flowerClass {
-    max-width: 250px;
-    max-height: 250px;
+    width: 250px;
+    height: 200px;
     margin-bottom: -70px;
     margin-left: 35%;
 }
@@ -553,20 +665,27 @@ body {
 }
 
 .curriculamTitle {
-    color: #031349;
-    font-size: 1.5em;
+    color: var(--Primary-600, #031349);
     font-family: Manrope;
-    line-height: 36px;
-    letter-spacing: 1.2px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
+    line-height: 36px;
+    /* 150% */
+    letter-spacing: 1.2px;
 }
 
 .curriculamText {
     color: #7F8BAB;
     font-family: Manrope;
-    line-height: 2em;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.824px;
     letter-spacing: 0.8px;
+    ul {
+        list-style: url(../assets/angles-right-solid.svg);
+    }
     
 }
 
@@ -810,20 +929,33 @@ marquee {
     position: relative;
     background-color: #160c54;
     width: 100%;
+    min-height: 400px;
     border-bottom-right-radius: 120px;
-  }
-  .certificate_text{
+}
+.certificate_text{
     text-align: center;
-    color: white;
-    padding-top: 6%;
-    padding-bottom: 15%;
+    h4 {
+        color: var(--Text-Light, #F4F0FF);
+        font-family: Playfair Display;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 67.5px;
+        letter-spacing: 1.8px;
+    }
 
-  }
-  .inputb{
-    padding-top: 2%;
-    position: absolute;
-    width: 100%;
-  }
+    p {
+        color: #7F8BAB;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25.824px;
+        letter-spacing: 0.8px;
+    }
+
+}
   .clouds{
     position: absolute;
 
@@ -975,7 +1107,7 @@ marquee {
         display: none
     }
 
-    .signal, .bg_image2, .side_curve, .side_curve2{
+    .signal, .bg_image2, .side_curve, .side_curve2, .technoloyClock{
         display: none;
     }
 
