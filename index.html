@@ -445,7 +445,7 @@
       <div class="container pt-5">
           <div class="row">
               <div class="col-12 text-center text-white js-scroll fade-in-bottom">
-                  <span style="font-size: 1.4em;">About Us</span><br>
+                  <span style="font-size: 1.4em; font-family: Manrope;;">About Us</span><br>
                   <span class="mainHeading">Who we are?</span>
               </div>
               <!-- mobile View -->
@@ -455,10 +455,10 @@
                       <img class="w-100 mobile_view" src="assets/Mask group.png" >
                       <div class="card d-block d-md-none  px-2 pt-1">
                           <div class="row align-items-start">
-                              <div class="col-3 px-2">
-                                  <img src="assets/card1.svg" class="w-100">
+                              <div class="col-3 px-2 text-center">
+                                  <img src="assets/card1.svg" style="width: 50px">
                               </div>
-                              <div class="col-9 whoWeAretext" style="transition: 1s;">
+                              <div class="col-9 whoWeAretext align-self-center" style="transition: 1s;">
                                   {{ activeTextWho.active == 1 && activeTextWho.count != defaultLength ? text1.slice(0, 10000 ): text1.slice(0, this.defaultLength)+ '...' }}
                               </div>
                               <div class="text-end w-100 px-4" style="margin-top: -10px" @click="whoWeAreActiveText(1)"><i class="fa-solid fa-angle-down" style="color:#5479F7"></i></div>
@@ -467,10 +467,10 @@
                       <div class="card d-block d-md-none px-2 pt-1">
                           <div class="row align-items-start">
                               <div class="col-3 text-center px-2">
-                                  <img src="assets/card2-1.svg" class="w-50"><br>
-                                  <img src="assets/card2-2.svg" class="w-50">
+                                  <img src="assets/card2-1.svg"  style="width: 30px"><br>
+                                  <img src="assets/card2-2.svg"  style="width: 30px">
                               </div>
-                              <div class="col-9 whoWeAretext" style="transition: 1s;"> 
+                              <div class="col-9 whoWeAretext align-self-center" style="transition: 1s;"> 
                                   {{ activeTextWho.active == 2 && activeTextWho.count != defaultLength ? text2.slice(0, 10000 ) : text2.slice(0, this.defaultLength)+ '...' }} 
                               </div>
                               <div class="text-end w-100 px-4" style="margin-top: -10px" @click="whoWeAreActiveText(2)"><i class="fa-solid fa-angle-down" style="color:#5479F7"></i></div>
@@ -479,9 +479,9 @@
                       <div class="card d-block d-md-none px-2 pt-1">
                           <div class="row align-items-start">
                               <div class="col-3 text-center px-2">
-                                  <img src="assets/card3.svg" class="w-100">
+                                  <img src="assets/card3.svg"  style="width: 50px">
                               </div>
-                              <div class="col-9 whoWeAretext" style="transition: 1s;">
+                              <div class="col-9 whoWeAretext align-self-center" style="transition: 1s;">
                                   {{ activeTextWho.active == 3 && activeTextWho.count != defaultLength ?  text3.slice(0, 10000 ): text3.slice(0, this.defaultLength)+ '...' }}
                               </div>
                               <div class="text-end w-100 px-4" style="margin-top: -10px" @click="whoWeAreActiveText(3)"><i class="fa-solid fa-angle-down" style="color:#5479F7"></i></div>
