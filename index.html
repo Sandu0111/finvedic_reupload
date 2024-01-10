@@ -84,6 +84,16 @@
         .footerStyle {
           background-size: cover;
         }
+
+        .CurriculumCarosuel li{
+          position: relative;
+          & .viewAllButton {
+            position: absolute;
+            bottom: -30px;
+            left: 0px;
+          }
+        }
+
       }
 
       .whyFinvedicScroll.active {
@@ -957,53 +967,46 @@
                 <div class="CurriculumCarosuel">
                   <ul class="CurriculumCarosuel__list" @click="curriculumSlideChange">
                     <li class="CurriculumCarosuel__item" data-pos="-3" data-content="1">
-                      <button class="btn btn-primary rounded-pill py-3 px-5 d-block d-md-none viewAllButton"
-                        style="margin-top: -50px;z-index: 9999!important">
+                      <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
                         View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
                       </button>
                     </li>
                     <li class="CurriculumCarosuel__item" data-pos="-2" data-content="2">
-                      <button class="btn btn-primary rounded-pill py-3 px-5 d-block d-md-none viewAllButton"
-                        style="margin-top: -50px;z-index: 9999!important">
+                      <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
                         View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
                       </button>
                     </li>
                     <li class="CurriculumCarosuel__item" data-pos="-1" data-content="3">
-                      <button class="btn btn-primary rounded-pill py-3 px-5 d-block d-md-none viewAllButton"
-                        style="margin-top: -50px;z-index: 9999!important">
+                      <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
                         View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
                       </button>
                     </li>
                     <li class="CurriculumCarosuel__item" data-pos="0" data-content="4">
-                      <button class="btn btn-primary rounded-pill py-3 px-5 d-block d-md-none viewAllButton"
-                        style="margin-top: -50px;z-index: 9999!important">
+                      <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
                         View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
                       </button>
                     </li>
                     <li class="CurriculumCarosuel__item" data-pos="1" data-content="5">
-                      <button class="btn btn-primary rounded-pill py-3 px-5 d-block d-md-none viewAllButton"
-                        style="margin-top: -50px;z-index: 9999!important">
+                      <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
                         View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
                       </button>
                     </li>
                     <li class="CurriculumCarosuel__item" data-pos="2" data-content="6">
-                      <button class="btn btn-primary rounded-pill py-3 px-5 d-block d-md-none viewAllButton"
-                        style="margin-top: -50px;z-index: 9999!important">
+                      <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
                         View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
                       </button>
                     </li>
                     <li class="CurriculumCarosuel__item" data-pos="3" data-content="7">
-                      <button class="btn btn-primary rounded-pill py-3 px-5 d-block d-md-none viewAllButton"
-                        style="margin-top: -50px;z-index: 9999!important">
+                      <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
                         View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
                       </button>
                     </li>
                   </ul>
                   <button class="btn rounded-circle mx-2 prev" @click="nextSlide(-1)">
-                    <i class="fa-solid fa-arrow-left"  style="color: #5479F7"></i>
+                    <i class="fa-solid fa-arrow-left my-auto"  style="color: #5479F7"></i>
                   </button>
                   <button class="btn rounded-circle next" @click="nextSlide(1)">
-                    <i class="fa-solid fa-arrow-right" style="color: #5479F7"></i>
+                    <i class="fa-solid fa-arrow-right my-auto" style="color: #5479F7"></i>
                   </button>
                 </div>
               </div>
@@ -1923,7 +1926,7 @@
             curriculumSlideChange(event) {
               var newActive = event.target;
               var isItem = newActive.closest('.CurriculumCarosuel__item');
-
+              
               if (!isItem || newActive.classList.contains('CurriculumCarosuel__item_active')) {
                 return;
               };
@@ -1934,6 +1937,10 @@
               const carouselItems = document.querySelectorAll('.CurriculumCarosuel__item');
               const elems = Array.from(carouselItems);
               const newActivePos = newActive.dataset.pos;
+              if (newActivePos == undefined) {
+                return;
+              }
+
               this.selectedTextBook = Number(newActive.dataset.content);
 
               const current = elems.find((elem) => elem.dataset.pos == 0);
@@ -1948,9 +1955,13 @@
 
               [current, prev, next, first, last, second, third].forEach(item => {
                 var itemPos = item.dataset.pos;
-
+                // document.querySelector(`.CurriculumCarosuel__item[data-pos="${itemPos}"] .viewAllButton`).classList.remove('d-block');
+                // document.querySelector(`.CurriculumCarosuel__item[data-pos="${itemPos}"] .viewAllButton`).classList.add('d-none');                
                 item.dataset.pos = this.getPos(itemPos, newActivePos)
               });
+
+              document.querySelector(`.CurriculumCarosuel__item[data-content="${this.selectedTextBook}"] .viewAllButton`).classList.add('d-block');     
+
             },
             getPos(current, active) {
               const diff = current - active;
