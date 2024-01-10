@@ -964,7 +964,14 @@
                     <li class="CurriculumCarosuel__item" data-pos="2" data-content="6"></li>
                     <li class="CurriculumCarosuel__item" data-pos="3" data-content="7"></li>
                   </ul>
+                  <button class="btn rounded-circle mx-2 prev" @click="nextSlide(-1)">
+                    <i class="fa-solid fa-arrow-left"  style="color: #5479F7"></i>
+                  </button>
+                  <button class="btn rounded-circle next" @click="nextSlide(1)">
+                    <i class="fa-solid fa-arrow-right" style="color: #5479F7"></i>
+                  </button>
                 </div>
+               
                   <!-- <button class="btn btn-primary rounded-pill py-3 px-5 d-block d-md-none" style="margin-top: -50px;z-index: 9999!important">View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button> -->
               </div>
 
@@ -1863,18 +1870,23 @@
               })
             },
             getRangeValue() {
-                const rangeSlider = this.slideRange;
-                const slider_carousel = this.$refs.slider_carousel;
-                const slider_carousel2 = this.$refs.slider_carousel2;
-                const range_slider_container = this.$refs.range_slider_container;
+              const rangeSlider = this.slideRange;
+              const slider_carousel = this.$refs.slider_carousel;
+              const slider_carousel2 = this.$refs.slider_carousel2;
+              const range_slider_container = this.$refs.range_slider_container;
 
-                let distance = (slider_carousel.offsetWidth - range_slider_container.offsetWidth) / 100;
-                slider_carousel.style.transform = `translateX(${-distance * rangeSlider}px)`
+              let distance = (slider_carousel.offsetWidth - range_slider_container.offsetWidth) / 100;
+              slider_carousel.style.transform = `translateX(${-distance * rangeSlider}px)`
 
-                let distance2 = (slider_carousel2.offsetWidth - range_slider_container.offsetWidth) / 100;
-                slider_carousel2.style.transform = `translateX(${-distance2 * rangeSlider}px)`
+              let distance2 = (slider_carousel2.offsetWidth - range_slider_container.offsetWidth) / 100;
+              slider_carousel2.style.transform = `translateX(${-distance2 * rangeSlider}px)`
 
-              },
+            },
+            nextSlide(posIndex){
+              let classData = `.CurriculumCarosuel__item[data-pos="${posIndex}"]`;
+              let slide = document.querySelector(classData)
+              this.update(slide);
+            },
             curriculumSlideChange(event) {
               var newActive = event.target;
               var isItem = newActive.closest('.CurriculumCarosuel__item');
