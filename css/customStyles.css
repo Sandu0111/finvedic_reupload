@@ -244,6 +244,8 @@ body {
     letter-spacing: 1.2px;
 }
 
+
+
 .whoWeAreStyleBase .card {
     border-radius: 0px 0px 20px 20px;
     border: none;
@@ -507,7 +509,7 @@ body {
         position: absolute;
         background: #2A2E8D;
         width: 60%;
-        height: 90%;
+        height: 95%;
         left: 20%;
         border-radius: 10px;
         z-index:0;
@@ -641,8 +643,13 @@ body {
     line-height: 2.5em;
     letter-spacing: 0.8px;
     padding: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .stageBox {
@@ -1033,9 +1040,9 @@ marquee {
         .bar {
             position: absolute;
             background: #2A2E8D;
-            width: 80%;
+            width: 60%;
             height: 90%;
-            left: 10%;
+            left: 20%;
             border-radius: 10px;
             z-index:0;
         }
@@ -1068,6 +1075,11 @@ marquee {
         }
     }
 
+    .whoWeAreStyleBase {
+        border-radius: 20px;
+        background: #ffffff90;
+    }
+    
     .buttonBrochure {
         border: none;
     }

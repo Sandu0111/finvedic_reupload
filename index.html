@@ -281,7 +281,7 @@
               </div>
               </div>
               <p class="textTechnology mobile_view">
-                We're dedicated to helping you to<br> succeed in this exciting new field.
+                We're dedicated to helping you to succeed in this exciting new field.
               </p>
 
             </div>
@@ -450,9 +450,9 @@
               </div>
               <!-- mobile View -->
               <div class="col-12 pt-5 px-4 js-scroll fade-in-bottom">
-                  <div class="whoWeAreStyleBase" >
+                  <div class="whoWeAreStyleBase">
                       <img class="w-100 web_view" src="assets/img_people.png" alt="" style="border-radius: 75px;">
-                      <img class="w-100 mobile_view" src="assets/Mask group.png" alt=""  style="background-color: #FFF;">
+                      <img class="w-100 mobile_view" src="assets/Mask group.png" >
                       <div class="card d-block d-md-none  px-2 pt-1">
                           <div class="row align-items-start">
                               <div class="col-3 px-2">
@@ -802,43 +802,56 @@
                   <div class="d-flex justify-content-center py-5 px-4">
                       <div class="rocketText"  style="width: 350px">
                         <img src="assets/rocket.png" class="rocket-img d-block d-md-none" v-if="loadingRocket">
-                        <div class="w-100 h-100 text-center" v-if="!loadingRocket && stage == '1'">
-                            <h6 class="rocketTextHeading">Fintech Domain Sessions</h6>
-                            <ul class="text-start">
+                        <div class="w-100 h-100 text-center d-flex align-content-between flex-wrap" v-if="!loadingRocket && stage == '1'">
+                            <div class="col-12">
+                              <h6 class="rocketTextHeading">Fintech Domain Sessions</h6>
+                              <ul class="text-start">
                                 <li>Trainers - Industry experts</li>
                                 <li>Video Library - Recorded sessions</li>
                                 <li>Proprietary Content - NextGen Fintech cirriculum</li>
                                 <li>Virtual Live - Classrooms</li>
                                 <li>Infographic handbooks</li>
-                            </ul>
-                            <h6 class="rocketTextHeading">Stage 1</h6>
+                              </ul>
+                            </div>
+                            <div class="col-12">
+                              <h6 class="rocketTextHeading">Stage 1</h6>
+                            </div>
                         </div>
-                        <div class="w-100 h-100 text-center" v-if="!loadingRocket && stage == '2'">
+                        <div class="w-100 h-100 text-center d-flex align-content-between flex-wrap" v-if="!loadingRocket && stage == '2'">
+                          <div class="col-12">
                             <h6 class="rocketTextHeading">Capstone Fintech Projects</h6>
                             <ul class="text-start">
-                                <li>NextGen Fintech Infrastructure</li>
-                                <li>Internship on Fintech projects</li>
-                                <li>AI powered lab assistance</li>
-                                <li>Real world experience</li>
-                                <li>Crafted by industry leaders</li>
+                              <li>NextGen Fintech Infrastructure</li>
+                              <li>Internship on Fintech projects</li>
+                              <li>AI powered lab assistance</li>
+                              <li>Real world experience</li>
+                              <li>Crafted by industry leaders</li>
                             </ul>
+                          </div>
+                          <div class="col-12">
                             <h6 class="rocketTextHeading">Stage 2</h6>
+                          </div>
                         </div>
-                        <div class="w-100 h-100 text-center" v-if="!loadingRocket && stage == '3'">
+                        <div class="w-100 h-100 text-center d-flex align-content-between flex-wrap" v-if="!loadingRocket && stage == '3'">
+                          <div class="col-12">
                             <h6 class="rocketTextHeading">Our Offerings</h6>
                             <ul class="text-start">
-                                <li>6 months of access to Gurukul portal that includes :
-                                    <ul>
-                                        <li>Handbooks</li>
-                                        <li>Video Lectures</li>
-                                        <li>Unlimited access to Fintech lab</li>
-                                        <li>200 hours of Azure Cloud Corporate access</li>
-                                    </ul>
-                                </li>
+                              <li>6 months of access to Gurukul portal that includes:
+                                <ul style="list-style-type: disc;padding-left: 20px;">
+                                  <li>Handbooks</li>
+                                  <li>Video Lectures</li>
+                                  <li>Unlimited access to Fintech lab</li>
+                                  <li>200 hours of Azure Cloud Corporate access</li>
+                                </ul>
+                              </li>
                             </ul>
+                          </div>
+                          <div class="col-12">
                             <h6 class="rocketTextHeading">Stage 3</h6>
+                          </div>
                         </div>
-                        <div class="w-100 h-100 text-center" v-if="!loadingRocket && stage == '4'">
+                        <div class="w-100 h-100 text-center d-flex align-content-between flex-wrap" v-if="!loadingRocket && stage == '4'">
+                          <div class="col-12">
                             <h6 class="rocketTextHeading">Placement Assistance</h6>
                             <ul class="text-start">
                                 <li>Corporate partnership</li>
@@ -846,7 +859,10 @@
                                 <li>Mock interviews</li>
                                 <li>Mentorship by experts</li>
                             </ul>
+                          </div>
+                          <div class="col-12">
                             <h6 class="rocketTextHeading">Stage 4</h6>
+                          </div>
                         </div>
                       </div>
                   </div>
@@ -1680,7 +1696,7 @@
             infinite: true,
             // autoplay: true,
             centerMode: true,
-            centerPadding: '50px',
+            centerPadding: '40px',
             autoplaySpeed: 2000,
         })
       })
