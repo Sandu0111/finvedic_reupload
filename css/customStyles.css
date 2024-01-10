@@ -1369,18 +1369,18 @@ marquee {
         border-radius: 14px;
     }
 
-    & .mainHeading {
+    .mainHeading {
         font-size: 1.5em;
     }
 
-    & .paper-1 {
+    .paper-1 {
         position: absolute;
         bottom: -50px;
         right: 50px;
         width: 90px
     }
 
-    & .paper-2 {
+    .paper-2 {
         position: absolute;
         bottom: -50px;
         right: 10px;
@@ -1390,9 +1390,9 @@ marquee {
 
 /* all carosel  DotsStyle  */
 .headerCaroselMobile, .profissionalCarosel, .stories-mobile {
-    & .slick-dots {
+    .slick-dots {
         bottom: -40px;
-        & li.slick-active button:before{
+        &li.slick-active button:before{
             width: 15px;
             height: 15px;
             background-color: #fff;
