@@ -459,9 +459,11 @@
                                   <img src="assets/card1.svg" style="width: 50px">
                               </div>
                               <div class="col-9 whoWeAretext align-self-center" style="transition: 1s;">
-                                  {{ activeTextWho.active == 1 && activeTextWho.count != defaultLength ? text1.slice(0, 10000 ): text1.slice(0, this.defaultLength)+ '...' }}
+                                {{ activeTextWho.active == 1 && activeTextWho.count != defaultLength ? text1.slice(0, 10000 ): text1.slice(0, this.defaultLength)+ '...' }}
                               </div>
-                              <div class="text-end w-100 px-4" style="margin-top: -10px" @click="whoWeAreActiveText(1)"><i class="fa-solid fa-angle-down" style="color:#5479F7"></i></div>
+                              <div class="text-end w-100 px-4" style="margin-top: -10px" @click="whoWeAreActiveText(1)">
+                                <i class="fa-solid fa-angle-down" :class="(activeTextWho.active == 1 && activeTextWho.count != defaultLength) ? 'toggleActive' : 'toggleDeactive'" style="color:#5479F7"></i>
+                              </div>
                           </div>
                       </div>
                       <div class="card d-block d-md-none px-2 pt-1">
@@ -473,7 +475,9 @@
                               <div class="col-9 whoWeAretext align-self-center" style="transition: 1s;"> 
                                   {{ activeTextWho.active == 2 && activeTextWho.count != defaultLength ? text2.slice(0, 10000 ) : text2.slice(0, this.defaultLength)+ '...' }} 
                               </div>
-                              <div class="text-end w-100 px-4" style="margin-top: -10px" @click="whoWeAreActiveText(2)"><i class="fa-solid fa-angle-down" style="color:#5479F7"></i></div>
+                              <div class="text-end w-100 px-4" style="margin-top: -10px" @click="whoWeAreActiveText(2)">
+                                <i class="fa-solid fa-angle-down" style="color:#5479F7" :class="(activeTextWho.active == 2 && activeTextWho.count != defaultLength) ? 'toggleActive' : 'toggleDeactive'"></i>
+                              </div>
                           </div>
                       </div>
                       <div class="card d-block d-md-none px-2 pt-1">
@@ -484,7 +488,9 @@
                               <div class="col-9 whoWeAretext align-self-center" style="transition: 1s;">
                                   {{ activeTextWho.active == 3 && activeTextWho.count != defaultLength ?  text3.slice(0, 10000 ): text3.slice(0, this.defaultLength)+ '...' }}
                               </div>
-                              <div class="text-end w-100 px-4" style="margin-top: -10px" @click="whoWeAreActiveText(3)"><i class="fa-solid fa-angle-down" style="color:#5479F7"></i></div>
+                              <div class="text-end w-100 px-4" style="margin-top: -10px" @click="whoWeAreActiveText(3)">
+                                <i class="fa-solid fa-angle-down" style="color:#5479F7" :class="(activeTextWho.active == 3 && activeTextWho.count != defaultLength) ? 'toggleActive' : 'toggleDeactive'"></i>
+                              </div>
                           </div>
                       </div>
                   </div>
