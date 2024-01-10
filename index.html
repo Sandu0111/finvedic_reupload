@@ -145,8 +145,8 @@
     <!-- navbar section  data-->
     <nav class="navbar navbar-expand-md navbar-dark " style="background-color: #0A004B;">
       <div class="container justify-content-center">
-        <img class="navbar-brand d-none d-md-block" src="assets/Logo.png">
-        <img class="navbar-brand d-block d-md-none p-3" src="assets/logo-mobile-version.svg">
+        <img class="navbar-brand d-none d-md-block px-2" src="assets/Logo.png">
+        
         <div class="collapse navbar-collapse d-none d-md-block" id="navbarNav">
           <div class="mx-auto"></div>
           <ul class="navbar-nav ">
@@ -155,7 +155,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Courses</a>
-            </li>
+             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Bootcamp</a>
             </li>
@@ -171,6 +171,10 @@
         </div>
       </div>
     </nav>
+    <div class="mobile_nav">
+      <img class="navbar-brand d-block d-md-none justify-content-center py-4" src="assets/logo-mobile-version.svg">
+    </div>
+    
     <div class="websiteBackground">
 
       <!-- header section  -->
@@ -183,8 +187,9 @@
             
           <div class="pt-5 pb-4 text-white text-center headerTextStyle">
             <span class="headerTextHightlite underlineImg">Join</span> 
-            Learn & Accelerate<br> Supercharge your <br> career with 
-            <span class="headerTextHightlite">Finvedic!</span>
+            Learn & Accelerate<br><span class="web_view">Supercharge your <br> career with 
+            <span class="headerTextHightlite">Finvedic!</span></span>
+            <span class="mobile_view">Supercharge <br>your career <br>with <span class="headerTextHightlite">Finvedic!</span></span>
           </div>
             <div class="row justify-content-center pb-5" style="white-space: nowrap;">
               <div class="row justify-content-center align-items-center g-3" style="max-width: 380px; z-index: 10!important;">
@@ -199,10 +204,10 @@
                 </div>
               </div>
             </div>
-            <div class="row justify-content-center" style="position: relative;">
+            <div class="row justify-content-center" style="position: relative;max-width: 1200px;margin-left: auto;margin-right: auto;">
                 <!--image_overlaps-->
                 <div class="overlap">
-                  <img class="overlap_img" src="assets/small_hero.png" alt="sasasa">
+                  <img class="overlap_img" src="assets/hero_small_1.png" alt="sasasa">
                   <div class="overlap2">
                     <img class="overlap_img" src="assets/lander1.png" alt="">  
                   </div>  
@@ -233,32 +238,55 @@
       </div>
 
       <!-- finance and technology -->
-      <div style="position: relative;" class="js-scroll fade-in-bottom">
+      <div style="position: relative;max-width: 1200;" class="js-scroll fade-in-bottom">
         <div class="container py-5" >
           <div class="row align-items-center">
            
-            <div class="col-12 col-md-6 text-left">
+            <div class="col-12 col-md-6 text-left px-2">
               <div class="col-md-10 px-4 text-left">
-              <p class="textTechnology px-2">
+              <p class="textTechnology web_view px-2">
                 As the world of <br>
                 <span style="color: #0A004B;white-space: nowrap;" class="fw-bold">finance and technology</span> <br>
                 continues to evolve and change.<br> so does the industry(FinTech)<br> that surrounds it.
               </p>
-              <div class="bg_image1" style=" height: 50px">
+              
+              <div class="bg_image1 web_view" style=" height: 50px">
                 <img src="assets/trophy_small.png" alt="" style="width: 100px;float: right; margin-top: -30px">
               </div>
-              <p class="textTechnology px-2">The need for financial<br> technology(FinTech) has never been greater 
-                <span class="bulb_img d-block d-md-none w-100 text-center">
-                  <img src="assets/bulb.png" alt=""  style="width: 120px;" />
-                </span>
-               and we're dedicated to helping you suceed in this  exciting new field
+              <p class="textTechnology web_view px-2">The need for financial<br> technology(FinTech) has never<br>
+                been greater and we're dedicated<br> to helping you succeed in this<br>exciting new field</p>
               </p>
               <div class="bulb_img d-none d-md-block px-5">
+                <div class="bulb_img d-none d-md-block px-5">
                 <img src="assets/bulb.png" alt="" style="width: 120px;">
               </div>
+              </div>
+
+              <!--text Technology Mobile View-->
+              <p class="textTechnology mobile_view">
+                As the world of <br>
+                <span style="color: #0A004B;white-space: nowrap;" class="fw-bolder">finance and technology</span> <br>
+                continues to evolve and change.<br> so does the industry(FinTech)<br> that surrounds it.
+                <div class="bg_image1 mobile_view" style=" height: 30px">
+                  <img src="assets/trophy_small.png" alt="" style="width: 80px;float: right; margin-top: -30px">
+                </div>
+              </p>
+              <p class="textTechnology mobile_view">
+                The need for financial<br> technology(FinTech) has never<br>
+                been greater
+              </p>
+              <div class="bulb_img mobile_view  px-5">
+                <div class="bulb_img  px-5">
+                <img src="assets/bulb.png" alt="" style="width: 120px;">
+              </div>
+              </div>
+              <p class="textTechnology mobile_view">
+                We're dedicated to helping you to<br> succeed in this exciting new field.
+              </p>
+
             </div>
           </div>
-          <div class="col-12 col-md-6 d-none d-md-inline-block text-center" style="z-index: 2;">
+          <div class="col-12 col-md-6 d-none d-md-inline-block text-center px-3" style="z-index: 2;">
             <img src="assets/hero_.png" alt="" class="w-75" >
             <div class="signal col-10 pt-5">
               <img src="assets/signal.png" alt=""  style="width: 100px;float: right;">
@@ -306,9 +334,10 @@
                 </div>
 
                 <div class="row py-3 align-items-center justify-content-center justify-content-md-end">
-                    <div class="col-12 col-md-8 ">
+                  <div class="col-12 col-md-1"></div>
+                    <div class="col-12 col-md-7 ">
                         <h4 class="profissionalTextHeading">Accelerated Growth Path</h4>
-                        <p class="profissionalText">FinTech offers tech, expert collaboration, experience,
+                        <p class="profissionalText">FinTech offers tech, expert collaboration, experience,<br>
                         and fast career growth due to high demand.</p>
                     </div>
                     <div class="col-10 col-md-3 text-center">
@@ -322,13 +351,15 @@
                     </div>
                     <div class="col-12 col-md-7 text-start">
                         <h4 class="profissionalTextHeading">Build a Solid Profile</h4>
-                        <p class="profissionalText">Exciting, rewarding FinTech environment to
+                        <p class="profissionalText">Exciting, rewarding FinTech environment to<br>
                         achieve career goals.</p>
                     </div>
                 </div>
 
                 <div class="row py-3 align-items-center justify-content-center justify-content-md-end">
-                    <div class="col-12 col-md-8 ">
+                  <div class="col-12 col-md-1"></div>
+                    <div class="col-12 col-md-7 ">
+                      
                         <h4 class="profissionalTextHeading">Achieve the Extra-Ordinary</h4>
                         <p class="profissionalText">FinTech's trillion-dollar growth provides a fantastic career
                         opportunity for extraordinary achievements.</p>

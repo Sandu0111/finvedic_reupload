@@ -79,7 +79,7 @@ body {
     width: 30%;
     top: 40%;
    
-    left: 14%;
+    left: 15%;
     z-index: 3;
 }
 .overlap4{
@@ -101,8 +101,11 @@ body {
   } */
   .bg_image2{
     position: absolute;
-    top: 54%;
-    left: 46%;
+    top: 62%;
+    left: 48%;
+  }
+  .fw-bold{
+    font-size: xx-large !important;
   }
   .side_curve2{
     position: absolute;
@@ -178,6 +181,9 @@ body {
 .websiteBackground {
     background: var(--Primary-Gradient, linear-gradient(180deg, #5f76f6 20%, #935feb 120.19%));
 }
+.navbar-brand{
+    width: 8%;
+}
 
 .textTechnology {
     text-align: left;
@@ -220,17 +226,19 @@ body {
 
 .profissionalTextHeading {
     color: #c04ae2;
-    font-family: 'Playfair Display', serif
+    font-family: 'Playfair Display', serif;
+    font-size: x-large;
+    letter-spacing: 1.2px;
 } 
 
 .profissionalText {
     color: #7F8BAB;
     font-family: Manrope;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    letter-spacing: 0.8px;
+    letter-spacing: 1.2px;
 }
 
 .whoWeAreStyleBase .card {
@@ -1004,12 +1012,43 @@ marquee {
     line-height: 67.5px;
     letter-spacing: 2.7px;
 }
+.mobile_nav{
+    display: none;
+}
+.mobile_view{
+    display: none;
+}
+@media only screen and (max-width: 1367px) and (min-width: 577px) {
+    .bg_image2{
+        position: absolute;
+        top: 58%;
+        left: 48%;
+      }
 
+}
 @media only screen and (max-width: 576px) {
-
+    .mobile_nav{
+        display: block;
+        background-color: #0A004B;
+    }
     .correct {
         width: 100%;
         position: relative;
+    }
+    .web_view{
+        display: none;
+    }
+    .mobile_view{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-brand{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
     .headerTextStyle {
         font-size: 2.5rem;
@@ -1029,7 +1068,7 @@ marquee {
     }
 
     .textTechnology {
-        font-size: 1.1em;
+        font-size: 0.95em;
         color: #BFC5EE;
         font-family: Manrope;
         & span {
