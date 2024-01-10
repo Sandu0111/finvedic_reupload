@@ -902,13 +902,13 @@ marquee {
 
     & .mainHeading-2 {
         color: var(--Secondary, #C04BE2);
-            font-family: Playfair Display;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 45px;
-            /* 140.625% */
-            letter-spacing: 1.6px;
+        font-family: Playfair Display;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 45px;
+        letter-spacing: 1.6px;
+        height: 100px;
     }
 }
 
@@ -1197,14 +1197,14 @@ marquee {
         }
         & .mainHeading-2 {
             color: var(--Secondary, #C04BE2);
-                text-align: center;
-                font-family: Playfair Display;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 19.424px;
-                /* 121.4% */
-                letter-spacing: 0.8px;
+            text-align: center;
+            font-family: Playfair Display;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 19.424px;
+            letter-spacing: 0.8px;
+            height: 30px;
         }
     }
 
