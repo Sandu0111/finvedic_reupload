@@ -527,6 +527,7 @@ body {
 }
 .whyFinvedicList{
     list-style: none;
+    font-family: Manrope;
     padding: 0%;
     li:before{
         content: '\f0da';
