@@ -176,7 +176,7 @@ body {
 }
 
 .websiteBackground {
-    background: var(--Primary-Gradient, linear-gradient(180deg, #5479F7 20%, #C04BE2 120.19%));
+    background: var(--Primary-Gradient, linear-gradient(180deg, #5f76f6 20%, #935feb 120.19%));
 }
 
 .textTechnology {
