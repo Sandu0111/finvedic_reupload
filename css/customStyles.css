@@ -1029,6 +1029,15 @@ marquee {
     .correct {
         width: 100%;
         position: relative;
+        .bar {
+            position: absolute;
+            background: #2A2E8D;
+            width: 80%;
+            height: 90%;
+            left: 10%;
+            border-radius: 10px;
+            z-index:0;
+        }
     }
     .web_view{
         display: none;
@@ -1051,7 +1060,7 @@ marquee {
         letter-spacing: 1.5px;
     }
     .headerCaroselMobile {
-        height: 500px;
+        height: 400px;
         & div {
             height: 100%;
             width: 100%;
