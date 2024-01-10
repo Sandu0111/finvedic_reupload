@@ -70,7 +70,6 @@ body {
 }
 .overlap2{
   position: absolute;
-  
   top: 0%;
   left: 40%;
 }
@@ -84,9 +83,9 @@ body {
 }
 .overlap4{
     position: absolute;
-    width: 30%;
+    width: 10%;
     top: 40%;
-    right: -14%;
+    right: 10%;
     z-index: 3;
 }
 .side_curve{
@@ -1017,14 +1016,6 @@ marquee {
 }
 .mobile_view{
     display: none;
-}
-@media only screen and (max-width: 1367px) and (min-width: 577px) {
-    .bg_image2{
-        position: absolute;
-        top: 58%;
-        left: 48%;
-      }
-
 }
 @media only screen and (max-width: 576px) {
     .mobile_nav{
