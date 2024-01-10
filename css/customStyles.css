@@ -1224,57 +1224,6 @@ marquee {
         letter-spacing: 0.7px;
     }
 
-    .CertificationStyle {
-        padding: 30px;
-        background: #C04BE225; 
-        border-radius: 16px;
-        box-shadow: 2px 2px 0px 0px #C04BE2;
-        position: relative;
-        padding-bottom: 80px;
-
-        input::placeholder{
-            color: var(--Text-50, #94A2D1);
-            text-align: center;
-            leading-trim: both;
-            text-edge: cap;
-            font-family: Manrope;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 14px;
-            letter-spacing: 0.8px;
-            
-        }
-        input {
-            text-align: center;
-            leading-trim: both;
-            text-edge: cap;
-            font-family: Manrope;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 14px;
-            letter-spacing: 0.8px;
-            border-radius: 14px;
-        }
-        & .mainHeading {
-            font-size: 1.5em;
-        }
-        & .paper-1 {
-            position: absolute;
-            bottom: -50px;
-            right: 50px;
-            width: 90px
-        }
-        & .paper-2 {
-            position: absolute;
-            bottom: -50px;
-            right: 10px;
-            width: 90px;
-
-        }
-    }
-
     .whyFinvedicStyle {
         background: var(--Primary-600, #031349)!important;
     }
@@ -1383,6 +1332,60 @@ marquee {
         }
     }
     
+}
+
+.CertificationStyle {
+    padding: 30px;
+    background: #C04BE225;
+    border-radius: 16px;
+    box-shadow: 2px 2px 0px 0px #C04BE2;
+    position: relative;
+    padding-bottom: 80px;
+
+    input::placeholder {
+        color: var(--Text-50, #94A2D1);
+        text-align: center;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.8px;
+
+    }
+
+    input {
+        text-align: center;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.8px;
+        border-radius: 14px;
+    }
+
+    & .mainHeading {
+        font-size: 1.5em;
+    }
+
+    & .paper-1 {
+        position: absolute;
+        bottom: -50px;
+        right: 50px;
+        width: 90px
+    }
+
+    & .paper-2 {
+        position: absolute;
+        bottom: -50px;
+        right: 10px;
+        width: 90px;
+    }
 }
 
 /* all carosel  DotsStyle  */
