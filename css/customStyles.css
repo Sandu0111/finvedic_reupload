@@ -107,11 +107,6 @@ body {
     top: 60%;
     left: 0%;
   }
-  /* .signal{
-    position: absolute;
-    right: 10%;
-    bottom: 30%;
-  } */
   .bg_image2{
     position: absolute;
     top: 62%;
@@ -129,18 +124,6 @@ body {
     max-height: 100%;
     max-height: 100%;
   }
-  /* .bg_image1{
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    width: 30%;
-  } */
-  /* .bulb_img{
-    position: absolute;
-    top:55%;
-    left: 20%;
-    width: 30%;
-  } */
 .headerCaroselWeb {
     border-radius: 40px;
     max-height: fit-content;
@@ -177,13 +160,9 @@ body {
 
 .buttonBrochure {
     border: 1px solid #6B54F7;
-    /* border-image: linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%);
-    border-image-slice: 1; */
-    /* background: transparent; */
     cursor: pointer;
     z-index: 15;
     border-radius: 35px !important;
-    /* overflow: hidden;  */
 }
 
 .buttonBrochure:hover {
@@ -254,8 +233,6 @@ body {
     letter-spacing: 1.2px;
 }
 
-
-
 .whoWeAreStyleBase .card {
     border-radius: 0px 0px 20px 20px;
     border: none;
@@ -284,7 +261,6 @@ body {
     gap: 10px;
     color: white;
     align-items: center;
-
     text-align: center;
     height: 100%;
 }
@@ -299,10 +275,7 @@ body {
     }
 }
 
-
-
 .whoWrAreStyle .card-para {
-
     color: var(--Text-Light, #F4F0FF);
     text-align: center;
     font-family: Manrope;
@@ -310,7 +283,6 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    /* 162.5% */
     letter-spacing: 0.8px;
 }
 
@@ -441,7 +413,7 @@ body {
         display: none;
     }
 
-    h1 {
+    & h1 {
         color: #405291;
         font-family: Manrope;
         font-size: 16px;
@@ -452,14 +424,13 @@ body {
         letter-spacing: 0.8px;
     }
     
-    p {
+    & p {
     color: #405291;
     font-family: Playfair Display;
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: 45px;
-    /* 125% */
     letter-spacing: 1.8px;
     }
 
@@ -486,7 +457,7 @@ body {
         z-index: 1;
         display: block;
     }
-    h1 {
+    & h1 {
         color: var(--Text-Light, #F4F0FF);
         font-family: Playfair Display;
         font-size: 36px;
@@ -497,7 +468,7 @@ body {
         letter-spacing: 1.8px;
     }
 
-    p {
+    & p {
         color: var(--Text-Light, #F4F0FF);
         font-family: Manrope;
         font-size: 16px;
@@ -515,7 +486,7 @@ body {
     & .check-normal {
         z-index: 9999;
     }
-    .bar {
+    & .bar {
         position: absolute;
         background: #2A2E8D;
         width: 60%;
@@ -529,7 +500,7 @@ body {
     list-style: none;
     font-family: Manrope;
     padding: 0%;
-    li:before{
+    & li:before{
         content: '\f0da';
         margin-right: 5px;
         font-family: FontAwesome;
@@ -656,7 +627,7 @@ body {
     padding: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
-    ul {
+    & ul {
         list-style: none;
         padding: 0;
         margin: 0;
@@ -779,7 +750,7 @@ body {
     font-weight: 400;
     line-height: 25.824px;
     letter-spacing: 0.8px;
-    ul {
+    & ul {
         list-style: url(../assets/angles-right-solid.svg);
     }
     
@@ -806,12 +777,12 @@ body {
     flex-wrap: nowrap;
     width: auto;
     overflow: hidden;
-    .item {
+    & .item {
         display: inline-block;
         border-radius: 12px;
         width: 800px;
         height: 180px;
-        .storyImgSaperate img{
+        & .storyImgSaperate img{
             width: 180px!important;
         }
         &:first-child {
@@ -844,13 +815,13 @@ body {
     overflow: hidden;
     padding-top: 30px;
     padding-bottom: 30px;
-    .item {
+    & .item {
         display: inline-block;
         border-radius: 12px;
         width: 800px;
         height: 180px;
 
-        .storyImgSaperate img {
+        & .storyImgSaperate img {
             width: 180px !important;
         }
 
@@ -977,7 +948,7 @@ marquee {
 }
 .certificate_text{
     text-align: center;
-    h4 {
+    & h4 {
         color: var(--Text-Light, #F4F0FF);
         font-family: Playfair Display;
         font-size: 36px;
@@ -987,7 +958,7 @@ marquee {
         letter-spacing: 1.8px;
     }
 
-    p {
+    & p {
         color: #7F8BAB;
         text-align: center;
         font-family: Manrope;
@@ -1051,7 +1022,7 @@ marquee {
 
 
 
-    .CurriculumCarosuel__list {
+    & .CurriculumCarosuel__list {
         display: flex;
         list-style: none;
         position: relative;
@@ -1060,7 +1031,7 @@ marquee {
         justify-content: center;
         perspective: 300px;
 
-        .CurriculumCarosuel__item {
+        & .CurriculumCarosuel__item {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1117,14 +1088,14 @@ marquee {
         }
     }
 
-    .prev {
+    & .prev {
         position: absolute;
         top: 45%;
         left: -8%;
         font-size: 20px;
     }
 
-    .next {
+    & .next {
         position: absolute;
         top: 45%;
         right: -8%;
@@ -1140,7 +1111,7 @@ marquee {
     .correct {
         width: 100%;
         position: relative;
-        .bar {
+        & .bar {
             position: absolute;
             background: #2A2E8D;
             width: 60%;
@@ -1311,20 +1282,20 @@ marquee {
     }
 
     .CurriculumCarosuel {  
-        .CurriculumCarosuel__item {
+        & .CurriculumCarosuel__item {
             &[data-pos="0"] {
                 z-index: 5;
                 transform: translateX(-15px);
             }
         }
-        .prev {
+        & .prev {
             position: absolute;
             top: 45%;
             left: -8px;
             background: white;
         }
 
-        .next {
+        & .next {
             position: absolute;
             top: 45%;
             right: 0%;
@@ -1520,7 +1491,7 @@ marquee {
     border-radius: 20px;
     height: 100%;
     padding: 10px;
-    .webStoryPerson {
+    & .webStoryPerson {
         color: var(--Primary-600, #031349);
         font-family: Manrope;
         font-size: 16px;
@@ -1529,7 +1500,7 @@ marquee {
         line-height: 36px;
         letter-spacing: 0.8px;
     }
-    .webStoryDesignation {
+    & .webStoryDesignation {
         color: #7F8BAB;
         font-family: Manrope;
         font-size: 14px;
@@ -1538,7 +1509,7 @@ marquee {
         line-height: 19.368px;
         letter-spacing: 0.7px;
     }
-    .webStoryCourse {
+    & .webStoryCourse {
         color: var(--Primary-600, #031349);
         font-family: Manrope;
         font-size: 20px;
@@ -1547,7 +1518,7 @@ marquee {
         line-height: 36px;
         letter-spacing: 1px;
     }
-    .webStoryText {
+    & .webStoryText {
         color: #7F8BAB;
         font-family: Manrope;
         font-size: 12px;
@@ -1560,7 +1531,7 @@ marquee {
 
 .storyImgSaperate {
     width: 180px;
-    img {
+    & img {
         border-radius: 20px;
     }
 }
