@@ -76,7 +76,7 @@ body {
     position: absolute;
 
     top: 0%;
-    right: 20%;
+    right: 12%;
     z-index: 3;
     width: 100%;
     height: 25%;
@@ -85,21 +85,21 @@ body {
 .overlap2{
   position: absolute;
   top: 0%;
-  left: 40%;
+  left: 30%;
 }
 .overlap3{
     position: absolute;
     width: 30%;
     top: 40%;
    
-    left: 15%;
+    left: 6%;
     z-index: 3;
 }
 .overlap4{
     position: absolute;
     width: 10%;
     top: 40%;
-    right: 10%;
+    right: 5%;
     z-index: 3;
 }
 .side_curve{
@@ -228,7 +228,7 @@ body {
     font-family: Manrope;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 26px;
     letter-spacing: 1.2px;
 }
