@@ -28,6 +28,8 @@ body {
 .h5class{
     font-family: Manrope;
     font-size: large;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 @keyframes fade-in-bottom {
@@ -112,8 +114,11 @@ body {
     top: 62%;
     left: 48%;
   }
-  .fw-bold{
+  .fw-bold1{
     font-size: xx-large !important;
+    font-family: 'Playfair Display', serif;
+    line-height: 0.8em;
+        font-size: 1.5em;
   }
   .side_curve2{
     position: absolute;
@@ -219,7 +224,7 @@ body {
 .profissionalTextHeading {
     color: #c04ae2;
     font-family: 'Playfair Display', serif;
-    font-size: x-large;
+    font-size: 28px;
     letter-spacing: 1.2px;
 } 
 
@@ -228,7 +233,6 @@ body {
     font-family: Manrope;
     font-size: 18px;
     font-style: normal;
-    font-weight: 200;
     line-height: 26px;
     letter-spacing: 1.2px;
 }
@@ -267,7 +271,7 @@ body {
 
 .whoWrAreStyle .card-title {
     width: 30%;
-    padding-top: 5%;
+    padding-top: 8%;
     padding-bottom: 5%;
     & img {
         height: 112px;
@@ -600,14 +604,14 @@ body {
 }
 
 .capImage {
-    padding-right: 10%;
+    padding-right: 8%;
     padding-left: auto;
     & .img-1 {
-        width: 90px;
+        width: 180px;
     }
     & .img-2 {
-        width: 90px;
-        margin-bottom: -95px;
+        width: 180px;
+        margin-bottom: -190px;
     }
 }
 
@@ -730,11 +734,16 @@ body {
 .CurriculumSlide {
     width: 100%;
 }
+.Module_cirrcullum{
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
 
 .curriculamTitle {
     color: var(--Primary-600, #031349);
     font-family: Manrope;
     font-size: 24px;
+    text-align: left;
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
@@ -1000,7 +1009,7 @@ marquee {
   }
   .small_clouds2{
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 0%;
   }
 
