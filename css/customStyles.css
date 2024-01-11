@@ -209,10 +209,10 @@ body {
 
 .starStyle {
     position:absolute;
-    top:0;
-    right: 0;
+    top:1%;
+    right: 1%;
     & img {
-        width: 80px;
+        width: 80%;
     }
 }
 
@@ -357,7 +357,7 @@ body {
     position: relative;
     & .boxes-1 {
         position: absolute;
-        top: 20%;
+        top: 18%;
         right: -200px;
         & .boxes-11 {
             border-radius: 74.313px;
@@ -1179,6 +1179,8 @@ marquee {
     }
 
     .starStyle {
+        top:0%;
+        right: 0%;
         & img {
             width: 35px;
         }
