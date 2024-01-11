@@ -4,7 +4,8 @@
     --Primary-Bg: #0A004B;
     --Text-Light: #F4F0FF;
     --Primary-600: #031349;
-    --Secondary: rgba(192, 75, 226, 1)
+    --Secondary: rgba(192, 75, 226, 1);
+    --Primary-White:rgba(255, 255, 255, 1)
 }
 
 html {
@@ -184,10 +185,11 @@ body {
 
 .textTechnology {
     text-align: left;
-    color: #fff;
+    color: #BFC5EE;
     font-size: 1.2em;
     font-family: 'Manrope';
     letter-spacing: 2px;
+    font-weight: 400;
     & span {
         line-height: 1.8em;
         font-size: 1.5em;
@@ -240,7 +242,7 @@ body {
 .whoWeAreStyleBase .card {
     border-radius: 0px 0px 20px 20px;
     border: none;
-    box-shadow: 0px -8px 16px 0px rgba(255, 255, 255, 0.245) inset;
+    box-shadow: 0px -4px 16px 0px rgba(148, 162, 209, 0.50) inset;
 }
 
 .whoWrAreStyle .card {
@@ -411,13 +413,34 @@ body {
 .whyFinvedicScroll {
     color: #405291;
     & .check-normal {
-        display: block;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9999 !important;
+        transition: 500ms;
     }
     & .check-active {
-        display: none;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9999 !important;
+        transition: 500ms;
     }
 
     & h1 {
+        color: #405291;
+        font-family: Playfair Display;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 45px;
+        /* 125% */
+        letter-spacing: 1.8px;
+    }
+    
+    & p {
         color: #405291;
         font-family: Manrope;
         font-size: 16px;
@@ -426,16 +449,6 @@ body {
         line-height: 26px;
         /* 162.5% */
         letter-spacing: 0.8px;
-    }
-    
-    & p {
-    color: #405291;
-    font-family: Playfair Display;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 45px;
-    letter-spacing: 1.8px;
     }
 
 }
@@ -452,14 +465,13 @@ body {
 
 .whyFinvedicScroll.active {
     transition: 2s;
-    color: #ffffff!important;
+   color: var(--Primary-White, #FFF);
     & .check-normal {
-        display: none;
+        opacity: 0;
     }
 
     & .check-active {
-        z-index: 1;
-        display: block;
+        opacity: 1;
     }
     & h1 {
         color: var(--Text-Light, #F4F0FF);
@@ -494,12 +506,17 @@ body {
         position: absolute;
         background: #2A2E8D;
         width: 60%;
-        height: 95%;
+        bottom: -20px;
         left: 20%;
-        border-radius: 10px;
+        top: 30px;
         z-index:0;
     }
 }
+
+.whyFinvedicTextPaddingBottom {
+    padding-bottom : 100px; 
+}
+
 .whyFinvedicList{
     list-style: none;
     font-family: Manrope;
@@ -801,7 +818,7 @@ body {
     & .item {
         display: inline-block;
         border-radius: 12px;
-        width: 800px;
+        width: 900px;
         height: 180px;
         & .storyImgSaperate img{
             width: 180px!important;
@@ -1070,7 +1087,7 @@ marquee {
 
             &[data-pos="-1"],
             &[data-pos="1"] {
-                opacity: 0.7;
+                /* opacity: 0.7; */
                 filter: blur(1px) grayscale(10%);
                 & .viewAllButton {
                     opacity: 0;
@@ -1090,7 +1107,7 @@ marquee {
 
             &[data-pos="-2"],
             &[data-pos="2"] {
-                opacity: 0.4;
+                /* opacity: 0.4; */
                 filter: blur(3px) grayscale(20%);
                 & .viewAllButton {
                     opacity: 0;
@@ -1137,16 +1154,10 @@ marquee {
     }
     .correct {
         width: 100%;
-        position: relative;
-        & .bar {
-            position: absolute;
-            background: #2A2E8D;
-            width: 60%;
-            height: 90%;
-            left: 20%;
-            border-radius: 10px;
-            z-index:0;
-        }
+        position: relative
+    }
+    .whyFinvedicTextPaddingBottom {
+        padding-bottom: 30px;
     }
     .web_view{
         display: none;
@@ -1178,7 +1189,7 @@ marquee {
 
     .whoWeAreStyleBase {
         border-radius: 20px;
-        background: #ffffff90;
+        background: rgb(231 237 255);
     }
     
     .buttonBrochure {
@@ -1332,6 +1343,13 @@ marquee {
             top: 45%;
             right: 0%;
             background: white;
+        }
+    }
+
+
+    .whyFinvedicScroll {
+        & h1 {
+            font-size: 20px!important;
         }
     }
     
