@@ -20,6 +20,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <link rel="stylesheet" href="css/stackedCards.css">
     <title>FinVedic</title>
     <style>
       .header-bg {
@@ -76,8 +77,10 @@
         .professionalBackground {
           background: url(assets/Card_mobile_view.png);
           background-repeat: no-repeat;
-           background-position: top;
-        background-size: 100% 100%;
+          background-position: top;
+          background-size: 100% 100%;
+          /* box-shadow: 0 0px 20px 0px #33333380; */
+          /* border-radius: 16px; */
 
         }
 
@@ -391,7 +394,8 @@
         </div>
         <!-- mobile View  -->
         <div class="d-block d-md-none">
-          <div class="profissionalCarosel">
+          <!-- old carosuels -->
+          <!-- <div class="profissionalCarosel">
             <div class="professionalBackground mobile" data-slideIndex="0">
               <div class="starStyle">
                 <img src="assets/star.png" alt="">
@@ -452,6 +456,84 @@
                 </div>
               </div>
             </div>
+          </div> -->
+
+
+          <div class="stacked-cards profissionalCarosel">
+            <ul>
+              <li>
+                <div class="professionalBackground mobile" data-slideIndex="0">
+                  <div class="starStyle">
+                    <img src="assets/star.png" alt="">
+                  </div>
+                  <div class="row px-4 py-5 align-items-center justify-content-center justify-content-md-start">
+                    <div class="col-8">
+                      <img src="assets/Icons.png" class="w-100">
+                    </div>
+                    <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
+                      <h4 class="profissionalTextHeading">Great Salary & Perks</h4>
+                      <p class="profissionalText">Easy to learn, high-paying and in a fast growing
+                        industry</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="professionalBackground mobile" data-slideIndex="1">
+                  <div class="starStyle">
+                    <img src="assets/star.png" alt="">
+                  </div>
+                  <div class="row px-3 pt-5 align-items-center justify-content-center justify-content-md-end">
+                    <div class="col-8">
+                      <img src="assets/Group 251.png" class="w-100">
+                    </div>
+                    <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
+                      <h4 class="profissionalTextHeading">Accelerated Growth Path</h4>
+                      <p class="profissionalText">FinTech offers tech, expert collaboration, experience,
+                        and fast career growth due to high demand.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="professionalBackground mobile" data-slideIndex="2">
+                  <div class="starStyle">
+                    <img src="assets/star.png" alt="">
+                  </div>
+                  <div class="row px-4 py-5 align-items-center justify-content-center justify-content-md-start">
+                    <div class="col-8">
+                      <img src="assets/Group 294.png" class="w-100">
+                    </div>
+                    <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
+                      <h4 class="profissionalTextHeading">Build a Solid Profile</h4>
+                      <p class="profissionalText">Exciting, rewarding FinTech environment to
+                        achieve career goals.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="professionalBackground mobile" data-slideIndex="3">
+                  <div class="starStyle">
+                    <img src="assets/star.png" alt="">
+                  </div>
+                  <div class="row px-3 pt-5 align-items-center justify-content-center justify-content-md-end">
+                    <div class="col-8">
+                      <img src="assets/Group 257.png" class="w-100">
+                    </div>
+                    <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
+                      <h4 class="profissionalTextHeading">Achieve the Extra-Ordinary</h4>
+                      <p class="profissionalText">FinTech's trillion-dollar growth provides a fantastic career
+                        opportunity for extraordinary achievements.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+           
+            
+           
+            
           </div>
         </div>
       </div>
@@ -1906,7 +1988,7 @@
   </div>
   <script src="scripts/scroller.js"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
+  <script src="js/stackedCards.min.js"></script>
   <!-- all carosuels script -->
   <script type="text/javascript">
     $(document).ready(function () {
@@ -1931,17 +2013,25 @@
         })
       })
 
-      $(document).ready(function (){
-        $('.profissionalCarosel').slick({
-            dots: true,
-            arrows: false,
-            infinite: true,
-            // autoplay: true,
-            centerMode: true,
-            centerPadding: '40px',
-            autoplaySpeed: 2000,
-        })
-      })
+      // $(document).ready(function (){
+      //   $('.profissionalCarosel').slick({
+      //       dots: true,
+      //       arrows: false,
+      //       infinite: true,
+      //       // autoplay: true,
+      //       centerMode: true,
+      //       centerPadding: '40px',
+      //       autoplaySpeed: 2000,
+      //   })
+      // })
+
+      var stackedCardFanOut = new stackedCards({
+          selector: '.profissionalCarosel',
+          layout: "fanOut",
+          transformOrigin: "bottom",
+        });
+
+        stackedCardFanOut.init();
 
       $(document).ready(function () {
         $('.stories-mobile').slick({
