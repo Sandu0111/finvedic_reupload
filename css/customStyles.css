@@ -186,7 +186,7 @@ body {
     text-align: left;
     color: #fff;
     font-size: 1.2em;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Manrope';
     letter-spacing: 2px;
     & span {
         line-height: 1.8em;
@@ -1526,7 +1526,7 @@ marquee {
     & .webStoryPerson {
         color: var(--Primary-600, #031349);
         font-family: Manrope;
-        font-size: 16px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: 36px;
