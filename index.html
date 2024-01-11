@@ -513,7 +513,7 @@
 
               <!-- web view  -->
               <div class="col-12 d-none d-md-block pt-5 js-scroll fade-in-bottom">
-                  <div class="row py-5 px-2">
+                  <div class="row py-2 pb-5 px-2">
 
                       <div class="col-4 whoWrAreStyle">
                           <div class="card">
@@ -552,7 +552,7 @@
               </div>
 
           </div>
-          <div class="row justify-content-center p-4 pt-5 js-scroll fade-in-bottom px-3 web_view">
+          <div class="row justify-content-center p-4 pt-1 js-scroll fade-in-bottom px-3 web_view">
               <div class="row whoWeAreContact align-items-center" >
                   <div class="col-12 col-md-9 p-4">
                       <h5 class="h5class px-5">Visit our website to learn more about how we can help you land your ideal position with a competitive salary</h5>
@@ -793,9 +793,9 @@
                           </div>
                           <br>
                           <ul class="letUsSeeList">
-                              <li>6 months of access to Gurukul portal that includes :
+                              <li>6 months of access to<br>Gurukul portal that includes :
                                   <ul class="letUsSeeList-1">
-                                      <li>Handbooks  Video Lectures</li>
+                                      <li>Handbooks &nbsp;&nbsp; <span><img  src="assets/listFlower.svg"></span> Video Lectures</li>
                                       <li>Unlimited access to Fintech lab</li>
                                       <li>200 hours of Azure Cloud Corporate access</li>
                                   </ul>
@@ -965,9 +965,9 @@
 
       <!-- Course Curriculum section  -->
       <div class="container overflow-hidden py-5 js-scroll fade-in-bottom">
-          <div class="row justify-content-center">
+          <div class="row justify-content-start">
               <div class="col-12 mainHeading text-center" style="color: var(--Primary-600, #031349)">Course <br class="d-block d-md-none"> Curriculum</div>
-              <div class="col-12 col-md-8 text-center py-5">
+              <div class="col-12 col-md-6 text-center py-5">
                 <div class="CurriculumCarosuel">
                   <ul class="CurriculumCarosuel__list" @click="curriculumSlideChange">
                     <li class="CurriculumCarosuel__item" data-pos="-3" data-content="1">
@@ -1006,19 +1006,137 @@
                       </button>
                     </li>
                   </ul>
-                  <button class="btn rounded-circle mx-2 prev" @click="nextSlide(-1)">
-                    <i class="fa-solid fa-arrow-left my-auto"  style="color: #5479F7"></i>
-                  </button>
                   <button class="btn rounded-circle next" @click="nextSlide(1)">
                     <i class="fa-solid fa-arrow-right my-auto" style="color: #5479F7"></i>
                   </button>
                 </div>
               </div>
+              <!--Updated Web View-->
+              <div class=" col-md-6 text-center py-5 px-5 web_view">
+                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" :class="(selectedTextBook) == 1 ? 'show active' : ''">
+                  <div class="row">
+                        <p class="curriculamTitle">Disruptive Technologies</p>
+                        <div class="curriculamText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                            <p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim
+                                id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" :class="(selectedTextBook) == 2 ? 'show active' : ''">
+                  <div class="row">
+                        <p class="curriculamTitle">FX Electronic Trading</p>
+                        <div class="curriculamText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                            <p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim
+                                id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" :class="(selectedTextBook) == 3 ? 'show active' : ''">
+                  <div class="row">
+                        <p class="curriculamTitle">Data & Analytics</p>
+                        <div class="curriculamText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                            <p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim
+                                id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" :class="(selectedTextBook) == 4 ? 'show active' : ''">
+                  <div class="row">
+                        <p class="curriculamTitle">Fintech & Financial Service Landscapes</p>
+                        <div class="curriculamText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                            <p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim
+                                id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" :class="(selectedTextBook) == 5 ? 'show active' : ''">
+                  <div class="row">
+                        <p class="curriculamTitle">Payments</p>
+                        <div class="curriculamText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                            <p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim
+                                id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" :class="(selectedTextBook) == 6 ? 'show active' : ''">
+                  <div class="row">
+                        <p class="curriculamTitle">Fixed Income & Electronic Trading</p>
+                        <div class="curriculamText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                            <p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim
+                                id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" :class="(selectedTextBook) == 7 ? 'show active' : ''">
+                  <div class="row">
+                        <p class="curriculamTitle">Insurance</p>
+                        <div class="curriculamText">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                            <p>laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim
+                                id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
 
-              <!-- web view -->
+              </div>
+<!--
               <div class="col-12 d-none d-md-block">
                 <div class="tab-content" id="pills-tabContent">
-                  <!-- book 1  -->
                   <div class="tab-pane fade" :class="(selectedTextBook) == 1 ? 'show active' : ''">
                     <div class="row g-5">
                       <div class="col-5">
@@ -1064,7 +1182,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- book 2 -->
                   <div class="tab-pane fade" :class="(selectedTextBook) == 2 ? 'show active' : ''">
                     <div class="row g-5">
                     <div class="col-5">
@@ -1110,7 +1227,6 @@
                     </div>
                     </div>
                   </div>
-                  <!-- book 3 -->
                   <div class="tab-pane fade" :class="(selectedTextBook) == 3 ? 'show active' : ''">
                     <div class="row g-5">
                     <div class="col-5">
@@ -1156,7 +1272,6 @@
                     </div>
                     </div>
                   </div>
-                  <!-- book 4 -->
                   <div class="tab-pane fade" :class="(selectedTextBook) == 4 ? 'show active' : ''">
                     <div class="row g-5">
                     <div class="col-5">
@@ -1202,7 +1317,6 @@
                     </div>
                     </div>
                   </div>
-                  <!-- book 5 -->
                   <div class="tab-pane fade" :class="(selectedTextBook) == 5 ? 'show active' : ''">
                     <div class="row g-5">
                     <div class="col-5">
@@ -1248,7 +1362,6 @@
                     </div>
                     </div>
                   </div>
-                  <!-- book 6 -->
                   <div class="tab-pane fade" :class="(selectedTextBook) == 6 ? 'show active' : ''">
                     <div class="row g-5">
                       <div class="col-5">
@@ -1294,7 +1407,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- book 7 -->
+ book 7 
                   <div class="tab-pane fade" :class="(selectedTextBook) == 7 ? 'show active' : ''">
                     <div class="row g-5">
                       <div class="col-5">
@@ -1343,7 +1456,7 @@
                   
                 </div>
               </div>
-
+-->
               <!-- mobile view  -->
               <div class="px-4 col-12 d-block d-md-none">
                 <div class="tab-content">
@@ -1400,6 +1513,48 @@
               </div>
               
           </div>
+      </div>
+      <div class="M0dule_cirrcullum web_view">
+        <div class="container">
+          <div class="col-12 row justify-content-center">
+            <div class="col-md-4 text-center">
+              <h5 class="curriculamTitleNew">Module 1</h5>
+              <div class="curriculamText">
+                <ul>
+                  <li>Navigating digital banking: An intro</li>
+                  <li>Banking unveiled: A primer</li>
+                  <li>Unlocking finance : A beginner’s guide</li>
+                  <li>Discovering fintech : The essentials</li>
+                  <li>Agile-powered software delivery journey</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <h5 class="curriculamTitleNew">Module 2</h5>
+              <div class="curriculamText">
+                <ul>
+                  <li>Navigating digital banking: An intro</li>
+                  <li>Banking unveiled: A primer</li>
+                  <li>Unlocking finance : A beginner’s guide</li>
+                  <li>Discovering fintech : The essentials</li>
+                  <li>Agile-powered software delivery journey</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <h5 class="curriculamTitleNew">Module 3</h5>
+              <div class="curriculamText">
+                <ul>
+                  <li>Navigating digital banking: An intro</li>
+                  <li>Banking unveiled: A primer</li>
+                  <li>Unlocking finance : A beginner’s guide</li>
+                  <li>Discovering fintech : The essentials</li>
+                  <li>Agile-powered software delivery journey</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       
       <!-- Our Success Stories section && About Finvedic section -->
@@ -1501,9 +1656,12 @@
           <div class="w-100 py-5 container-fluid js-scroll fade-in-bottom">
               <div class="row justify-content-center aboutStyle">
                   <div class="col-12  AboutFinvedicMainHeading text-center">About Finvedic</div>
-                  <div class="col-11 col-md-5 text-white-50 text-center py-4">By utilizing technological advances such as AI and blockchain,
-                  fintech companies are revolutionizing the way people interact with their
+                  <div class="col-11 col-md-5 text-white-50 text-center py-4 web_view">By utilizing technological advances such as AI and blockchain,<br>
+                  fintech companies are revolutionizing the way people interact with their<br>
                   finances by being part of the:</div>
+                  <div class="col-11 col-md-5 text-white-50 text-center py-4 mobile_view">By utilizing technological advances such as AI and blockchain,
+                    fintech companies are revolutionizing the way people interact with their
+                    finances by being part of the:</div>
               </div>
           </div>
           <div class="mainHeading text-center py-4 d-block d-md-none" style="color: var(--Primary-Bg, #0A004B);
@@ -1558,7 +1716,7 @@
                             <div class="h-100">    
                               <div class="d-flex align-content-between flex-wrap">
                                 <div class="col-12 mainHeading-2 text-center">
-                                  Payments processing and network
+                                  Payments processing <br>and network
                                 </div>
                                 <img class="pt-5 w-100" src="assets/logos_of_diff_companies.png">
                               </div>
@@ -1566,7 +1724,7 @@
                             <div class="h-100">  
                               <div class="d-flex align-content-between flex-wrap">
                                 <div class="col-12 mainHeading-2 text-center">
-                                  Paroll & benefits, Asset Management
+                                  Paroll & benefits,<br> Asset Management
                                 </div>
                                 <img class="pt-5 w-100" src="assets/Group 317.png">
                               </div>
@@ -1574,7 +1732,7 @@
                             <div class="h-100">  
                               <div class="d-flex align-content-between flex-wrap">
                                 <div class="col-12 mainHeading-2 text-center">
-                                  Corporate cards & expense management,Digital banking
+                                  Corporate cards & expense management,<br>Digital banking
                                 </div>
                                 <img class="pt-5 w-100" src="assets/Group 312.png">
                               </div>
@@ -1582,7 +1740,7 @@
                             <div class="h-100">  
                               <div class="d-flex align-content-between flex-wrap">
                                 <div class="col-12 mainHeading-2 text-center">
-                                  Cryptocurrency, BNPL & credit cards
+                                  Cryptocurrency, BNPL &<br> credit cards
                                 </div>
                                 <img class="pt-5 w-100" src="assets/Group 309.png">
                               </div>
@@ -1590,7 +1748,7 @@
                             <div class="h-100">  
                               <div class="d-flex align-content-between flex-wrap">
                                 <div class="col-12 mainHeading-2 text-center">
-                                  Capital Markets, Consumer lending, Business lending
+                                  Capital Markets, Consumer lending,<br> Business lending
                                 </div>
                                 <img class="pt-5 w-100" src="assets/Group 308.png">
                               </div>
@@ -1598,7 +1756,7 @@
                             <div class="h-100">  
                               <div class="d-flex align-content-between flex-wrap">
                                 <div class="col-12 mainHeading-2 text-center">
-                                  Accounting & finance, Investing & trading infrastructure Mobile wallets & remittances, Real estate & mortagage
+                                  Accounting & finance, Investing & trading infrastructure<br> Mobile wallets & remittances, Real estate & mortagage
                                 </div>
                                 <img class="pt-5 w-100" src="assets/Group 307.png">
                               </div>
@@ -1606,7 +1764,7 @@
                             <div class="h-100">  
                               <div class="d-flex align-content-between flex-wrap">
                                 <div class="col-12 mainHeading-2 text-center">
-                                  Financial Services automation, Fraud prevention &compliance, Core banking & infrastructure
+                                  Financial Services automation, Fraud prevention <br> &compliance, Core banking & infrastructure
                                 </div>
                                 <img class="pt-5 w-100" src="assets/Group 306.png">
                               </div>
@@ -1614,7 +1772,7 @@
                             <div class="h-100">  
                               <div class="d-flex align-content-between flex-wrap">
                                 <div class="col-12 mainHeading-2 text-center">
-                                  Retail investing & wealth management, Core banking & infrastructure
+                                  Retail investing & wealth management,<br> Core banking & infrastructure
                                 </div>
                               <img class="pt-5 w-100" src="assets/Group 305.png">
                             </div>
@@ -1639,7 +1797,7 @@
                   <div>Subscribe to Our Newsletter</div>
                   <div class="form-floating mb-3 mt-3 ">
                       <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
-                      <label for="name">Email</label>
+                      <label for="name">Name</label>
                   </div>
                   <div class="form-floating mb-3 mt-3 ">
                       <input type="number" class="form-control" id="number" placeholder="Enter Contant No" name="number">
@@ -1710,8 +1868,12 @@
                               </div>
                               <div class="form-floating mb-2 mt-2 ">
                                   <input type="text" class="form-control" id="number" placeholder="Enter Contant No" name="number">
-                                  <label for="number">Contant No</label>
+                                  <label for="number">Contact No</label>
                               </div>
+                              <div class="form-floating mb-2 mt-2 ">
+                                <input type="text" class="form-control" id="number" placeholder="Enter Email Id" name="number">
+                                <label for="number">Email Id</label>
+                            </div>
                               <div class="text-white">
                                   <button class="buttonEnroll btn rounded-pill text-white py-2 px-5 mt-2 mb-2">Enroll Now</button>
                                   <div style="font-size: 12px;"> * yes, I agree to the terms and privacy policy</div>

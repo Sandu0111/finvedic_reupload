@@ -236,7 +236,7 @@ body {
 .whoWeAreStyleBase .card {
     border-radius: 0px 0px 20px 20px;
     border: none;
-    box-shadow: 0px -8px 16px 0px rgba(148, 162, 209, 0.50) inset;
+    box-shadow: 0px -8px 16px 0px rgba(255, 255, 255, 0.245) inset;
 }
 
 .whoWrAreStyle .card {
@@ -603,11 +603,11 @@ body {
     padding-right: 10%;
     padding-left: auto;
     & .img-1 {
-        width: 70px;
+        width: 90px;
     }
     & .img-2 {
-        width: 70px;
-        margin-bottom: -70px;
+        width: 90px;
+        margin-bottom: -95px;
     }
 }
 
@@ -738,12 +738,24 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
+    padding-top: 10%;
+    /* 150% */
+    letter-spacing: 1.2px;
+}
+.curriculamTitleNew {
+    color: var(--Primary-600, #031349);
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
     /* 150% */
     letter-spacing: 1.2px;
 }
 
 .curriculamText {
     color: #7F8BAB;
+    text-align: left;
     font-family: Manrope;
     font-size: 16px;
     font-style: normal;
