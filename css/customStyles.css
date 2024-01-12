@@ -818,7 +818,7 @@ body {
     & .item {
         display: inline-block;
         border-radius: 12px;
-        width: 900px;
+        width: 850px;
         height: 180px;
         & .storyImgSaperate img{
             width: 180px!important;
@@ -856,7 +856,7 @@ body {
     & .item {
         display: inline-block;
         border-radius: 12px;
-        width: 800px;
+        width: 850px;
         height: 180px;
 
         & .storyImgSaperate img {
@@ -933,7 +933,7 @@ marquee {
 }
 
 .subscriptionStyle {
-    background: #03134916;
+    background: #4247c2;
     padding: 20px;
     font-weight: 400;
     border-radius: 16px;
