@@ -253,7 +253,7 @@ body {
     width: 100%;
     height: 400px;
     background-color: rgba(255, 255, 255, 0.105);
-    border-radius: 35px;
+    border-radius: 16px;
     border:white;
     color: white;
     overflow: hidden;
@@ -298,8 +298,9 @@ body {
 }
 
 .whoWrAreStyle .card:hover {
-    transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+    
     border: 2px solid rgba(255, 255, 255, 0.636);
+    
    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);*/
 }
 
@@ -503,7 +504,7 @@ body {
 }
 
 .correct {
-    width: 70%;
+    width: 76%;
     position: relative;
     & .check-normal {
         z-index: 9999;
@@ -511,9 +512,9 @@ body {
     & .bar {
         position: absolute;
         background: #2A2E8D;
-        width:70%;
+        width:74%;
         bottom: -20px;
-        left: 15%;
+        left: 13%;
         top: 30px;
         z-index:0;
     }
@@ -535,8 +536,52 @@ body {
 
 }
 
+
+
+.whcontainer{
+    position: absolute;
+    top: 32.5%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     max-width: 1200;
+     flex-wrap: wrap;
+     z-index: 1;
+
+}
+.whcontainer .whcard{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow:20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .letUsSeeList {
     list-style: url(../assets/arrow-right-solid.svg);
+    font-size: 18px;
 }
 
 .letUsSeeList-1 {
@@ -1165,6 +1210,29 @@ a:link { text-decoration: none; }
 }
 
 @media only screen and (max-width: 576px) {
+    .paymentscarosel {
+        & .slick-dots {
+            bottom: -50px;
+    
+            & li.slick-active button:before {
+                width: 10px;
+                height: 10px;
+                background-color: #5479F7;
+                border-radius: 50%;
+                color: transparent;
+                opacity: 1;
+            }
+    
+            & li button:before {
+                color: transparent;
+                width: 10px;
+                height: 10px;
+                border: 2px solid #5479F7;
+                border-radius: 50%;
+                opacity: 1;
+            }
+        }
+    }
     .mobile_nav{
         display: block;
         background-color: #0A004B;
@@ -1462,8 +1530,8 @@ a:link { text-decoration: none; }
         bottom: -50px;
 
         & li.slick-active button:before {
-            width: 10px;
-            height: 10px;
+            width: 15px;
+            height: 15px;
             background-color: #5479F7;
             border-radius: 50%;
             color: transparent;
@@ -1472,8 +1540,8 @@ a:link { text-decoration: none; }
 
         & li button:before {
             color: transparent;
-            width: 10px;
-            height: 10px;
+            width: 15px;
+            height: 15px;
             border: 2px solid #5479F7;
             border-radius: 50%;
             opacity: 1;
