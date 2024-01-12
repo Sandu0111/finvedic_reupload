@@ -1242,7 +1242,7 @@ a:link { text-decoration: none; }
     .whoWeAretext {
         color: var(--Text-50, #94A2D1);
         font-family: Manrope;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 26px;
