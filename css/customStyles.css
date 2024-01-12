@@ -1228,6 +1228,19 @@ a:link { text-decoration: none; }
             }
         }
     }
+    .profissionalTextHeading {
+        color: #c04ae2;
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        letter-spacing: 1.2px;
+    } 
+    .profissionalText {
+        color: #7F8BAB;
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        letter-spacing: 1.2px;
+    }
     .mobile_nav{
         display: block;
         background-color: #0A004B;
@@ -1597,7 +1610,7 @@ a:link { text-decoration: none; }
     }
 
     & .slick-slide {
-        transform: scale(0.85) rotate(6deg);
+        transform: scale(0.85);
         text-align: center;
         transition: transform 0.3s ease-in-out;
     }

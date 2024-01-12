@@ -80,6 +80,7 @@
           background-repeat: no-repeat;
           background-position: top;
           background-size: 100% 100%;
+          height: 150px;
           /* box-shadow: 0 0px 20px 0px #33333380; */
           /* border-radius: 16px; */
 
@@ -398,16 +399,16 @@
         <!-- mobile View  -->
         <div class="d-block d-md-none w-100 py-5" style="overflow-x: hidden;">
           <!-- old carosuels -->
-          <!-- <div class="profissionalCarosel">
+           <div class="profissionalCarosel">
             <div class="professionalBackground mobile" data-slideIndex="0">
               <div class="starStyle">
                 <img src="assets/star.png" alt="">
               </div>
               <div class="row px-4 py-5 align-items-center justify-content-center justify-content-md-start">
                 <div class="col-8">
-                  <img src="assets/Icons.png" class="w-100">
+                  <img src="assets/icon1.png" style="margin-left: auto;margin-right: auto;">
                 </div>
-                <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
+                <div class="col-12 col-md-7 mt-3 text-center" style="min-height: 150px">
                   <h4 class="profissionalTextHeading">Great Salary & Perks</h4>
                   <p class="profissionalText">Easy to learn, high-paying and in a fast growing
                     industry</p>
@@ -420,9 +421,9 @@
               </div>
               <div class="row px-3 pt-5 align-items-center justify-content-center justify-content-md-end">
                 <div class="col-8">
-                  <img src="assets/Group 251.png" class="w-100">
+                  <img src="assets/icon4.png" style="margin-left: auto;margin-right: auto;">
                 </div>
-                <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
+                <div class="col-12 col-md-7 mt-3 text-center" style="min-height: 150px">
                   <h4 class="profissionalTextHeading">Accelerated Growth Path</h4>
                   <p class="profissionalText">FinTech offers tech, expert collaboration, experience,
                     and fast career growth due to high demand.</p>
@@ -431,13 +432,13 @@
             </div>
             <div class="professionalBackground mobile" data-slideIndex="2">
               <div class="starStyle">
-                <img src="assets/star.png" alt="">
+                <img src="assets/star.png" alt="" >
               </div>
               <div class="row px-4 py-5 align-items-center justify-content-center justify-content-md-start">
                 <div class="col-8">
-                  <img src="assets/Group 294.png" class="w-100">
+                  <img src="assets/icon3.png" style="margin-left: auto;margin-right: auto;" >
                 </div>
-                <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
+                <div class="col-12 col-md-7 mt-3 text-center" style="min-height: 150px">
                   <h4 class="profissionalTextHeading">Build a Solid Profile</h4>
                   <p class="profissionalText">Exciting, rewarding FinTech environment to
                     achieve career goals.</p>
@@ -450,18 +451,18 @@
               </div>
               <div class="row px-3 pt-5 align-items-center justify-content-center justify-content-md-end">
                 <div class="col-8">
-                  <img src="assets/Group 257.png" class="w-100">
+                  <img src="assets/icon4.png" style="margin-left: auto;margin-right: auto;">
                 </div>
-                <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
+                <div class="col-12 col-md-7 mt-3 text-center" style="min-height: 150px">
                   <h4 class="profissionalTextHeading">Achieve the Extra-Ordinary</h4>
                   <p class="profissionalText">FinTech's trillion-dollar growth provides a fantastic career
                     opportunity for extraordinary achievements.</p>
                 </div>
               </div>
             </div>
-          </div> -->
+          </div> 
 
-
+<!--
           <div class="stacked-cards profissionalCarosel">
             <ul>
               <li>
@@ -534,6 +535,7 @@
               </li>
             </ul>
           </div>
+-->
         </div>
       </div>
 
@@ -2033,17 +2035,17 @@
         })
       })
 
-      // $(document).ready(function (){
-      //   $('.profissionalCarosel').slick({
-      //       dots: true,
-      //       arrows: false,
-      //       infinite: true,
-      //       // autoplay: true,
-      //       centerMode: true,
-      //       centerPadding: '40px',
-      //       autoplaySpeed: 2000,
-      //   })
-      // })
+       $(document).ready(function (){
+         $('.profissionalCarosel').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+             autoplay: true,
+          centerMode: true,
+           centerPadding: '40px',
+             autoplaySpeed: 2000,
+         })
+       })
 
       var stackedCardFanOut = new stackedCards({
           selector: '.profissionalCarosel',
@@ -2258,21 +2260,21 @@
               return diff;
             },
             addClassProfissionalCarosel(currentSlide) {
-              // const carouselItems = document.querySelectorAll('.professionalBackground');
-              // const elems = Array.from(carouselItems);
-              // const current = elems.find((elem) => elem.dataset.slideindex == currentSlide);
-              // const prevIndex = currentSlide == 0 ? 3 : currentSlide - 1;
-              // const nextIndex = currentSlide == 3 ? 0 : currentSlide + 1;
-              // const prev = elems.find((elem) => elem.dataset.slideindex == prevIndex);
-              // const next = elems.find((elem) => elem.dataset.slideindex == nextIndex);
-              // console.log(prev, 'prev')
-              // console.log(next, 'next');
-              // current.classList.remove('antiClockSlide');
-              // current.classList.remove('clockSlide');
-              // prev.classList.remove('clockSlide');
-              // prev.classList.add('antiClockSlide');
-              // next.classList.remove('antiClockSlide');
-              // next.classList.add('clockSlide');
+               const carouselItems = document.querySelectorAll('.professionalBackground');
+              const elems = Array.from(carouselItems);
+              const current = elems.find((elem) => elem.dataset.slideindex == currentSlide);
+              const prevIndex = currentSlide == 0 ? 3 : currentSlide - 1;
+              const nextIndex = currentSlide == 3 ? 0 : currentSlide + 1;
+              const prev = elems.find((elem) => elem.dataset.slideindex == prevIndex);
+              const next = elems.find((elem) => elem.dataset.slideindex == nextIndex);
+              console.log(prev, 'prev')
+              console.log(next, 'next');
+              current.classList.remove('antiClockSlide');
+              current.classList.remove('clockSlide');
+              prev.classList.remove('clockSlide');
+              prev.classList.add('antiClockSlide');
+              next.classList.remove('antiClockSlide');
+              next.classList.add('clockSlide');
              
             }
           },
