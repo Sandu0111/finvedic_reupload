@@ -1521,6 +1521,7 @@ a:link { text-decoration: none; }
 }
 
 .paymentscarosel {
+   
     & .slick-dots {
         bottom: -50px;
 
