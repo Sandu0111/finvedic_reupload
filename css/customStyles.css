@@ -250,6 +250,9 @@ body {
 }
 
 .whoWrAreStyle .card {
+    position: relative;
+    display: block;
+    z-index: 1;
     width: 100%;
     height: 400px;
     background-color: rgba(255, 255, 255, 0.105);
@@ -262,6 +265,29 @@ body {
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
     cursor: pointer;
 }
+.whoWrAreStyle .card::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:radial-gradient(circle 70vh at 50% 100%,#6B54F7,#C04BE2) ;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    z-index: -1;
+
+}
+.whoWrAreStyle .card:hover::before{
+    opacity: 1;
+    visibility: visible;
+
+
+
+}
+.whoWrAreStyle .card{}
+.whoWrAreStyle .card{}
 
 .whoWrAreStyle .card-content {
     padding: 2%;
@@ -304,37 +330,6 @@ body {
    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);*/
 }
 
-.whoWrAreStyle .card:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient( rgba(255, 255, 255, 0.807));
-    transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-    z-index: 1;
-}
-
-.whoWrAreStyle .card:hover:before {
-    transform: translateX(-100%);
-}
-
-.whoWrAreStyle .card:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient( rgba(255, 255, 255, 0.807));
-    transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-    z-index: 1;
-}
-
-.whoWrAreStyle .card:hover:after {
-    transform: translateX(100%);
-}
 
 .whoWeAreContact {
     border-radius: 16px;
