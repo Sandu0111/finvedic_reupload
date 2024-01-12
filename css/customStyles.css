@@ -219,10 +219,10 @@ body {
 
 .starStyle {
     position:absolute;
-    top:1%;
-    right: 1%;
+    top:0%;
+    right: 0%;
     & img {
-        width: 80%;
+        width: 100%;
     }
 }
 
