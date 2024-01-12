@@ -8368,7 +8368,8 @@ fieldset:disabled .btn {
 }
 
 .rounded-pill {
-    border-radius: 50rem !important
+    border-radius: 50rem !important;
+    border:none;
 }
 
 .rounded-top {

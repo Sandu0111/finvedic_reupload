@@ -19,6 +19,7 @@ body {
 
 }
 
+
 .js-scroll {
     opacity: 0;
     transition: opacity 0.675s;
@@ -160,7 +161,7 @@ body {
 }
 
 .buttonEnroll {
-    background: var(--Gradient-2, linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%));
+    background: linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%);
     color: white;
     box-shadow: inset rgba(247, 250, 255, 0.296) 0px 0px 40px 0px, inset rgba(216, 230, 255, 0.5) 0px 0px 40px 0px, inset rgb(169, 169, 169) 0px 0px 36px -24px;
 }
@@ -275,8 +276,8 @@ body {
 
 .whoWrAreStyle .card-title {
     width: 30%;
-    padding-top: 8%;
-    padding-bottom: 5%;
+    padding-top: 12%;
+    padding-bottom: 2%;
     & img {
         height: 112px;
         width: 112px;
@@ -507,9 +508,9 @@ body {
     & .bar {
         position: absolute;
         background: #2A2E8D;
-        width: 60%;
+        width:70%;
         bottom: -20px;
-        left: 20%;
+        left: 15%;
         top: 30px;
         z-index:0;
     }
@@ -599,7 +600,7 @@ body {
     & .letUsSeeHeadingImg {
         transition: 1s;
         margin-left: 10px;
-        transform: scale(1.3);
+        transform: scale(1.6);
         
     }
 }
@@ -809,6 +810,7 @@ body {
     width: 100%;
     overflow: auto;
     margin: 0 auto;
+    
 }
 
 .slider_carousel {
@@ -853,7 +855,7 @@ body {
     flex-wrap: nowrap;
     width: auto;
     overflow: hidden;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 30px;
     & .item {
         display: inline-block;
@@ -897,8 +899,7 @@ body {
 }
 
 .range-slider {
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
     background-color: rgba(246, 240, 247, 0.50);
     border: 3px solid rgba(246, 240, 247, 0.50);
 }
@@ -1024,7 +1025,7 @@ marquee {
   .small_clouds{
     position: absolute;
     top: 50%;
-    width: 100%;
+    width: 10%;
   }
   .small_clouds2{
     position: absolute;
@@ -1035,6 +1036,14 @@ marquee {
   .book_container input {
     display: none;
 }
+::placeholder {
+    color: rgba(164, 164, 164, 0.589);
+    opacity: 0.8; 
+  }
+ .certification_box input[type=text] {
+    padding-left: 30px !important;
+  }
+
 
 .AboutFinvedicMainHeading {
     color: var(--Primary-White, #FFF);
@@ -1051,6 +1060,7 @@ marquee {
 .mobile_view{
     display: none;
 }
+a:link { text-decoration: none; }
 
 .CurriculumCarosuel {
     display: flex;
@@ -1138,6 +1148,7 @@ marquee {
         top: 45%;
         left: -8%;
         font-size: 20px;
+        background: white;
     }
 
     & .next {
@@ -1145,6 +1156,7 @@ marquee {
         top: 45%;
         right: -8%;
         font-size: 20px;
+        background: white;
     }
 
 }

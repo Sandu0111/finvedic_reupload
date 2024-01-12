@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Playfair+Display&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400&family=Playfair+Display&display=swap">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/slick.min.css">
@@ -872,12 +872,10 @@
                           </div>
                           <br>
                           <ul class="letUsSeeList">
-                              <li>6 months of access to<br>Gurukul portal that includes :
-                                  <ul class="letUsSeeList-1">
-                                      <li>Handbooks &nbsp;&nbsp; <span><img  src="assets/listFlower.svg"></span> Video Lectures</li>
-                                      <li>Unlimited access to Fintech lab</li>
-                                      <li>200 hours of Azure Cloud Corporate access</li>
-                                  </ul>
+                              <li>6 months of access to<br>Gurukul portal that includes :<br><span style="font-size: 14px;">
+                                <span><img  src="assets/listFlower.svg">Handbooks &nbsp;&nbsp; <img  src="assets/listFlower.svg"></span> Video Lectures
+                                <br><span><img  src="assets/listFlower.svg"></span>Unlimited access to Fintech lab
+                                <br><span><img  src="assets/listFlower.svg"></span>200 hours of Azure Cloud Corporate access</span>
                               </li>
                           </ul>
                       </div>
@@ -1019,15 +1017,15 @@
           </div>
         </div>
       </div>
-      <div class="certification_box js-scroll fade-in-bottom">
-          <div class="clouds" style="z-index: -1;">
+      <div class="certification_box">
+          <div class="clouds1" style="z-index: -1;">
             <div class="small_clouds2">
               <img src="assets/CLOUD-2 2.png" alt="">
             </div>
             <div class="cld1">
               <img class="cld1" src="assets/Mask group (2).png" alt="">
             </div>
-            <div class="small_clouds">
+            <div class="small_clouds" >
               <img src="assets/CLOUD-2 1.png" alt="">
             </div>
           </div>
@@ -1036,7 +1034,7 @@
             <h4 class="pt-5">Certificate of Authentication</h4>
             <p>Online authentication of certification to the legitimacy of digital identities</p>
             <div class="py-5" >
-              <input class="p-3" type="text" style="width: 50%;border-radius: 40px;border: none; outline: none;" placeholder="Enter registered mail id to check authentication" >4
+              <input class="p-3" type="text" style="width: 50%;border-radius: 40px;border: none; outline: none;" placeholder="Enter registered mail id to check authentication" >
             
               <button class="buttonEnroll btn rounded-pill text-white py-3 w-100" style="max-width: 200px;margin-left: 1%;">Check here</button>
             </div>
@@ -1044,7 +1042,7 @@
       </div>
 
       <!-- Course Curriculum section  -->
-      <div class="container overflow-hidden py-5 pb-5 js-scroll fade-in-bottom">
+      <div class="container overflow-hidden py-5 pb-1 js-scroll fade-in-bottom">
           <div class="row justify-content-start">
               <div class="col-12 mainHeading text-center" style="color: var(--Primary-600, #031349)">Course <br class="d-block d-md-none"> Curriculum</div>
               <div class="col-12 col-md-7 text-center py-5">
@@ -1086,10 +1084,10 @@
                       </button>
                     </li>
                   </ul>
-                  <button class="btn rounded-circle prev web_view" @click="nextSlide(-1)" style="margin-left: 15%;">
+                  <button class="btn rounded-circle prev web_view" @click="nextSlide(-1)" style="margin-left: 20%;">
                     <i class="fa-solid fa-arrow-left my-auto "  style="color: #5479F7"></i>
                   </button>
-                  <button class="btn rounded-circle next web_view" @click="nextSlide(1)" style="margin-right: 11%;">
+                  <button class="btn rounded-circle next web_view" @click="nextSlide(1)" style="margin-right: 15%;">
                     <i class="fa-solid fa-arrow-right my-auto" style="color: #5479F7"></i>
                   </button>
                   <button class="btn rounded-circle mx-2 prev mobile_view" @click="nextSlide(-1)">
@@ -1712,7 +1710,7 @@
                   
                           </div>                         
                       </div>
-                      <div class="w-100 px-auto">
+                      <div class="px-auto" style="background-color: #FFF;margin-right: auto;margin-left: auto;width: 40%;border-radius: 15px;height: 20px;margin-top: 2%;">
                         <input class="range-slider" v-model="slideRange" type="range" value="0" max="100" />
                       </div>
                   </div>
@@ -1743,8 +1741,12 @@
 
           <!-- About Finvedic section -->
           <div class="w-100 py-5 container-fluid js-scroll fade-in-bottom">
-              <div class="row justify-content-center aboutStyle">
-                  <div class="col-12  AboutFinvedicMainHeading text-center">About Fintech</div>
+              <div class="row justify-content-center aboutStyle pt-5" style="position: relative;">
+                <div style="position: absolute;width: 10%;bottom:25%;right:20%;">
+                  <img src="assets/Group 137.png" alt="">
+                </div>
+                
+                  <div class="col-12  AboutFinvedicMainHeading text-center ">About Fintech</div>
                   <div class="col-11 col-md-5 text-white-50 text-center py-4 web_view">By utilizing technological advances such as AI and blockchain,<br>
                   fintech companies are revolutionizing the way people interact with their<br>
                   finances by being part of the:</div>
@@ -1771,12 +1773,12 @@
             font-style: normal;
             font-weight: 600;
             line-height: 59.52px; /* 82.667% */
-            letter-spacing: 5.2px;opacity: 0.25;">
+            letter-spacing: 5.2px;opacity: 0.08;">
             The Fintech 250 The Fintech 250 The Fintech 250 The Fintech 250 The Fintech 250 The Fintech 250 The Fintech 250
           </marquee>
-          <div class="col-12 text-center d-none d-md-block py-3">
+          <div class="col-12 text-center d-none d-md-block py-4">
               <div style="background-color: #FFF;width: 100%;" >
-                  <marquee>  The most promising fintech companies of 2022 The most promising fintech companies of 2022 The most promising fintech companies of 2022 The most promising fintech companies of 2022 The most promising fintech companies of 2022 The most promising fintech companies of 2022 The most promising fintech companies of 2022</marquee>
+                  <marquee style="padding-top: 1%;padding-bottom: 1%;">  The most promising fintech companies of 2022 &nbsp;&nbsp;&nbsp; The most promising fintech companies of 2022&nbsp;&nbsp;&nbsp; The most promising fintech companies of 2022 The most promising fintech companies of 2022&nbsp;&nbsp;&nbsp; The most promising fintech companies of 2022 The most promising fintech companies of 2022&nbsp;&nbsp;&nbsp; The most promising fintech companies of 2022</marquee>
               </div>
               <div class="text-white py-4">
                   <strong>Source : </strong>
@@ -1898,7 +1900,7 @@
                   </div>
                   <div class="text-white">
                       <button class="buttonEnroll btn rounded-pill text-white py-3 px-5 mt-4 mb-2">Enroll Now</button>
-                      <div style="font-size: 12px;" > * yes, I agree to the terms and privacy policy</div>
+                      <div  style="font-size: 12px;" > * yes, I agree to the terms and privacy policy</div>
                   </div>
               </div>
           </div>
@@ -1906,7 +1908,7 @@
           <!-- footer  section  -->
           <div class="footerStyle pb-4">
               <div class="container js-scroll fade-in-bottom">
-                  <div class="row">
+                  <div class="row pt-5">
                       <div class="col-12 mainHeading text-center text-white pt-5">Follow Us</div>
                       
                       <div class="col-12">
@@ -1925,15 +1927,15 @@
                       <div class="col-12 col-md-4 pt-5 addessStyle">
                           <img src="assets/logo_long_re.png" class="w-50"> 
                           <br><br>
-                          <p class="text-white" style="font-size: smaller;line-height: 30px;">RENT A DESK,Hitech City RAM SVR,Plot No4/2<br>Sector
+                          <p class="text-white" style="font-size: smaller;line-height: 25px;">RENT A DESK,Hitech City RAM SVR,Plot No4/2<br>Sector
                               1,Madhapur,HuDA Techno Enclave,<br>HITECH City,Hyderabad,Telangana 500081</p>
-                          <p class="text-white py-3">+91 9908011843 <span class="px-2"><i class="fa fa-envelope"></i> support@finvedic.com</span></p>
+                          <p class="text-white py-3"><span><img src="assets/phoneVector.png" alt=""></span>+91 9908011843 <span class="px-2"><img src="assets/mail.png" alt=""> support@finvedic.com</span></p>
                       </div>
-                      <div class="col-3 pt-5 d-none d-md-block" style="margin-left: auto;margin-right: auto;">
+                      <div class="col-3 pt-5 d-none d-md-block" style="margin-left: 6%;margin-right: auto;">
                           <table class="table table-borderless " style="color: #F4F0FF;">
-                              <tbody>
-                                  <tr>
-                                      <td>Home</td>
+                              <tbody >
+                                  <tr  >
+                                      <td >Home</td>
                                       <td>External</td>
                                   </tr>
                                   <tr>
@@ -1964,8 +1966,8 @@
                                 <label for="number">Email Id</label>
                             </div>
                               <div class="text-white">
-                                  <button class="buttonEnroll btn rounded-pill text-white py-2 px-5 mt-2 mb-2">Enroll Now</button>
-                                  <div style="font-size: 12px;"> * yes, I agree to the terms and privacy policy</div>
+                                  <button class="buttonEnroll btn rounded-pill text-white py-3 px-5 mt-2 mb-2">Enroll Now</button>
+                                  <div class="py-3" style="font-size: 12px;"> * yes, I agree to the terms and privacy policy</div>
                               </div>
                           </div>
                       </div>
@@ -2161,7 +2163,7 @@
             handleScrollAnimation(selectedClass) {
               const scrollElements = document.querySelectorAll(selectedClass);
               scrollElements.forEach((el) => {
-                if (this.elementInView(el, 1.4)) {
+                if (this.elementInView(el, 1.8)) {
                   el.classList.add("active")
                 } else if (this.elementOutofView(el)) {
                   el.classList.remove("active");
