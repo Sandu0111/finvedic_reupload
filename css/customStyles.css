@@ -162,7 +162,9 @@ body {
 .buttonEnroll {
     background: var(--Gradient-2, linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%));
     color: white;
+    box-shadow: inset rgba(247, 250, 255, 0.296) 0px 0px 40px 0px, inset rgba(216, 230, 255, 0.5) 0px 0px 40px 0px, inset rgb(169, 169, 169) 0px 0px 36px -24px;
 }
+
 
 .buttonBrochure {
     border: 1px solid #6B54F7;
