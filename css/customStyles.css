@@ -749,6 +749,88 @@ body {
         width: 42px;
     }
 }
+.range_slider_container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .slider_carousel {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+    overflow: hidden;
+    .item {
+      display: inline-block;
+      border-radius: 12px;
+      width: 800px;
+      height: 200px;
+      background: white;
+      margin-left: 20px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        border-right: 0.1px solid white;
+      }
+    }
+  }
+  .image_card{
+    position: absolute;
+    display: flex;
+  }
+  .card_abs{
+    margin-left: 40%;
+  }
+  .image_card h6{
+    padding-top: 10px;
+    width: 100%;text-align: center;color: black;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .item h4{
+    margin-top: 6%;margin-left: 10%;width: 100%; font-weight: 600;
+    color: black;
+  }
+  .slider_carousel2 {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+    overflow: hidden;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    
+  }
+  .slider_carousel2 .item {
+    display: inline-block;
+    border-radius: 12px;
+    
+    height: 800px;
+    background: white;
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      border-right: 0.1px solid white;
+    }
+  }
+  .range-slider{
+    width: 40%;
+    margin-left:30%;
+  
+  }
+  .sucess_story_box{
+    width: 100%;
+    border-top-left-radius:120px ;
+    background-image: linear-gradient(#6B54F7 50%, #C04BE2 );
+  
+  }
+  .rangeslider{
+    padding-top: 3%;
+  }
 
 .rocketTextHeading {
     font-family: Playfair Display;
@@ -898,7 +980,6 @@ body {
     flex-wrap: nowrap;
     width: auto;
     overflow: hidden;
-    padding-top: 50px;
     padding-bottom: 30px;
     & .item {
         display: inline-block;
@@ -942,7 +1023,7 @@ body {
 }
 
 .range-slider {
-    width: 100%;
+    width: 40%;
     background-color: rgba(246, 240, 247, 0.50);
     border: 3px solid rgba(246, 240, 247, 0.50);
 }
