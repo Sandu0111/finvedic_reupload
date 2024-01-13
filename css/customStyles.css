@@ -235,10 +235,10 @@ color: #072794;
 }
 
 .buttonBrochure:hover {
-    background: linear-gradient(180deg, #5840f6, #C04BE2 , #C04BE2,#5840f6) !important;
+    background: linear-gradient(70deg, #5840f6, #C04BE2 , #C04BE2,#5840f6) !important;
     cursor: pointer;
 
-    font-size: large;
+
 }
 .buttonBrochure:before {
     content: "";
@@ -248,7 +248,7 @@ color: #072794;
     bottom: -5px;
     left: -5px;
     z-index: -1;
-    background: linear-gradient(90deg, #5840f6, #C04BE2 , #C04BE2,#5840f6);
+    background: linear-gradient(70deg, #5840f6, #C04BE2 , #C04BE2,#5840f6);
     background-size: 400%;
     border-radius: 40px;
     opacity: 0;
@@ -1371,6 +1371,37 @@ a:link { text-decoration: none; }
 }
 
 @media only screen and (max-width: 576px) {
+
+    .buttonEnroll {
+        position: relative;
+        display: inline-block;
+    
+        color: #fff;
+        box-sizing: border-box;
+        background: linear-gradient(90deg, #5840f6, #C04BE2 , #C04BE2,#5840f6);
+        background-size: 400%;
+        border-radius: 30px;
+        z-index: 1;
+         animation: animate 12s linear infinite;
+    font-size: large;
+   
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+  
+      }
+      .buttonEnroll::before {
+        filter: blur(10px);
+        opacity: 1;
+        animation: animate 8s linear infinite;
+      }
+      
+
     .paymentscarosel {
         & .slick-dots {
             bottom: -50px;
