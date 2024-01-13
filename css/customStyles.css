@@ -1491,7 +1491,7 @@ a:link { text-decoration: none; }
         color: #BFC5EE;
         font-family: Manrope;
         & span {
-            line-height: 2.5em;
+            line-height: 1.2em;
             font-size: 1.5em;
         }
     }
