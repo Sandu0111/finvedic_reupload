@@ -180,7 +180,7 @@ color: #072794;
 
     color: #fff;
     box-sizing: border-box;
-    background: linear-gradient(90deg, #6B54F7, #C04BE2, #ff3adb, #1c77ff);
+    background: linear-gradient(90deg, #5840f6, #C04BE2 , #C04BE2,#5840f6);
     background-size: 400%;
     border-radius: 30px;
     z-index: 1;
@@ -209,7 +209,7 @@ color: #072794;
     bottom: -5px;
     left: -5px;
     z-index: -1;
-    background: linear-gradient(90deg, #6B54F7, #C04BE2 , #ff3adb,#1c77ff);
+    background: linear-gradient(90deg, #5840f6, #C04BE2 , #C04BE2,#5840f6);
     background-size: 400%;
     border-radius: 40px;
     opacity: 0;
@@ -235,7 +235,7 @@ color: #072794;
 }
 
 .buttonBrochure:hover {
-    background: linear-gradient(180deg, #6B54F7 27.52%, #C04BE2 171.15%) !important;
+    background: linear-gradient(180deg, #5840f6, #C04BE2 , #C04BE2,#5840f6) !important;
     cursor: pointer;
 
     font-size: large;
@@ -248,7 +248,7 @@ color: #072794;
     bottom: -5px;
     left: -5px;
     z-index: -1;
-    background: linear-gradient(90deg, #6B54F7, #C04BE2 , #ff3adb,#1c77ff);
+    background: linear-gradient(90deg, #5840f6, #C04BE2 , #C04BE2,#5840f6);
     background-size: 400%;
     border-radius: 40px;
     opacity: 0;
@@ -256,7 +256,7 @@ color: #072794;
   }
    
   .buttonBrochure:hover:before {
-    filter: blur(20px);
+    filter: blur(10px);
     opacity: 1;
     animation: animate 8s linear infinite;
   }
