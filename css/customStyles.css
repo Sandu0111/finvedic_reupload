@@ -21,6 +21,16 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
 .js-scroll {
     opacity: 0;
     transition: opacity 0.675s;
@@ -30,11 +40,12 @@ body {
 }
 .h5class{
     font-family: Manrope;
-    font-size: larger;
+color: #072794;
+    font-size: 24px;
     line-height: 1.8rem;
     padding-top: 3%;
     padding-bottom: 3%;
-    padding-left: 10%!important;
+    padding-left: 4%!important;
 }
 
 @keyframes fade-in-bottom {
@@ -206,7 +217,7 @@ body {
   }
    
   .buttonEnroll:hover:before {
-    filter: blur(20px);
+    filter: blur(10px);
     opacity: 1;
     animation: animate 8s linear infinite;
   }
