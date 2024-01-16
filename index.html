@@ -48,7 +48,7 @@
       }
 
       .professionalBackground {
-        background: url(assets/White_square.png);
+        background: url(assets/White_square1.png);
         background-position: top;
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -156,23 +156,71 @@
   </head>
 
   <body>
-   <!-- 
-    <div class="merger">
-      <div id="my-menu">
-        <input type="checkbox" id="active">
-        <label for="active" class="menu-btn">
-          <i class="fas fa-bars"></i></label>
-          <div class="wrapper_mobile" style="background-image: url(assets/wrapper-background.jpg);">
-            <ul style="color: #000 !important;">
-               <li><a href="#">Courses</a></li>
-               <li><a href="#">Bootcamp</a></li>
-               <li><a href="#">External</a></li>
-               <li><a href="#">About Us</a></li>
-            </ul>
-           </div>
+
+    <div class="BNcontainer " id="my-menu" > 
+      <nav class="bottom_nav" id="bnav" data-back-top-btn> 
+          <a href="#home"> 
+              <i class="fas fa-home icon"></i>Home 
+          </a> 
+          <a href="#jobs"> 
+              <i class="fas fa-graduation-cap icon"></i>FinTech 
+          </a> 
+          <a href="#fintech2"> 
+              <img src="assets/logo_long_re.png" alt="" width="50%">
+          </a> 
+          <a href="#courses"> 
+              <i class="fas fa-book icon"></i>Courses
+          </a> 
+          <a href="#contact"> 
+              <i class="fas fa-address-card icon"></i>Contact Us
+          </a> 
+          
+      </nav> 
+  </div>
+
+
+
+  <div class="BNcontainer_mobile " id="my-menu" > 
+    <nav class="bottom_nav_mobile" id="bnav" data-back-top-btn> 
+        <a href="#home"> 
+            <i class="fas fa-home icon"></i> 
+        </a> 
+        <a href="#jobs"> 
+            <i class="fas fa-graduation-cap icon"></i>
+        </a> 
+        <a href="#fintech"> 
+            <img src="assets/Logo.png" alt="">
+        </a> 
+        <a href="#courses"> 
+            <i class="fas fa-book icon"></i>
+        </a> 
+        <a href="#contact"> 
+            <i class="fas fa-address-card"></i>
+        </a> 
+        
+    </nav> 
+</div>
+
+  
+  <!--
+<div class="merger_mobile">
+  <div id="my-menu_mobile">
+    <input type="checkbox" id="active_mobile">
+      <label for="active_mobile" class="menu-btn_mobile"><i class="fas fa-bars"></i></label>
+      <div class="wrapper_mobile" style="background-image: url(assets/wrapper-background.jpg);">
+          <ul style="color: #0000!important;">
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Bootcamp</a></li>
+            <li><a href="#">External</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
       </div>
-    </div>
-  -->
+  </div>
+
+</div>
+-->
+
+
   <div id="app">
     <!-- navbar section  data-->
     <nav class="navbar navbar-expand-md navbar-dark pt-3" style="background-color: #0A004B;">
@@ -209,7 +257,7 @@
     </div>
 
     
-    <div class="websiteBackground">
+    <div class="websiteBackground" id="home">
 
       <!-- header section  -->
       <div class="header-bg">
@@ -227,8 +275,11 @@
           </div>
             <div class="row justify-content-center pb-5" style="white-space: nowrap;">
               <div class="row justify-content-center align-items-center g-3" style="max-width: 460px; z-index: 10!important;">
-                <div class="col-12 col-md-5" >
+                <div class="col-12 col-md-5 web_view" >
                   <button class="buttonEnroll btn rounded-pill text-white  w-100 py-3">Enroll Now</button>
+                </div>
+                <div class="col-12 col-md-5 mobile_view text-center" >
+                  <button class="buttonEnroll btn rounded-pill text-white  py-3" style="padding-left: 20%;padding-right: 20%;">Enroll Now</button>
                 </div>
                 <div class="col-8 col-md-1" ></div>
                 <div class="col-8 col-md-5">
@@ -261,9 +312,9 @@
               </div>
               <div class="col-10 col-md-6 d-block d-md-none">
                 <div class="headerCaroselMobile">
-                  <div><img src="assets/mobile_landing_slider_img_5.png" class="w-100 h-100"> </div>
-                  <div><img src="assets/mobile_landing_slider_img_2.png" class="w-100 h-100"> </div>
-                  <div><img src="assets/mobile_landing_slider_img_3.png" class="w-100 h-100"> </div>
+                  <div><img src="assets/mobile_landing_slider_img_9.png" class="w-100 h-100"> </div>
+                  <div><img src="assets/Carousel2.svg" class="w-100 h-100"> </div>
+                  <div><img src="assets/Carousel3.svg" class="w-100 h-100"> </div>
                 </div>
               </div>
           </div>
@@ -302,7 +353,7 @@
               <div class="col-md-10 text-left px-4" style="position: relative;">
               <p class="textTechnology mobile_view">
                 As the world of <br>
-                <span style="color: #0A004B;white-space: nowrap;" class="fw-bolder">finance and technology</span> <br>
+                <span style="color: #0A004B;" class="fw-bolder">finance and technology</span> <br>
                 continues to evolve and change.<br> so does the industry(FinTech)<br> that surrounds it.
                 <div class="bg_image1 mobile_view" style=" height: 30px;position: absolute;right:18%;top:42%">
                   <img src="assets/trophy_small.png" alt="" style="width: 60px;float: right; margin-top: -30px">
@@ -343,7 +394,7 @@
       </div>
 
       <!-- Life as a FinTech Professional -->
-      <div style="position: relative;" class="js-scroll fade-in-bottom py-2">
+      <div style="position: relative;" class="js-scroll fade-in-bottom py-2" id="jobs"  >
         <div class="side_curve2">
           <img src="assets/side_curve2.png" alt="" style="width: 100%;">
         </div>
@@ -364,7 +415,7 @@
 
                 <div class="row pt-5 align-items-center justify-content-center justify-content-md-start">
                     <div class="col-10 col-md-3 text-center">
-                        <img src="assets/Icons.png" class="w-100">
+                        <img src="assets/Fintech1.svg" class="w-100">
                     </div>
                     <div class="col-12 col-md-7 text-start">
                         <h4 class="profissionalTextHeading">Great Salary & Perks</h4>
@@ -381,13 +432,13 @@
                         and fast career growth due to high demand.</p>
                     </div>
                     <div class="col-10 col-md-3 text-center">
-                        <img src="assets/Group 251.png" class="w-100">
+                        <img src="assets/Fintech2.svg" class="w-100">
                     </div>
                 </div>
 
                 <div class="row py-3 align-items-center justify-content-center justify-content-md-start">
                     <div class="col-10 col-md-3">
-                        <img src="assets/Group 294.png" class="w-100">
+                        <img src="assets/Fintech3.svg" class="w-100">
                     </div>
                     <div class="col-12 col-md-7 text-start">
                         <h4 class="profissionalTextHeading">Build a Solid Profile</h4>
@@ -405,7 +456,7 @@
                         opportunity for extraordinary achievements.</p>
                     </div>
                     <div class="col-10 col-md-3 text-center">
-                        <img src="assets/Group 257.png" class="w-100">
+                        <img src="assets/Fintech4.svg" class="w-100">
                     </div>
                 </div>
 
@@ -415,69 +466,25 @@
           </div>
         </div>
         <!-- mobile View  -->
-        <div class="d-block d-md-none w-100 pt-1 pb-2" style="overflow-x: hidden;">
+        <div class="d-block d-md-none w-100 pt-1 pb-2" style="overflow-x: hidden;" >
           <!-- old carosuels -->
-           <div class="profissionalCarosel">
-            <div class="professionalBackground mobile" data-slideIndex="0">
-              <div class="starStyle">
-                <img src="assets/star.png" alt="">
-              </div>
-              <div class="row px-4 py-5 align-items-center justify-content-center justify-content-md-start">
-                <div class="col-8">
-                  <img src="assets/icon1.png" style="margin-left: auto;margin-right: auto;">
-                </div>
-                <div class="col-12 col-md-7 mt-3 text-center" style="min-height: 150px">
-                  <h4 class="profissionalTextHeading">Great Salary & Perks</h4>
-                  <p class="profissionalText">Easy to learn, high-paying and in a fast growing
-                    industry</p>
-                </div>
-              </div>
+           <div class="profissionalCarosel" >
+            <div class="professionalBackground1 mobile" data-slideIndex="0">
+              <img src="assets/card1 (2).svg" style="margin-left: auto;margin-right: auto;">
             </div>
-            <div class="professionalBackground mobile" data-slideIndex="1">
-              <div class="starStyle">
-                <img src="assets/star.png" alt="">
-              </div>
-              <div class="row px-3 pt-5 align-items-center justify-content-center justify-content-md-end">
-                <div class="col-8">
-                  <img src="assets/icon4.png" style="margin-left: auto;margin-right: auto;">
-                </div>
-                <div class="col-12 col-md-7 mt-3 text-center" style="min-height: 150px">
-                  <h4 class="profissionalTextHeading">Accelerated Growth Path</h4>
-                  <p class="profissionalText">FinTech offers tech, expert collaboration, experience,
-                    and fast career growth due to high demand.</p>
-                </div>
-              </div>
+            <div class="professionalBackground1 mobile" data-slideIndex="1">
+              <img src="assets/card2.svg" style="margin-left: auto;margin-right: auto;">
             </div>
-            <div class="professionalBackground mobile" data-slideIndex="2">
-              <div class="starStyle">
-                <img src="assets/star.png" alt="" >
-              </div>
-              <div class="row px-4 py-5 align-items-center justify-content-center justify-content-md-start">
-                <div class="col-8">
-                  <img src="assets/icon3.png" style="margin-left: auto;margin-right: auto;" >
-                </div>
-                <div class="col-12 col-md-7 mt-3 text-center" style="min-height: 150px">
-                  <h4 class="profissionalTextHeading">Build a Solid Profile</h4>
-                  <p class="profissionalText">Exciting, rewarding FinTech environment to
-                    achieve career goals.</p>
-                </div>
-              </div>
+            <div class="professionalBackground1 mobile" data-slideIndex="2">
+              <img src="assets/buildasolidprofile.svg" style="margin-left: auto;margin-right: auto;">
             </div>
-            <div class="professionalBackground mobile" data-slideIndex="3">
-              <div class="starStyle">
-                <img src="assets/star.png" alt="">
-              </div>
-              <div class="row px-3 pt-5 align-items-center justify-content-center justify-content-md-end">
-                <div class="col-8">
-                  <img src="assets/icon4.png" style="margin-left: auto;margin-right: auto;">
-                </div>
-                <div class="col-12 col-md-7 mt-3 text-center" style="min-height: 150px">
-                  <h4 class="profissionalTextHeading">Achieve the Extra-Ordinary</h4>
-                  <p class="profissionalText">FinTech's trillion-dollar growth provides a fantastic career
-                    opportunity for extraordinary achievements.</p>
-                </div>
-              </div>
+            <div class="professionalBackground1 mobile" data-slideIndex="3">
+              <img src="assets/card4.svg" style="margin-left: auto;margin-right: auto;">
             </div>
+            
+            
+            
+            
           </div> 
 
 <!--
@@ -558,21 +565,21 @@
       </div>
 
       <!-- who We Are Section -->
-      <div class="container pt-3">
+      <div class="container pt-3" >
           <div class="row">
-              <div class="col-12 pt-5 text-center text-white js-scroll fade-in-bottom">
+              <div class="col-12 pt-5 text-center text-white">
                   <span style="font-size: 1.4em; font-family: Manrope;;">About Us</span><br>
                   <span class="mainHeading">Who we are?</span>
               </div>
               <!-- mobile View -->
-              <div class="col-12 pt-5 px-4 js-scroll fade-in-bottom">
+              <div class="col-12 pt-5 px-4">
                   <div class="whoWeAreStyleBase">
                       <img class="w-100 web_view" src="assets/img_people.png" alt="" style="border-radius: 75px;">
                       <img class="w-100 mobile_view" src="assets/Mask group.png" >
                       <div class="card d-block d-md-none  px-2 pt-1">
                           <div class="row align-items-center">
                               <div class="col-3 px-2 text-center">
-                                  <img src="assets/card1.svg" style="width: 50px">
+                                  <img src="assets/mobile1.svg" style="width: 50px">
                               </div>
                               <div class="col-9 whoWeAretext align-self-center" style="transition: 1s;">
                                 {{ activeTextWho.active == 1 && activeTextWho.count != defaultLength ? text1.slice(0, 10000 ): text1.slice(0, this.defaultLength)+ '...' }}
@@ -585,8 +592,7 @@
                       <div class="card d-block d-md-none px-2 pt-1">
                           <div class="row align-items-center">
                               <div class="col-3 text-center px-2">
-                                  <img src="assets/card2-1.svg"  style="width: 30px"><br>
-                                  <img src="assets/card2-2.svg"  style="width: 30px">
+                                <img src="assets/mobile 2.svg" style="width: 50px">
                               </div>
                               <div class="col-9 whoWeAretext align-self-center" style="transition: 1s;"> 
                                   {{ activeTextWho.active == 2 && activeTextWho.count != defaultLength ? text2.slice(0, 10000 ) : text2.slice(0, this.defaultLength)+ '...' }} 
@@ -599,7 +605,7 @@
                       <div class="card d-block d-md-none px-2 pt-1">
                           <div class="row align-items-center">
                               <div class="col-3 text-center px-2">
-                                  <img src="assets/card3.svg"  style="width: 50px">
+                                  <img src="assets/mobile3.svg"  style="width: 50px">
                               </div>
                               <div class="col-9 whoWeAretext align-self-center" style="transition: 1s;">
                                   {{ activeTextWho.active == 3 && activeTextWho.count != defaultLength ?  text3.slice(0, 10000 ): text3.slice(0, this.defaultLength)+ '...' }}
@@ -701,7 +707,7 @@
     </div>
 
       <!-- why Finvedic Section  && Certification of Authentication section -->
-      <div class="w-100 whyFinvedicStyle pt-1 overflow-hidden">
+      <div class="w-100 whyFinvedicStyle pt-1 overflow-hidden" >
           <div class="boxes-1 d-none d-md-block">
             <div class="boxes-11">
               <div class="boxes-111">
@@ -718,7 +724,7 @@
           </div>
 
           <!-- why Finvedic Section -->
-          <div class="container py-3">
+          <div class="container py-3" id="fintech2">
               <div class="row">
                   <div class="col-12 text-center mainHeading text-white d-block d-md-none pt-5 pb-2">Why FinVedic?</div>
 
@@ -798,23 +804,27 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-12 d-block d-md-none py-2 js-scroll fade-in-bottom">
-                      <div class="row align-items-center">
-                          <div class="col-6">
-                              <img src="assets/student_img.png" class="w-100">
-                          </div>
-                          <div class="col-6" style="color: var(--Primary-White, #FFF);
+                  <div class="col-12 d-block d-md-none pt-2 js-scroll fade-in-bottom"  style="background: var(--Secondary, #C04BE225);">
+                    <div class="col-12 text-center pt-3 pb-2" style="
+                    color: var(--Primary-White, #FFF);
                             font-family: Manrope;
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 400;
                             line-height: 26px; /* 162.5% */
-                            letter-spacing: 0.8px;">
-                              Subscribe to our newsletter to get new updates on courses
+                            letter-spacing: 0.8px;
+                    
+                    ">
+                    Subscribe to our newsletter to get new updates on courses
+                    </div>
+                      <div class="row align-items-center">
+                          <div class="col-6"  >
+                              <img src="assets/student_img.png" class="w-100">
                           </div>
-                          <div class="col-12 text-center py-5" style="background: var(--Secondary, #C04BE225);">
-                              <button class="buttonEnroll btn rounded-pill text-white px-5  py-3">Enroll Now</button>
-                          </div>
+                          <div class="col-6 text-center">
+                            <button class="buttonEnroll btn rounded-pill text-white px-5 py-3" style="font-size: 12px;">Enroll Now</button>
+                          </div> 
+                         
                       </div>
                   </div>
 
@@ -825,7 +835,7 @@
           </div>
 
           <!-- let us see web  -->
-          <div class="container pb-5 d-none d-md-block px-5">
+          <div class="container pb-5 d-none d-md-block px-5" >
               <div class="row text-white">
 
                   <div class="col-6 letUsSeeSectionStyle justify-content-center ">
@@ -924,7 +934,7 @@
           </div>
 
           <!-- let us see mobile -->
-          <div class="container d-bock d-md-none py-5">
+          <div class="container d-bock d-md-none py-5" id="fintech">
               <div class="row js-scroll fade-in-bottom">
                   <div class="col-12 mainHeading text-white text-center"> Let us see<br>how we do it?</div>
                   <div class="d-flex justify-content-center py-5 px-4">
@@ -1073,11 +1083,11 @@
       </div>
 
       <!-- Course Curriculum section  -->
-      <div class="container overflow-hidden py-5 pb-1 js-scroll fade-in-bottom">
-          <div class="row justify-content-start">
+      <div class="container overflow-hidden py-5 pb-1 js-scroll fade-in-bottom" >
+          <div class="row justify-content-start" id="courses">
               <div class="col-12 mainHeading text-center" style="color: var(--Primary-600, #031349)">Course <br class="d-block d-md-none"> Curriculum</div>
               <div class="col-12 col-md-7 text-center py-5">
-                <div class="CurriculumCarosuel">
+                <div class="CurriculumCarosuel" >
                   <ul class="CurriculumCarosuel__list" @click="curriculumSlideChange">
                     <li class="CurriculumCarosuel__item" data-pos="-3" data-content="1">
                       <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
@@ -1576,7 +1586,7 @@
               </div>
 -->
               <!-- mobile view  -->
-              <div class="px-4 col-12 d-block d-md-none">
+              <div class="px-4 col-12 d-block d-md-none" >
                 <div class="tab-content">
                   <div class="tab-pane fade" :class="(selectedTextBook) == 1 ? 'show active' : ''">
                     <p class="curriculamTitleMobile">Course description {{ selectedTextBook }}</p>
@@ -2176,7 +2186,7 @@
           </div>
 
           <!-- footer  section  -->
-          <div class="footerStyle pb-4">
+          <div class="footerStyle pb-4" id="contact">
               <div class="container js-scroll fade-in-bottom">
                   <div class="row pt-5">
                       <div class="col-12 mainHeading text-center text-white pt-5">Follow Us</div>
@@ -2198,7 +2208,7 @@
                           <img src="assets/logo_long_re.png" class="w-50"> 
                           <br><br>
                           <p class="text-white" style="font-size: small;line-height: 25px;letter-spacing: 2px;">RENT A DESK,Hitech City RAM SVR,Plot No4/2<br>Sector
-                              1,Madhapur,HuDA Techno Enclave,<br>HITECH City,Hyderabad,Telangana 500081</p>
+                              1,Madhapur,HUDA Techno Enclave,<br>HITECH City,Hyderabad,Telangana 500081</p>
                           <p class="text-white py-3"><span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg></span>+91 9908011843 
                             <span class="px-2"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg> support@finvedic.com</span></p>
                       </div>
@@ -2227,27 +2237,41 @@
                           <div class="text-center subscriptionStyle text-white px-4" style="background:#261474;">
                               <div>Subscribe to Our Newsletter</div>
                               <div class="row">
-                                <div class="col-12 col-md-6">
+                                <div class="col-12 col-md-7">
                               <div class="form-floating mb-2 mt-2 ">
                                   <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
                                   <label for="name">Name</label>
                               </div>
                             </div>
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-md-1" style="position: relative;" >
+                              <h6 style="position: absolute;bottom: 15%;right: 0;">+91</h6>
+                            </div>
+                            <div class="col-12 col-md-4">
                               <div class="form-floating mb-2 mt-2 ">
                                   <input type="text" class="form-control" id="number" placeholder="Enter Contant No" name="number">
                                   <label for="number">Contact No</label>
                               </div>
                             </div>
                             </div>
-                              <div class="form-floating mb-2 mt-2 ">
-                                <input type="text" class="form-control" id="number" placeholder="Enter Email Id" name="number">
-                                <label for="number">Email Id</label>
-                            </div>
-                              <div class="text-white">
-                                  <button class="buttonEnroll btn rounded-pill text-white py-3 px-5 mt-2 mb-2">Enroll Now</button>
-                                  <div class="py-3" style="font-size: 12px;"> * yes, I agree to the terms and privacy policy</div>
+                            <div class="row">
+                              <div class="col-12 col-md-7">
+                                <div class="form-floating mb-2 mt-2 ">
+                                  <input type="text" class="form-control" id="number" placeholder="Enter Email Id" name="number">
+                                  <label for="number">Email Id</label>
                               </div>
+                              <div class="col-12 col-md-1"></div>
+                              </div>
+                              <div class="col-12 col-md-4" style="margin-left: auto;">
+                                <div class="text-white">
+                                  <button class="buttonEnroll btn rounded-pill text-white py-3 mt-2 mb-2" style="padding-right: 30%;padding-left: 30%;">Enroll Now</button>
+                                  
+                              </div>
+                              </div>
+                              <div class="py-3" style="font-size: 12px;"> * yes, I agree to the terms and privacy policy</div>
+                              
+                            </div>
+                              
+                              
                           </div>
                       </div>
 
@@ -2255,9 +2279,13 @@
               </div>
 
 
-              <div class="col-12 text-center text-white pt-5" style="font-size: 12px;">
+              <div class="col-12 text-center text-white pt-5 mt-3 web_view" style="font-size: 12px;">
                   Terms & Conditions &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Privacy Policy &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All Rights Reserved @ FinVedic 2023
               </div>
+              <div class="col-12 text-center text-white pt-2 pb-5 mobile_view" style="font-size: 12px;">
+                Terms & Conditions &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Privacy Policy &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; All Rights<br> Reserved @ FinVedic 2023
+            </div>
+              <div class="mobile_view pb-5"></div>
           </div>
 
       </div>
@@ -2266,6 +2294,10 @@
   <script src="scripts/scroller.js"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="js/stackedCards.min.js"></script>
+  <script src="scripts/scroll.js"></script>
+  <script>
+    
+  </script>
   <script type="text/javascript">
     VanillaTilt.init(document.querySelector(".card"), {
       max: 25,
@@ -2307,7 +2339,7 @@
             infinite: true,
              autoplay: true,
           centerMode: true,
-           centerPadding: '40px',
+           centerPadding: '45px',
              autoplaySpeed: 2000,
          })
        })
@@ -2532,7 +2564,7 @@
               return diff;
             },
             addClassProfissionalCarosel(currentSlide) {
-               const carouselItems = document.querySelectorAll('.professionalBackground');
+               const carouselItems = document.querySelectorAll('.professionalBackground1');
               const elems = Array.from(carouselItems);
               const current = elems.find((elem) => elem.dataset.slideindex == currentSlide);
               const prevIndex = currentSlide == 0 ? 3 : currentSlide - 1;
