@@ -45,7 +45,7 @@ body {
     z-index: 9999999;
     border-radius: 40px;
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(192, 75, 226, 0.6);
+    border: 2px solid rgba(192, 75, 226, 0.3);
    
 } 
 .bottom_nav:hover{
