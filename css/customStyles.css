@@ -381,7 +381,7 @@ color: #072794;
    
   .buttonEnroll:hover {
     animation: animate 12s linear infinite;
-    font-size: large;
+ 
   }
    
   @keyframes animate {
@@ -409,7 +409,7 @@ color: #072794;
   }
    
   .buttonEnroll:hover:before {
-    filter: blur(10px);
+    filter: blur(6px);
     opacity: 1;
     animation: animate 8s linear infinite;
   }
@@ -448,7 +448,7 @@ color: #072794;
   }
    
   .buttonBrochure:hover:before {
-    filter: blur(10px);
+    filter: blur(6px);
     opacity: 1;
     animation: animate 8s linear infinite;
   }
