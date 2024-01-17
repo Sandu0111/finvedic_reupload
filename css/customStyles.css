@@ -1371,7 +1371,7 @@ marquee {
         font-weight: 600;
         & .label {
             background: linear-gradient(180deg, #5479F7 0%, #C04BE2 120.19%);
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             /* line-height: 25.824px; */
