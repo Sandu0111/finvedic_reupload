@@ -151,6 +151,30 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
       }
+       .CurriculumCarosuel__item:nth-child(8) {
+        background: red;
+        /* background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat; */
+      }
+       .CurriculumCarosuel__item:nth-child(9) {
+        background: blue;
+        /* background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat; */
+      }
+       .CurriculumCarosuel__item:nth-child(10) {
+        background: black;
+        /* background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat; */
+      }
+      .CurriculumCarosuel__item:nth-child(11) {
+        background: yellow;
+        /* background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat; */
+      }
 
     </style>
   </head>
@@ -1107,7 +1131,7 @@
       <!-- Course Curriculum section  -->
       <div class="container overflow-hidden py-5 pb-1 js-scroll fade-in-bottom" >
           <div class="row justify-content-start" id="courses">
-              <div class="col-12 mainHeading text-center" style="color: var(--Primary-600, #031349)">Course <br class="d-block d-md-none"> Curriculum</div>
+              <div class="col-12 mainHeading text-center" style="color: var(--Primary-600, #031349)">Course <br class="d-block d-md-none"> Curriculum {{ selectedTextBook }}</div>
               <div class="col-12 col-md-7 text-center py-5">
                 <div class="CurriculumCarosuel" >
                   <ul class="CurriculumCarosuel__list" @click="curriculumSlideChange">
@@ -1142,6 +1166,26 @@
                       </button>
                     </li>
                     <li class="CurriculumCarosuel__item" data-pos="3" data-content="7">
+                      <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
+                        View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </li>
+                    <li class="CurriculumCarosuel__item" data-pos="4" data-content="8">
+                      <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
+                        View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </li>
+                    <li class="CurriculumCarosuel__item" data-pos="-5" data-content="9">
+                      <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
+                        View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </li>
+                    <li class="CurriculumCarosuel__item" data-pos="-4" data-content="10">
+                      <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
+                        View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
+                      </button>
+                    </li>
+                    <li class="CurriculumCarosuel__item" data-pos="5" data-content="11">
                       <button class="btn btn-primary rounded-pill py-3 px-4 viewAllButton d-md-none">
                         View all books &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i>
                       </button>
@@ -2567,6 +2611,7 @@ function closeMenu()
               this.update(newActive);
             },
             update(newActive) {
+              console.log(newActive, 'newActive');
               const carouselItems = document.querySelectorAll('.CurriculumCarosuel__item');
               const elems = Array.from(carouselItems);
               const newActivePos = newActive.dataset.pos;
@@ -2583,10 +2628,15 @@ function closeMenu()
               const third = elems.find((elem) => elem.dataset.pos == 2);
               const first = elems.find((elem) => elem.dataset.pos == -3);
               const last = elems.find((elem) => elem.dataset.pos == 3);
+              const firstOne = elems.find((elem) => elem.dataset.pos == -4);
+              const lastOne = elems.find((elem) => elem.dataset.pos == 4);
+              const firstTwo = elems.find((ele) => ele.dataset.pos == -5);
+              const lasttwo = elems.find((elem) => elem.dataset.pos == 5);
+
 
               current.classList.remove('CurriculumCarosuel__item_active');
 
-              [current, prev, next, first, last, second, third].forEach(item => {
+              [current, prev, next, first, last, second, third, firstOne, lastOne, firstTwo, lasttwo].forEach(item => {
                 var itemPos = item.dataset.pos;
                 // document.querySelector(`.CurriculumCarosuel__item[data-pos="${itemPos}"] .viewAllButton`).classList.remove('d-block');
                 // document.querySelector(`.CurriculumCarosuel__item[data-pos="${itemPos}"] .viewAllButton`).classList.add('d-none');                
@@ -2598,7 +2648,7 @@ function closeMenu()
             },
             getPos(current, active) {
               const diff = current - active;
-              if(Math.abs(current - active) > 3) {
+              if(Math.abs(current - active) > 5) {
                 return -current
               }
               return diff;
@@ -2611,8 +2661,6 @@ function closeMenu()
               const nextIndex = currentSlide == 3 ? 0 : currentSlide + 1;
               const prev = elems.find((elem) => elem.dataset.slideindex == prevIndex);
               const next = elems.find((elem) => elem.dataset.slideindex == nextIndex);
-              console.log(prev, 'prev')
-              console.log(next, 'next');
               current.classList.remove('antiClockSlide');
               current.classList.remove('clockSlide');
               prev.classList.remove('clockSlide');

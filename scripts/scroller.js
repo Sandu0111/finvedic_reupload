@@ -51,7 +51,7 @@ if (osWrappers.length > 0) {
     const screenHeight =
       window.innerHeight || document.documentElement.clientHeight;
     textContainer.style.top = `${screenHeight / 2 - textContainerHeight / 2}px`;
-    console.log(textContainer.style);
+    // console.log(textContainer.style);
 
     // add for each os__text-container children element a ghost and link them with a uuid
     Object.keys(textContainer.children).forEach((pKey) => {

@@ -8,6 +8,6 @@ window.addEventListener("scroll", (body) => {
     else{
         progressValue.style.display="none";
     }
-    console.log(scroll)
+    // console.log(scroll)
 });
 
