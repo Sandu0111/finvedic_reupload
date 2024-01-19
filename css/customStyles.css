@@ -1543,7 +1543,11 @@ a:link { text-decoration: none; }
             }
 
             &[data-pos="-3"],
-            &[data-pos="3"] {
+            &[data-pos="3"],
+            &[data-pos="-4"],
+            &[data-pos="4"],
+            &[data-pos="-5"],
+            &[data-pos="5"] {
                 display: none;
             }
         }
