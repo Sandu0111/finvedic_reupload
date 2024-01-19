@@ -499,7 +499,26 @@ color: #072794;
     & img {
         width: 100%;
     }
+    
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
 }
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
 
 .profissionalTextHeading {
     color: #c04ae2;
@@ -732,7 +751,7 @@ color: #072794;
 .subscribeText {
     color: #5661B0;
     font-family: Manrope;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -1181,10 +1200,11 @@ color: #072794;
 .curriculamTitleNew {
     color: var(--Primary-600, #031349);
     font-family: Manrope;
-    font-size: 24px;
+    font-size: 20px;
+    text-align: left;
     font-style: normal;
-    font-weight: 400;
-    line-height: 36px;
+    font-weight: 600;
+    line-height: 24px;
     /* 150% */
     letter-spacing: 1.2px;
 }
@@ -1481,7 +1501,7 @@ marquee {
     & .form-floating .form-control{
         background: transparent!important;
         border: none;
-        border-bottom: 2px solid #F4F0FF25!important;
+        border-bottom: 1px solid #ffffff46!important;
         color: white;
     }
 
@@ -1687,6 +1707,7 @@ a:link { text-decoration: none; }
         left: -8%;
         font-size: 20px;
         background: white;
+        border: none;
     }
 
     & .next {
@@ -1695,6 +1716,7 @@ a:link { text-decoration: none; }
         right: -8%;
         font-size: 20px;
         background: white;
+        border: none;
     }
 
 }
@@ -2116,8 +2138,8 @@ a:link { text-decoration: none; }
         bottom: -50px;
 
         & li.slick-active button:before {
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
             background-color: #5479F7;
             border-radius: 50%;
             color: transparent;
@@ -2126,8 +2148,8 @@ a:link { text-decoration: none; }
 
         & li button:before {
             color: transparent;
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
             border: 2px solid #5479F7;
             border-radius: 50%;
             opacity: 1;
