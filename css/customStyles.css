@@ -1176,12 +1176,12 @@ color: #072794;
 .curriculamTitle {
     color: var(--Primary-600, #031349);
     font-family: Manrope;
-    font-size: 24px;
+    font-size: 26px;
     text-align: left;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 36px;
-    padding-top: 10%;
+    padding-top: 15%;
     /* 150% */
     letter-spacing: 1.2px;
 }
@@ -1204,6 +1204,21 @@ color: #072794;
     font-style: normal;
     font-weight: 400;
     line-height: 42px;
+    letter-spacing: 0.8px;
+    & ul {
+        list-style: url(../assets/angles-right-solid.svg);
+    }
+    
+}
+.curriculamText1 {
+    color: #7F8BAB;
+    text-align: left;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    text-align: left;
+    font-weight: 400;
+    line-height: 24px;
     letter-spacing: 0.8px;
     & ul {
         list-style: url(../assets/angles-right-solid.svg);
