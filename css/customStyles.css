@@ -30,7 +30,7 @@ body {
 #close
 {
     position: absolute;
-    bottom: 6%;
+    top: 6%;
     right: 1.5%;
     margin-right: 4%;
     float: right;
@@ -41,12 +41,13 @@ body {
     z-index: 99999999;
 }
 #menu li a{
+    width: 100%;
     display: inline-block;
     padding: 10px;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: #000;
+    color: #405291;
     margin: 5px 0px;
     transition: all 0.3s ease;
 }
@@ -79,7 +80,7 @@ body {
 }
 #menu li a:hover
 {
-    background-color: #000;
+    background-image: linear-gradient(#6B54F7 27.52%, #C04BE2 171.15%);
     color: #fff;
 
 
@@ -1598,6 +1599,14 @@ a:link { text-decoration: none; }
     .menu_body{
         display: block;
     }
+    .StoriesStyle {
+        border-radius: 0px 0px 0px 0px;
+        background: linear-gradient(180deg, #5479F7 -3.18%, #C04BE2 143.15%);
+        width: 100%;
+        overflow: auto;
+        font-weight: 400;
+        font-family: Manrope;
+    }
     .BNcontainer{
         display: none; }
     .bottom_nav{
@@ -2011,8 +2020,8 @@ a:link { text-decoration: none; }
         bottom: -50px;
 
         & li.slick-active button:before {
-            width: 15px;
-            height: 15px;
+            width: 8px;
+            height: 8px;
             background-color: #5479F7;
             border-radius: 50%;
             color: transparent;
@@ -2021,8 +2030,8 @@ a:link { text-decoration: none; }
 
         & li button:before {
             color: transparent;
-            width: 15px;
-            height: 15px;
+            width: 8px;
+            height: 8px;
             border: 2px solid #5479F7;
             border-radius: 50%;
             opacity: 1;
