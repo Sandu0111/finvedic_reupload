@@ -1206,6 +1206,7 @@ color: #072794;
     line-height: 42px;
     letter-spacing: 0.8px;
     & ul {
+
         list-style: url(../assets/angles-right-solid.svg);
     }
     
