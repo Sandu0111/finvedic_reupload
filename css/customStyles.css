@@ -1422,6 +1422,8 @@ marquee {
 
         & .icon {
             color: white!important;
+            font-size: 0.6rem;
+            
         }
     }
 }
