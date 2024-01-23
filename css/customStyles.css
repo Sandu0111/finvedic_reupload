@@ -24,6 +24,10 @@ body {
     font-size: 25px;
     cursor: pointer;
     color: white;
+    background-color:rgba(255,255,255,.4);
+   
+    border-radius: 50% 48% 50% 48%;
+    padding: 3%;
     position: fixed;
     z-index: 9999;
 }
