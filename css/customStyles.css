@@ -1614,10 +1614,16 @@ a:link { text-decoration: none; }
     }
 
 }
+.new_pay_c{
+    padding-bottom: 5%;
+}
 
 @media only screen and (max-width: 576px) {
     .menu_body{
         display: block;
+    }
+    .new_pay_c{
+        padding-bottom: 2%;
     }
     .StoriesStyle {
         border-radius: 0px 0px 0px 0px;
