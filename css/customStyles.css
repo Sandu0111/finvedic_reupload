@@ -1252,6 +1252,7 @@ color: #072794;
     overflow: auto;
     font-weight: 400;
     font-family: Manrope;
+    padding-top: 5%;
 }
 
 .range_slider_container {
@@ -1632,7 +1633,33 @@ a:link { text-decoration: none; }
         overflow: auto;
         font-weight: 400;
         font-family: Manrope;
+        padding-top: 0;
     }
+    .buttonBrochure:hover {
+        background: transparent !important;
+        cursor: pointer;
+    
+    
+    }
+    .buttonBrochure:before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        bottom: -5px;
+        left: -5px;
+        z-index: -1;
+        background: transparent;
+        background-size: 400%;
+        border: none;
+        border-radius: 40px;
+        opacity: 0;
+        transition: .5s;
+      }
+       
+      .buttonBrochure:hover:before {
+        border: none;
+      }
     .BNcontainer{
         display: none; }
     .bottom_nav{
