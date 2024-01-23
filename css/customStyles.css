@@ -41,7 +41,7 @@ body {
     z-index: 99999999;
 }
 #menu li a{
-    width: 100%;
+
     display: inline-block;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -52,7 +52,6 @@ body {
     margin: 5px 0px;
     transition: all 0.3s ease;
     text-align: center;
-    margin-right: 10%;
 }
 
 .menu_body{
@@ -86,6 +85,7 @@ body {
 {
     background-image: linear-gradient(#6B54F7 27.52%, #C04BE2 171.15%);
     color: #fff;
+    width: 100%;
 
 
 }
@@ -1840,7 +1840,7 @@ a:link { text-decoration: none; }
     }
 
     .paymentsSectionStyle {
-        border-radius: 64px;
+        border-radius: 24px;
         background: #fff;
         font-family: Playfair Display;
 
@@ -2006,8 +2006,8 @@ a:link { text-decoration: none; }
     & .slick-dots {
         bottom: -40px;
         & li.slick-active button:before{
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
             background-color: #fff;
             border-radius: 50%;
             color: transparent;
@@ -2016,8 +2016,8 @@ a:link { text-decoration: none; }
 
         & li button:before {
             color: transparent;
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
             border: 2px solid #fff; 
             border-radius: 50%;
             opacity: 1;
@@ -2028,7 +2028,7 @@ a:link { text-decoration: none; }
 .stories-mobile {
     & .slick-dots {
         bottom: -20px;
-        margin-left: -30px;
+        margin-left: -15px;
     }
 }
 
@@ -2058,7 +2058,7 @@ a:link { text-decoration: none; }
 }
 
 .storyCard {
-    background: #F6F0F7;
+    background: #ffff;
     border-radius: 24px;
     text-align: center;
     font-family: Manrope;
