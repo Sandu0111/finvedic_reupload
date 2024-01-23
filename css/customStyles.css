@@ -235,7 +235,7 @@ input[type=checkbox]{
     font-family: Manrope;
 color: #072794;
     font-size: 24px;
-    line-height: 1.8rem;
+    line-height: 34px;
     padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 4%!important;
@@ -267,7 +267,7 @@ color: #072794;
     font-family: 'Playfair Display', serif;
     font-size: 4.5em;
     color: white;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     line-height: 1.3em;
 }
 
@@ -740,7 +740,7 @@ color: #072794;
 .subscribeText {
     color: #5661B0;
     font-family: Manrope;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
@@ -807,8 +807,9 @@ color: #072794;
     font-family: Manrope;
     padding: 0%;
     & li:before{
-        content: '\f0da';
-        margin-right: 5px;
+        content: '\f00c';
+        font-size: 14px;
+        margin-right: 10px;
         font-family: FontAwesome;
     }
 
@@ -1177,11 +1178,11 @@ color: #072794;
 .curriculamTitle {
     color: var(--Primary-600, #031349);
     font-family: Manrope;
-    font-size: 26px;
+    font-size: 24px;
     text-align: left;
     font-style: normal;
     font-weight: 600;
-    line-height: 36px;
+    line-height: 30px;
     padding-top: 15%;
     /* 150% */
     letter-spacing: 1.2px;
@@ -1192,7 +1193,7 @@ color: #072794;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 36px;
+    line-height: 30px;
     /* 150% */
     letter-spacing: 1.2px;
 }
@@ -1201,14 +1202,14 @@ color: #072794;
     color: #7F8BAB;
     text-align: left;
     font-family: Manrope;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 42px;
     letter-spacing: 0.8px;
     & ul {
 
-        list-style: url(../assets/angles-right-solid.svg);
+        list-style: url(../assets/doublearrow.svg);
     }
     
 }
@@ -1223,7 +1224,7 @@ color: #072794;
     line-height: 24px;
     letter-spacing: 0.8px;
     & ul {
-        list-style: url(../assets/angles-right-solid.svg);
+        list-style: url(../assets/doublearrow.svg);
     }
     
 }
@@ -1350,7 +1351,7 @@ marquee {
 
 .paymentsSectionStyle {
     border-radius: 64px;
-    background: #F6F0F7;
+    background: #ffff;
     padding-top: 30px;
 
     & .mainHeading-2 {
@@ -1366,13 +1367,14 @@ marquee {
 }
 
 .subscriptionStyle {
-    background: #261474;
+    background:rgba(7, 39, 148, 0.6);
+   /* background: rgba(256, 256, 256, 0.2);*/
     padding: 20px;
     font-weight: 400;
     border-radius: 16px;
     font-family: Manrope;
     & .form-floating label {
-        color: #F4F0FF25;
+        color: #f4f0ff6a;
     }
     & .form-floating .form-control{
         background: transparent!important;
@@ -1468,7 +1470,7 @@ marquee {
 }
 ::placeholder {
     color: rgba(164, 164, 164, 0.589);
-    opacity: 0.8; 
+    font-weight: 600;
   }
  .certification_box input[type=text] {
     padding-left: 30px !important;
@@ -1823,7 +1825,7 @@ a:link { text-decoration: none; }
 
     .paymentsSectionStyle {
         border-radius: 64px;
-        background: #F6F0F7;
+        background: #fff;
         font-family: Playfair Display;
 
         & .mainHeading {
@@ -2020,8 +2022,8 @@ a:link { text-decoration: none; }
         bottom: -50px;
 
         & li.slick-active button:before {
-            width: 8px;
-            height: 8px;
+            width: 12px;
+            height: 12px;
             background-color: #5479F7;
             border-radius: 50%;
             color: transparent;
@@ -2030,8 +2032,8 @@ a:link { text-decoration: none; }
 
         & li button:before {
             color: transparent;
-            width: 8px;
-            height: 8px;
+            width: 12px;
+            height: 12px;
             border: 2px solid #5479F7;
             border-radius: 50%;
             opacity: 1;
