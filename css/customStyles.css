@@ -52,13 +52,13 @@ body {
     z-index: 99999999;
 }
 #menu li a{
+    width: 100%;
 
     display: inline-block;
     padding-top: 10px;
     padding-bottom: 10px;
     text-decoration: none;
     font-size: 20px;
-    font-weight: bold;
     color: #405291;
     margin: 5px 0px;
     transition: all 0.3s ease;
@@ -1149,7 +1149,7 @@ color: #072794;
 
 .rocketTextHeading {
     font-family: Playfair Display;
-    font-size: 2rem;
+    font-size: 24px;
 }
 .pad-x{
     padding-left: 5% !important;
@@ -1935,7 +1935,7 @@ a:link { text-decoration: none; }
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
-        line-height: 30px;
+        line-height: 15px;
         letter-spacing: 0.8px;
     }
 
