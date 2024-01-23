@@ -43,14 +43,18 @@ body {
 #menu li a{
     width: 100%;
     display: inline-block;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
     color: #405291;
     margin: 5px 0px;
     transition: all 0.3s ease;
+    text-align: center;
+    margin-right: 10%;
 }
+
 .menu_body{
     display: none;
 }
@@ -499,6 +503,18 @@ color: #072794;
     right: 0%;
     & img {
         width: 100%;
+    }
+    animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
     }
 }
 .card_new1, .card_new2, .card_new3{
