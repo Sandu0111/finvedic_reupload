@@ -175,28 +175,21 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
       }
-#preloader{
-  background-color: #FFF url(assets/logo6.png) no-repeat center center;
-  background-size: 70%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-}
+
     </style>
     <script src="CC_script.js"></script>
+   
+    
+  </head>
+
+  <body>
+    <div id="preloader"></div>
     <script>
       var loader=document.getElementById("preloader");
       window.addEventListener("load",function(){
         loader.style.display="none"
       })
     </script>
-    
-  </head>
-
-  <body>
-    <div id="preloader"></div>
-
 
 
 
