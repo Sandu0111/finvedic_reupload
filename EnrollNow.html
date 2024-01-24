@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/customStyles.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>FinVedic Website</title>
+    <link rel="stylesheet" href="css/splide.css">
+    <script src="js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .accordion-item:first-of-type .accordion-button,
+        .accordion-item:last-of-type .accordion-button.collapsed {
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        .form-background{
+    background-color: linear-gradient(#6B54F7 27.52%, #C04BE2 171.15%);
+}
+        .accordion-button {
+            width: fit-content;
+            float: right;
+            padding: 6px;
+            border-radius: 50%;
+        }
+
+        .accordion-button.collapsed {
+            background-color: #f3f6ff !important;
+            box-shadow: none;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #6366F1 !important;
+            box-shadow: none;
+        }
+
+        .accordion-button::after {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBmaWxsPSIjMjgxQzQ1Ij48cGF0aCBkPSJNMjMzLjQgNDA2LjZjMTIuNSAxMi41IDMyLjggMTIuNSA0NS4zIDBsMTkyLTE5MmMxMi41LTEyLjUgMTIuNS0zMi44IDAtNDUuM3MtMzIuOC0xMi41LTQ1LjMgMEwyNTYgMzM4LjcgODYuNiAxNjkuNGMtMTIuNS0xMi41LTMyLjgtMTIuNS00NS4zIDBzLTEyLjUgMzIuOCAwIDQ1LjNsMTkyIDE5MnoiLz48L3N2Zz4=);
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBmaWxsPSIjZmZmZmZmIj48cGF0aCBkPSJNMjMzLjQgNDA2LjZjMTIuNSAxMi41IDMyLjggMTIuNSA0NS4zIDBsMTkyLTE5MmMxMi41LTEyLjUgMTIuNS0zMi44IDAtNDUuM3MtMzIuOC0xMi41LTQ1LjMgMEwyNTYgMzM4LjcgODYuNiAxNjkuNGMtMTIuNS0xMi41LTMyLjgtMTIuNS00NS4zIDBzLTEyLjUgMzIuOCAwIDQ1LjNsMTkyIDE5MnoiLz48L3N2Zz4=);
+        }
+
+        .accordion-collapse.collapse.card-body {
+            padding: 0px;
+        }
+
+        .nav.nav-pills .nav-item .nav-link {
+            background: white !important;
+            border-radius: 10px;
+            box-shadow: 0px 4px 5px 0px rgb(177, 177, 177);
+            cursor: pointer;
+        }
+
+        .nav.nav-pills .nav-item .nav-link p {
+            color: rgb(180, 180, 180) !important;
+            font-weight: bold;
+        }
+
+        .nav.nav-pills .nav-item .nav-link img {
+            opacity: 0.4;
+        }
+
+        .nav.nav-pills .nav-item {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .nav.nav-pills .nav-item .nav-link.active {
+            transform: scale(1.1);
+            transition: 0.25s;
+            background-color: red;
+
+            border-radius: 10px 10px 0px 0px;
+            border-bottom: 5px solid #ea63ff;
+            box-shadow: 0px 4px 5px 0px #ea63ff;
+        }
+
+        .nav.nav-pills .nav-item .nav-link.active img {
+            opacity: 1;
+        }
+
+        .nav.nav-pills .nav-item .nav-link.active p {
+            color: #281C45 !important;
+        }
+
+        .nav.nav-pills .nav-item .nav-link img {
+            width: 70px;
+            /* height: 70px; */
+            padding-bottom: 10px;
+        }
+
+        .header-section {
+            background-image: url('assets/images/Bannerimg12x.png');
+        }
+
+        .lab-section {
+            background-image: url('assets/images/Group1602x.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .Excellence-section {
+            background-image: url('assets/images/Group168@2x.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .finvedic-section {
+            /* height: 100vh; */
+            /* background-image: url('assets/images/Component1812x.png'); */
+            /* background-repeat: no-repeat; */
+            /* background-size: 100% 100%; */
+        }
+
+        .finvedic-section:hover {
+            transform: scale(0.4)
+        }
+
+        .logo {
+            width: 154px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .header-section {
+                background-image: url('assets/images/Group74702x.png');
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .logo {
+                width: 116px;
+            }
+
+            .header-section {
+                background-image: url('assets/images/Group74702x.png');
+            }
+
+            .lab-section {
+                background-image: url('assets/images/Group74803x.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 180% 100%;
+            }
+
+            .Excellence-section {
+                background-image: url('assets/images/Group74813x.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 180% 100%;
+            }
+
+            .mainlab-section {
+                box-shadow: 0px -100px 100px 0px #ffffff;
+            }
+
+            .finvedic-section {
+                height: 45vh;
+                background-image: url('assets/images/Component1812x.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 150% 100%;
+            }
+
+            .nav.nav-pills .nav-item .nav-link.active {
+                transform: scale(1.2);
+            }
+
+            .nav.nav-pills .nav-item .nav-link img {
+                width: 50px;
+                /* height: 50px; */
+            }
+        }
+
+        ol,
+        ul {
+            padding-left: 1.225rem;
+        }
+        .form-control{
+            border: 0px;
+            border-bottom: 1px solid #ced4da;
+            border-radius:0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav
+        class="navbar navbar-expand-lg navbar-light bg-light sticky-top fixed-top shadow animate__animated animate__pulse">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo6.png" class="logo">
+            </a>
+            <button type="button" class="navbar-toggler btn" data-bs-toggle="modal" data-bs-target="#navbarModel">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cources
+                        </a>
+                        <ul class="dropdown-menu bordered dropdown-menu-style" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="Payments.html">Payments <i class="fa-solid fa-angle-right"></i></a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Banking <i class="fa-solid fa-angle-right"></i></a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Digital Landing <i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a class="dropdown-item" href="#">Wealth Management <i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a class="dropdown-item" href="#">Insurance <i class="fa-solid fa-angle-right"></i></a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Capital Markets <i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a class="dropdown-item" href="#">SMB <i class="fa-solid fa-angle-right"></i></a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Real Estate <i
+                                        class="fa-solid fa-angle-right"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">External</a>
+                    </li>
+                </ul>
+                <ui class="navbar-nav">
+                    <li class="nav-item mx-3">
+                        <a class="btn sign-in-btn rounded my-2" href="#">
+                            <i class="fa-solid fa-arrow-right-from-bracket text-blue"></i>&nbsp;&nbsp; Sign In
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn text-white sign-up-btn rounded my-2" href="signUp.html">
+                            <i class="fa-regular fa-user text-white"></i>&nbsp;&nbsp;Sign Up
+                        </a>
+                    </li>
+                </ui>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <div class="modal fade" id="navbarModel">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content bg-light" style="border-radius: 25px;">
+                <div class="modal-head m-4 text-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="d-flex align-items-start" style="height:80vh;overflow-y: auto;">
+                    <ul class="navbar-nav mx-auto mt-4 mb-lg-0">
+                        <li class="nav-item h5">
+                            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle h4" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><span class="h5"> Cources</span> </a>
+                            <ul class="dropdown-menu bordered " aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">
+                                        Payments <i class="fa-solid fa-angle-right"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        Banking <i class="fa-solid fa-angle-right"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        Digital Landing <i class="fa-solid fa-angle-right"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        Wealth Management <i class="fa-solid fa-angle-right"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        Insurance <i class="fa-solid fa-angle-right"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        Capital Markets <i class="fa-solid fa-angle-right"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        SMB <i class="fa-solid fa-angle-right"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        Real Estate <i class="fa-solid fa-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item h5">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item h5">
+                            <a class="nav-link" href="#">External</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-sm sign-in-btn rounded ">
+                                <i class="fa-solid fa-arrow-right-from-bracket text-blue"></i>&nbsp;&nbsp; Sign In
+                            </button>
+                        </li>
+                        <li class="nav-item my-3">
+                            <button class="btn btn-sm text-white sign-up-btn rounded">
+                                <i class="fa-regular fa-user text-white"></i>&nbsp;&nbsp;Sign Up
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid py-5 form-background px-2" style=" background: linear-gradient(#6B54F7 27.52%, #C04BE2 171.15%);">
+        <div class="container bg-white py-5 rounded">
+            <form onsubmit="">
+            <div class="row">
+                <div class="col-12 display-4 fw-bold text-center">
+                    <p class=" fs-sm-20 heading-text"> Thank You For Your Interest</p>
+                    <p class="fs-20 fs-sm-14 heading-text">Please fill the form to help you assist further</p>
+                </div>
+                <div class="col-12 col-lg-6 p-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputFNmae" placeholder="name@example.com" value="">
+                        <label for="floatingInputFNmae">First Name <span class="text-danger fw-bold">*</span></label>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingInputLName" placeholder="name@example.com" value="">
+                        <label for="floatingInputLName">Last Name</label>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInputAddress" placeholder="name@example.com" value="">
+                        <label for="floatingInputAddress">Email address <span class="text-danger fw-bold"> *</span></label>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 p-3">
+                    <div class="form-floating">
+                        <input type="number" class="form-control" id="floatingInputNumber" placeholder="name@example.com" value="">
+                        <label for="floatingInputNumber">Phone Number <span class="text-danger fw-bold"> *</span></label>
+                    </div>
+                </div>
+                <div class="col-12 p-3">
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTex" style="height: 100px"></textarea>
+                        <label for="floatingTex">Tell us more about you</label>
+                      </div>
+                </div>
+                <div class="col-4 p-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            I am a student/fresh graduate
+                        </label>
+                    </div>
+                </div>
+                <div class="col-4 p-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            I'm experienced professional
+                        </label>
+                    </div>
+                </div>
+                <div class="col-4 p-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            I am just researching
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 text-center" >
+                    <button class="px-5 btn btn-lg submit-btn text-white" type="submit" role="button" style=" background: linear-gradient(#6B54F7 27.52%, #C04BE2 171.15%);">SUBMIT</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</html>
