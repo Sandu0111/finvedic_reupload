@@ -1646,6 +1646,10 @@ a:link { text-decoration: none; }
     .menu_body{
         display: block;
     }
+    .CCHeading{
+        font-size: x-large;
+        line-height: 28px;
+    }
     .new_pay_c{
         padding-bottom: 2%;
     }
